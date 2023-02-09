@@ -1,0 +1,231 @@
+@import "../../../theme/theme.scss";
+
+section#login {
+    height: 100vh !important;
+    overflow: hidden;
+}
+
+
+.title {
+
+    margin-left: 259px;
+    /* font: normal normal normal 44px/59px Tasty Gothic_Demi; */
+    letter-spacing: 0px;
+    height: 59px;
+    text-align: center;
+    opacity: 1;
+    font-size: 44px;
+    width: 200px;
+    color: $black-1;
+    font-family: 'Tasty-Gothic_Demi';
+    margin-top: 174px;
+    margin-bottom: 0px;
+}
+
+.inputemail {
+    max-width: 422px;
+    height: 49px;
+    background: $main-card-bg 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    opacity: 1;
+    margin: 0px 0px 15px 0px;
+    padding: 2px 0 0 37px;
+    border: none;
+    width: 100%;
+}
+
+.form_cont {
+    position: relative;
+    margin-left: 160px;
+    width: 422px;
+    height: 49px;
+    margin-bottom: 16px;
+    padding: 0px;
+}
+
+.usererrmsg {
+    font-size: 13px;
+    font-weight: 500;
+    color: $bg-red-1;
+    position: relative;
+    bottom: 17px;
+    padding: 0 60% 0 14px;
+    // margin: 8px 0px 8px 0px;
+}
+
+
+.password_field {
+    margin-left: 0px !important;
+}
+
+
+.example-margin {
+    margin-left: 13.94px;
+    width: 16.6px;
+    height: 16.6px;
+    // background: white 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    opacity: 1;
+    /* text-align: left; */
+    font: normal normal normal 13px/30px Tasty-Gothic_Demi;
+    letter-spacing: 0px;
+    color: $black-1;
+    font-family: 'Tasty-Gothic_Book';
+}
+
+.signinbtn {
+    width: 206px;
+    height: 54px;
+    background: $primary 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px $box-shadow;
+    border-radius: 27px;
+    opacity: 1;
+    font-size: 13px;
+    color: $white;
+    margin-bottom: 40px;
+    // margin: 30px auto 20px auto;
+    margin-left: 256px;
+    text-align: center;
+    display: block;
+}
+
+.forgot {
+    margin-left: 308px;
+    width: 108px;
+    height: 18px;
+    font: normal normal normal 14px/18px Tasty-Gothic_Demi;
+    letter-spacing: 0px;
+    color: $black-1;
+    opacity: 1;
+    font-family: 'Tasty-Gothic_Book';
+    text-align: center;
+    display: block;
+}
+
+.spacetop {
+    margin-top: 20px;
+}
+
+
+.lang {
+    color: $black-1;
+    float: right;
+    font-size: 14px;
+    margin: 15px 10px 0 0;
+    font: normal normal normal 14px/18px Tasty-Gothic_Demi;
+    font-family: 'Tasty-Gothic_Book';
+}
+
+.VITlogo {
+    width: 683px;
+    position: fixed;
+    right: -65px;
+    top: 203px;
+    left: 683px;
+    height: 388px;
+    opacity: 1;
+    background: transparent 0% 0% no-repeat padding-box;
+}
+
+.emailicon {
+    position: absolute;
+    padding-left: 0px;
+    top: 16px;
+    font-size: 20px;
+    height: 16px;
+    width: 20px;
+    left: 13.6px;
+    color: $cement-2;
+    opacity: 0.2;
+}
+
+.lockicon {
+    position: absolute;
+    top: 16px;
+    font-size: 20px;
+    height: 16px;
+    width: 20px;
+    color: $cement-2;
+    opacity: 0.2;
+    left: 13.6px;
+    padding-left: 0px;
+}
+
+.rember {
+    text-align: left;
+    max-width: 405px;
+    width: 100%;
+    // margin: 0 auto;
+}
+
+:host ::ng-deep .langsel .mat-select-arrow {
+    width: 16px;
+    height: 6px;
+    border: 0;
+    background-repeat: no-repeat;
+}
+
+.remember_box {
+    height: 48.33px;
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .emailicon {
+        left: 3%;
+    }
+
+    .lockicon {
+        left: 3%;
+    }
+
+    .usererrmsg {
+        padding: 0 66% 0 0;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+
+    .form_cont {
+        padding: 0;
+        position: relative;
+    }
+
+    .VITlogo {
+        /* margin-top: 65px; */
+        width: 50px;
+        position: fixed;
+        left: 45%;
+        height: 50px;
+        opacity: 1;
+        background: transparent 0% 0% no-repeat padding-box;
+        top: 0;
+        bottom: 0;
+    }
+
+    .emailicon {
+        left: 9px;
+        // top: 17px;
+        // position: absolute;
+    }
+
+    .lockicon {
+        left: 6px;
+        top: 12px;
+        position: absolute;
+    }
+
+    .leftside {
+        margin-top: 80px;
+    }
+
+    .usererrmsg {
+        padding: 0 57% 0 0;
+        text-align: left;
+    }
+}
+
+.langsel {
+    background-color: $gray-12;
+    color: $black-1 ;
+}

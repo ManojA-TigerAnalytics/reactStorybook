@@ -1,0 +1,1592 @@
+/* You can add global styles to this file, and also import other style files */
+//@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+// @import "bootstrap/dist/css/bootstrap.min.css";
+// @import "~@ng-select/ng-select/themes/material.theme.css";
+// @import "~angular2-multiselect-dropdown/themes/default.theme.css";
+@import "theme.scss";
+
+@font-face {
+    font-family: 'Tasty-Gothic_Book';
+    src: url('../../assets/fonts/Tasty-Gothic_Book.eot');
+    src: local('☺'), url('../../assets/fonts/Tasty-Gothic_Book.woff') format('woff'),
+        url('../../assets/fonts/Tasty-Gothic_Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tasty-Gothic_Heavy';
+    src: url('../../assets/fonts/Tasty-Gothic_Heavy.eot');
+    src: local('☺'), url('../../assets/fonts/Tasty-Gothic_Heavy.woff') format('woff'),
+        url('../../assets/fonts/Tasty-Gothic_Heavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Tasty-Gothic_Demi';
+    src: url('../../assets/fonts/Tasty-Gothic_Demi.eot');
+    src: local('☺'), url('../../assets/fonts/Tasty-Gothic_Demi.woff') format('woff'),
+        url('../../assets/fonts/Tasty-Gothic_Demi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.mat-card,
+input,
+button,
+select,
+ul li {
+    font-family: 'Tasty-Gothic_Book' !important;
+}
+
+th.mat-header-cell,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Tasty-Gothic_Demi';
+}
+
+body,
+td.mat-cell {
+    margin: 0;
+    font-family: 'Tasty-Gothic_Book';
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html body {
+    margin: 0;
+    font-family: 'Tasty-Gothic_Demi';
+    background: $secondary;
+    height: 100%;
+}
+
+.mat-select-value-text {
+    color: $black !important;
+    padding: 4px 0 0 8px !important;
+    font-size: 13px !important;
+}
+
+th.mat-header-cell,
+td.mat-cell,
+td.mat-footer-cell {
+    border-bottom-style: dashed !important;
+    border-bottom-color: $app-border-color !important;
+
+}
+
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background,
+.mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: $primary !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-flex {
+    padding: 0 0 0 0.75em !important;
+}
+
+/*Job summary*/
+.jobSummary .mat-select-value-text {
+    color: $app-text-color !important;
+}
+
+/*Impact styles*/
+.highcharts-credits {
+    display: none;
+}
+
+.recommended_impact .mat-tab-body-wrapper {
+    margin-top: 20px;
+    border: 1px solid $app-border-color;
+    border-radius: 5px;
+    background: $main-card-bg;
+    padding: 0 15px;
+}
+
+.recommended_impact .mat-tab-label {
+    opacity: 1;
+    font-size: 15px;
+}
+
+.recommended_impact .mat-tab-label-active {
+    font-weight: bold;
+    color: $primary;
+
+}
+
+.recommended_impact .mat-primary .mat-ink-bar {
+    background-color: $primary;
+}
+
+.recommended_impact .segment_dropdown.mat-select {
+    width: 140px;
+    text-align: center;
+    margin: 10px 10px 10px 0 !important;
+    border: 1px solid $app-border-color;
+    background: $secondary;
+    float: right;
+    font-size: 14px;
+    display: block;
+    border-radius: 5px;
+    color: $app-text-color;
+}
+
+.recommended_impact .mat-select-value-text,
+.scenarioname-container .mat-select-value-text {
+    color: $app-text-color !important;
+}
+
+/** Angular Multi Select DropDown */
+.selected-list .c-list .c-token {
+    background: $primary !important;
+}
+
+.pure-checkbox input[type="checkbox"]:checked+label:before {
+    background: $primary !important;
+}
+
+.pure-checkbox input[type="checkbox"]:focus+label:before,
+.pure-checkbox input[type="checkbox"]:hover+label:before {
+    border-color: $primary !important;
+    background-color: $secondary;
+}
+
+.pure-checkbox input[type="checkbox"]+label:before {
+    color: $primary !important;
+    border: 1px solid $primary !important;
+    ;
+}
+
+.pure-checkbox input[type="checkbox"]+label:after {
+    background-color: $primary !important;
+}
+
+.cursorhand {
+    cursor: pointer;
+}
+
+.mat-column-start_date .mat-sort-header-container {
+    border-bottom: 0px !important;
+}
+
+.mat-column-start_date .mat-form-field {
+    font-weight: 600;
+    border: 1px solid $app-border-color;
+    height: 36px;
+    margin-top: 6px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.mat-column-start_date .mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    padding-bottom: 0 !important;
+}
+
+.mat-column-start_date .mat-form-field-appearance-legacy .mat-form-field-underline,
+.mat-column-start_date .mat-form-field-ripple {
+    height: 0px !important;
+}
+
+.mat-column-start_date .mat-form-field-suffix,
+.scenarioname-container .start_date .mat-form-field-suffix {
+    width: 30px;
+}
+
+.mat-column-start_date .mat-form-field-appearance-legacy .mat-form-field-suffix .mat-icon-button .mat-icon,
+.scenarioname-container .start_date .mat-form-field-appearance-legacy .mat-form-field-suffix .mat-icon-button .mat-icon {
+    width: 20px;
+    padding: 6px 0 12px;
+}
+
+.mat-column-start_date input.mat-input-element {
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.mat-option.mat-active {
+    color: $primary !important;
+}
+
+.mat-form-field.mat-focused.mat-primary .mat-select-arrow {
+    color: $primary !important;
+}
+
+.mat-form-field.mat-focused .mat-form-field-ripple {
+    background-color: $primary
+}
+
+::ng-deep .toast-container .ngx-toastr:hover {
+    cursor: none !important;
+}
+
+.mat-calendar-abbr {
+    text-decoration: none !important;
+    cursor: unset !important;
+}
+
+.mat-calendar-body-selected {
+    background-color: $primary;
+}
+
+.mat-calendar-body-in-range::before {
+    background: $secondary;
+}
+
+.mat-icon-button .mat-button-focus-overlay {
+    opacity: 0 !important;
+}
+
+.mat-button {
+    font-family: 'Tasty-Gothic_Heavy' !important;
+}
+
+.mat-calendar-body-today:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical) {
+    border-color: $primary;
+}
+
+
+.discount_planner.modal-open .cdk-overlay-container {
+    z-index: 1061 !important;
+}
+
+.discount_planner .modal-dialog {
+    max-width: 90% !important;
+}
+
+.discount_planner .modal-body .mat-form-field {
+    width: 95%;
+    height: 35px !important;
+}
+
+.discount_planner .modal-body .mat-form-field-appearance-outline .mat-form-field-wrapper {
+    padding: 0 !important;
+    height: 30px !important;
+    margin: 0 !important;
+}
+
+.discount_planner .modal-body .mat-form-field-appearance-outline .mat-form-field-flex {
+    padding: 0 !important;
+}
+
+.discount_planner .modal-body .mat-form-field-appearance-outline .mat-form-field-infix {
+    border-top: 0;
+    text-align: right;
+    padding: 17px 10px 5px;
+}
+
+.discount_planner .modal-body .error_discount_price .dis_price .mat-form-field-appearance-outline .mat-form-field-outline-end,
+.discount_planner .modal-body .error_discount_price .depth_price .mat-form-field-appearance-outline .mat-form-field-outline-end {
+    border-radius: 4px;
+    border: 1px solid $primary;
+
+}
+
+.discount_planner .modal-body .error_discount_price .dis_price .mat-form-field-appearance-outline .mat-form-field-outline-start,
+.discount_planner .modal-body .error_discount_price .depth_price .mat-form-field-appearance-outline .mat-form-field-outline-start {
+    border: 0;
+    min-width: 0;
+}
+
+.discount_planner .modal-body .readOnly.mat-form-field-appearance-outline .mat-form-field-outline {
+    background: $gray-2 !important;
+    border-radius: 4px !important;
+}
+
+.discount_planner .modal-body .discount_mech .c-btn span:first-child,
+.discount_planner .modal-body .item .c-btn span:first-child,
+.discount_planner .modal-body .segment_drop .c-btn span:first-child {
+    white-space: nowrap;
+    padding-right: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.discount_planner .modal-body .c-remove c-icon,
+.editdisable .c-angle-down {
+    display: none;
+}
+
+.discount_planner .modal-body .selected-list .c-btn {
+    font-size: 14px;
+    color: $black;
+    font-family: 'Tasty-Gothic_Book';
+}
+
+.discount_planner .modal-body label {
+    padding: 0;
+    font-size: 14px;
+}
+
+.discount_planner .modal-body .save_yes:disabled {
+    cursor: not-allowed !important;
+}
+
+.issue_tracker .promo_select .ng-select .ng-select-container:after {
+    display: none;
+}
+
+.issue_tracker .promo_select .ng-select.ng-select-single .ng-select-container .ng-arrow-wrapper {
+    bottom: 27px;
+    right: 3px;
+}
+
+.issue_tracker .promo_select .ng-select .ng-select-container .ng-value-container {
+    margin-top: -12px;
+    padding-left: 8px;
+}
+
+.issue_tracker .promo_select span.ng-clear-wrapper {
+    display: none;
+}
+
+.issue_tracker .promo_select .ng-dropdown-panel {
+    margin-top: 20px;
+}
+
+.issue_tracker .promo_select .ng-select .ng-arrow-wrapper .ng-arrow {
+    color: $primary
+}
+
+.issue_tracker .promo_select .ng-select.ng-select-focused .ng-select-container .ng-arrow-wrapper .ng-arrow {
+    color: $primary !important
+}
+
+.issue_tracker .modal-content {
+    width: 75%;
+    margin-left: 64px;
+}
+
+.issue_tracker .mat-form-field-appearance-outline .mat-form-field-infix {
+    padding: 0 !important;
+    position: relative !important;
+    bottom: 7px !important;
+}
+
+.issue_tracker .mat-form-field-appearance-outline .mat-form-field-flex {
+    height: 35px;
+    width: 240px;
+}
+
+.issue_tracker .mat-form-field-outline-thick {
+    color: $secondary !important;
+}
+
+.issue_tracker .mat-form-field-flex {
+    height: 35px;
+}
+
+.issue_tracker .mat-form-field-appearance-outline .mat-form-field-outline {
+    background-color: $secondary;
+}
+
+.issue_tracker .mat-input-element {
+    font-size: 13px !important;
+    color: $gray-700;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.dis_price input::-webkit-outer-spin-button,
+.dis_price input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.impact_index .modal-content {
+    width: 800px;
+    height: 600px;
+    position: relative;
+    right: 156px;
+}
+
+.impact_index input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.impact_index input::-webkit-outer-spin-button,
+.impact_index input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.impact_index .mat-form-field-appearance-outline .mat-form-field-flex {
+    padding: 0 0 0 2px !important;
+    height: 36px;
+    width: 150px;
+}
+
+.impact_index .mat-form-field {
+    height: 40px;
+}
+
+.impact_index .mat-button.mat-button-disabled.mat-button-disabled {
+    cursor: not-allowed;
+    color: $secondary;
+}
+
+.impact_index .mat-form-field-appearance-outline .mat-form-field-infix {
+    padding: 0 !important;
+}
+
+/* Firefox */
+.impact_index input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Firefox */
+.dis_price input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: $secondary;
+    border-radius: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $gray-600;
+    border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $gray-700;
+}
+
+.clrblack {
+    color: $black-1;
+    display: inline-grid;
+}
+
+.mat-form-field-outline-thick {
+    color: none !important;
+}
+
+.tablabel {
+    margin: 20px 0 0 15px;
+}
+
+.note {
+    font-family: 'italic normal normal Tasty-Gothic_Demi';
+    font-size: 12px;
+    color: $black-1;
+    text-align: left;
+    opacity: 0.5;
+    margin-top: 10px;
+    width: 50%;
+    text-align: left;
+    display: inline-block;
+}
+
+.graph_outter {
+    padding: 10px 20px;
+    background: $white;
+    border: 1px solid $gray-5;
+    border-radius: 4px;
+}
+
+.graph_outter h3 {
+    font-size: 18px;
+}
+
+.select_grid {
+    border-radius: 60px !important;
+    background: $bg-default;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.select_grid .fa {
+    font-size: 24px;
+    color: $bg-red-1;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.select_grid .fa.graph_active {
+    color: $white;
+}
+
+.excel_btn_container {
+    margin-right: 10px;
+    position: absolute;
+    top: 15px;
+    cursor: pointer;
+    right: 15px;
+    z-index: 9;
+    background: $gray98;
+    padding-left: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+    .excel_btn_container {
+        position: relative;
+    }
+}
+
+.excelcont {
+    display: inline-block;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.excel-inline {
+    display: inline-block;
+}
+
+#login p {
+    margin: 0;
+}
+
+@media only screen and (max-width: 580px) {
+    .login_contetent {
+        transform: translate(-50%, 25%);
+    }
+
+    section#login {
+        // height: 100%;
+        width: 100%;
+    }
+
+    .title {
+        width: 100%;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .inputemail {
+        width: 100%;
+        margin: 0px 0px 15px 0px;
+        margin-top: 0 !important;
+    }
+
+    .signinbtn {
+        margin: 16px 0 !important;
+        width: 100%;
+        height: auto;
+        padding: 8px 0;
+    }
+
+    .form_cont {
+        width: 100%;
+    }
+
+    .example-margin {
+        margin-left: 0;
+    }
+
+    .forgot {
+        margin-left: 0;
+        width: 100%;
+        text-align: center !important;
+        margin: 10px auto;
+        display: block;
+    }
+}
+
+.divheight {
+    width: 100%;
+    margin: 0;
+}
+
+.leftside {
+    float: left;
+}
+
+.marginleft {
+    margin-top: 35px;
+}
+
+.leftright {
+    float: left;
+    padding-right: 0;
+}
+
+
+
+#login input.startdt.langsel.input__drop {
+    border: 0 !important;
+}
+
+input.startdt.langsel.input__drop:focus {
+    outline: 0;
+}
+
+.mat-button.mat-button-base.mat-warn.mat-button-disabled {
+    color: white;
+    cursor: not-allowed;
+}
+
+.input__drop {
+    color: $white;
+    font-size: 12px;
+    /* margin-top: 0px; */
+    padding: 5px;
+}
+
+section#login {
+    background: $secondary;
+    color: $white-1;
+    // height: 100%;
+    width: 100%;
+}
+
+.form_cont {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 45px 0px 0;
+}
+
+.minlenpass {
+    font-size: 13px;
+    font-weight: 500;
+    color: $bg-red-1;
+    position: relative;
+    bottom: 10px;
+    padding: 0 36% 0 0;
+    width: 500px;
+}
+
+.userinvalid {
+    font-size: 13px;
+    font-weight: 500;
+    color: $bg-red-1;
+    position: relative;
+    bottom: 10px;
+    padding: 0 56% 0 0;
+}
+
+.invalidpass {
+    font-size: 13px;
+    font-weight: 500;
+    color: $bg-red-1;
+    position: relative;
+    bottom: 10px;
+    padding: 0 57% 0 0;
+    width: 500px;
+}
+
+.langsel {
+    width: 127px;
+    height: 29px;
+    float: right;
+    font-size: 13px;
+    background: $btn-bg 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    opacity: 1;
+    margin: 10px 10px 0 0;
+}
+
+// .mat-select-arrow {
+//     color: $white !important;
+// }
+.login_contetent {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 300px;
+}
+
+.login_contetent h4 {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.imgdiv {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.form_container .form_input {
+    margin-bottom: 8px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 0;
+    width: 100%;
+}
+
+.form_container {
+    margin-top: 20px;
+}
+
+a.forgot_link {
+    margin-top: 20px;
+    display: block;
+    color: $bg-white-1 ;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.excel {
+    width: 17px;
+    height: 20px;
+    display: inline-block;
+}
+
+.excel-rec {
+    display: inline-block;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.excel_font {
+    font-size: 12px;
+}
+
+.card {
+    border-radius: 14px !important;
+    box-shadow: 0px 1px 2px $box-shadow !important;
+    background: $main-card-bg 0% 0% no-repeat padding-box !important;
+}
+
+.titleimport {
+    letter-spacing: 0px;
+    color: $black-1;
+}
+
+.infoicon {
+    width: 29px !important;
+    height: 29px !important;
+    margin-left: 49%;
+    margin-top: 140px;
+    display: block !important;
+}
+
+.dataleft {
+    letter-spacing: 0px;
+    color: $primary;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.bordbottom {
+    border-bottom: 1px dashed $gray-2;
+    opacity: 0.77;
+    padding-bottom: 15px;
+}
+
+.crdate {
+    letter-spacing: 0px;
+    color: $black-1;
+    opacity: 1;
+    font-size: 12px;
+    position: relative;
+    bottom: 20px;
+    left: 4px;
+    margin: 0 6px 0 0;
+
+}
+
+.create_date {
+    position: absolute !important;
+    right: 35px !important;
+    padding-top: 7px !important;
+}
+
+.enddate {
+    margin: 2px 0 0 0px;
+}
+
+a.save_yes {
+    color: $bg-white-1 ;
+    background: $primary 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px $box-shadow;
+    text-align: center;
+    font-size: 13px;
+    border-radius: 60px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 6px;
+    display: inline-block;
+}
+
+.primaryButton {
+    color: $main-card-bg ;
+    background: $primary 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px $box-shadow;
+    text-align: center;
+    font-size: 13px;
+    border-radius: 60px !important;
+    font-family: 'Tasty-Gothic_Demi' !important;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px;
+    display: inline-block;
+    border: none;
+}
+
+.cancelbtn {
+    background: $bg-white-1 0% 0% no-repeat padding-box;
+    color: $black;
+}
+
+.heigth-31 {
+    height: 30px;
+    margin: 4px !important;
+    line-height: 1px !important;
+}
+
+.importbtn {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.mat-button.mat-button-disabled.mat-button-disabled {
+    cursor: not-allowed;
+    color: $main-card-bg;
+    border: none;
+    background: $gray-disable 0% 0% no-repeat padding-box !important;
+}
+
+.tabselect {
+    border: 0;
+    background: transparent;
+}
+
+
+.dis_rec {
+    font-family: 'Tasty-Gothic_Book' !important;
+    color: $cement-2;
+}
+
+.save_no {
+    background: $gray-9 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px $box-shadow;
+    color: $bg-white-1 ;
+}
+
+.headpadding {
+    margin: 20px;
+}
+
+.startdt-com {
+    background: $bg-white-1 0% 0% no-repeat padding-box;
+    border: 1px solid $gray-92;
+    border-radius: 3px;
+    opacity: 1;
+    font-size: 13px;
+    padding: 0;
+}
+
+.listborder {
+    padding: 0 0 10px 30px;
+    list-style-type: none;
+    border-bottom: 2px dashed $gray-2;
+}
+
+.product {
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid $primary;
+    padding: 0 0 10px 0;
+    width: max-content;
+}
+
+.button_cont {
+    text-align: center;
+}
+
+.prodscroll-sec {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.subheading_font {
+    color: $black-1;
+    font-size: 13px;
+}
+
+.prodcat {
+    // width: 282px;
+    height: 29px !important;
+    border: 0px solid $gray-92;
+    border-radius: 3px;
+    opacity: 1;
+    padding: 0;
+    font-size: 12px;
+}
+
+.prodscroll-disc {
+    height: 350px;
+    overflow-y: scroll;
+}
+
+.container__row {
+    box-shadow: 0px 1px 2px $box-shadow;
+    border: 1px solid $gray-93;
+    border-radius: 12px 0 0 12px;
+    background: $white;
+    margin-top: 20px;
+    border-right: 0;
+}
+
+.title__container .drop_down_cont {
+    align-items: center !important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 320px;
+}
+
+.title__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.drop_down_cont .select_cont {
+    width: 168px;
+}
+
+.impact_title {
+    font-size: 12px !important;
+    color: $black-1;
+}
+
+.left-title {
+    width: 60%;
+    display: inline-block;
+    margin: 0px !important;
+}
+
+.boxstyleimpact {
+    border: None;
+    box-shadow: none;
+}
+
+.recommend-offers-card {
+    background: $white;
+    width: 100%;
+}
+
+.right-buttons {
+    width: 40%;
+    display: inline-block;
+    text-align: right;
+}
+
+.boxstyle {
+    border: None;
+    box-shadow: none;
+    margin-top: 0px !important;
+}
+
+
+.boxstyleimpact {
+    border: None;
+    box-shadow: none;
+}
+
+.configuretext {
+    font-size: 12px;
+    text-align: right;
+    font-size: 11px;
+    color: $primary;
+    margin-top: 10px;
+}
+
+.promoheading {
+    font-style: bold;
+    color: $black-1;
+    opacity: 1;
+}
+
+.selectedText {
+    color: $black;
+    font-style: bold;
+}
+
+.unselectedText {
+    color: $black-1;
+    opacity: 0.5;
+}
+
+
+.heading_font {
+    color: $gray-44;
+    font-size: 12px;
+}
+
+.subheading_font {
+    color: $black-1;
+    font-size: 13px;
+}
+
+.button_font {
+    color: $white;
+    font-size: 13px !important;
+}
+
+
+.configuretext .tooltiptext {
+    visibility: hidden;
+    background-color: $primary;
+    color: $white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    margin-top: -80px;
+    margin-left: -145px;
+    padding: 5px;
+    width: 200px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.configuretext:hover .tooltiptext {
+    visibility: visible;
+}
+
+.slide_toggle_container {
+    width: 100%;
+}
+
+.toggle_slider .mat-slide-toggle {
+    margin-left: 10px;
+}
+
+.toggle_slider {
+    position: absolute;
+    right: 0;
+    padding: 10px;
+}
+
+.nocontent {
+    letter-spacing: 0px;
+    color: $black-1;
+    opacity: 1;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+h6.title {
+    margin: 0;
+    margin-left: 11px;
+}
+
+.modal-backdrop {
+    z-index: 1040 !important;
+}
+
+.float-right {
+    float: right;
+}
+
+.kpilabel {
+    font-size: 12px;
+    font-family: 'Tasty-Gothic_Demi';
+    letter-spacing: 0px;
+    color: $black-1;
+    margin-right: 6px;
+    margin-top: 13px;
+}
+
+//Date
+.dateicon {
+    position: relative;
+    display: inline !important;
+    font-size: 17px !important;
+    // color: $gray-5 !important;
+}
+
+.calicon {
+    // background-color: $primary;
+    height: 30px !important;
+    border-radius: 3px;
+    width: 30px !important;
+}
+
+.calicon_pos {
+    padding-top: 7px;
+    position: relative;
+    bottom: 13px;
+    left: 5px;
+}
+
+.calicon_pad {
+    bottom: 14px;
+}
+
+.titleheader {
+    letter-spacing: 0px;
+    color: $black-1;
+    font-size: 18px;
+    opacity: 1;
+    margin: 24px 0 24px 30px;
+}
+
+.widhieight {
+    height: 30px;
+    width: 400px;
+    margin-left: 8px;
+    float: left;
+    font-size: 12px;
+    display: block;
+}
+
+.scenario {
+    color: $black-1;
+}
+
+.label {
+    color: $gray-44;
+    font-weight: 500;
+}
+
+.scenid {
+    margin: 0 15px 0 60px;
+}
+
+.disdur {
+    margin: 0 15px 0 37px;
+}
+
+.stdt {
+    margin: 0 15px 0 68px;
+}
+
+.createby {
+    margin: 0 15px 0 64px;
+}
+
+.lastupdt {
+    margin: 0 15px 0 51px;
+}
+
+.thscen {
+    width: 23%;
+}
+
+.tdseg {
+    width: 11%;
+}
+
+.tddismec {
+    width: 33%;
+}
+
+.tditem {
+    width: 30%;
+}
+
+.thitem {
+    width: 20%;
+}
+
+.tddisdep {
+    width: 9%;
+}
+
+.tdregprice {
+    width: 9%;
+}
+
+.left {
+    float: left;
+    width: 24%;
+    // border-bottom: 1px solid $gray-2;
+    margin-bottom: 30px;
+    margin-top: 1px;
+}
+
+.innertable {
+    width: 100%;
+    float: right;
+    // border-bottom: 1px solid $gray-2;
+}
+
+.dashborder {
+    // width: 100%;
+    border-bottom: 1px dashed $gray-2;
+}
+
+.nosegment {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 7%;
+    font-weight: 500;
+}
+
+.lableborder {
+    margin-bottom: 12px;
+}
+
+.tabwidth {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.overall {
+    width: 34%;
+}
+
+.icon {
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    font-size: 20px;
+}
+
+.tablescroll {
+    height: 150px;
+    overflow-y: scroll;
+}
+
+.offercard1 {
+    width: 98%;
+    margin: 15px;
+    height: 100%;
+    background: #e2efd9 0% 0% no-repeat padding-box;
+}
+
+.checkalign {
+    padding: 18px 0px 0px 18px !important;
+}
+
+.vertical {
+    vertical-align: top;
+}
+
+
+
+.startdat {
+    font-weight: 600;
+    height: 40px;
+    float: left;
+    width: 120px;
+}
+
+
+
+.search {
+    position: absolute;
+    right: 49%;
+    padding-top: 11px;
+}
+
+.inputsearch {
+    height: 30px;
+    font-size: 12px;
+}
+
+.count {
+    color: $cement-2;
+    padding-top: 5px;
+    font-family: 'Tasty-Gothic_Book';
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: $warm-white;
+    border-radius: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $gray-6;
+    border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $gray-7;
+}
+
+.date_padding {
+    bottom: 10px;
+}
+
+.createdby {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 240px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}
+
+.startdt-sec {
+    font-weight: normal !important;
+    font-size: 12px !important;
+    position: relative;
+    bottom: 19px;
+}
+
+.date_padding {
+
+    .mat-button-ripple.mat-ripple,
+    .mat-button-focus-overlay {
+        left: 4px !important;
+        bottom: 14px !important;
+    }
+
+    .mat-ripple {
+        overflow: visible !important;
+    }
+}
+
+.mat-datepicker-toggle {
+
+    .mat-button-ripple.mat-ripple,
+    .mat-button-focus-overlay {
+        left: 4px !important;
+        bottom: 26px !important;
+    }
+
+    .mat-ripple {
+        overflow: visible !important;
+    }
+}
+
+.mat-form-field#createdate {
+    .mat-form-field-flex {
+        height: 35px;
+        color: gray !important;
+    }
+
+    .mat-date-range-input-container {
+        position: absolute;
+        top: 0;
+        color: gray !important;
+        font-size: 13px;
+    }
+
+    .mat-date-range-input-separator {
+        color: gray;
+    }
+}
+
+.mat-radio-outer-circle {
+    height: 18px !important;
+    width: 18px !important;
+    top: 2px !important;
+    left: 1px !important;
+    border-color: $bg-red-1;
+}
+
+.mat-radio-inner-circle {
+    transform: scale(0.4) !important;
+    top: 1px !important;
+}
+
+.mat-radio-container {
+    height: 15px !important;
+}
+
+.mat-radio-button.mat-accent .mat-radio-inner-circle {
+    background-color: $bg-red-1;
+}
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+    border-color: $bg-red-1;
+}
+
+.mat-expansion-panel#expand {
+    box-shadow: none;
+}
+
+.dropdown-list {
+    z-index: 99997 !important;
+}
+
+.mat-date-range-input-start-wrapper .mat-date-range-input-inner {
+    top: 2px !important;
+    left: 5px;
+}
+
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+    color: #495057;
+    background-color: #fff;
+    border-color: $border-color;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem $box-shadow;
+}
+
+.mat-form-field-outline-thick {
+    color: $border-color !important;
+
+}
+
+.showMoreToolTip {
+    white-space: pre-line !important;
+    background-color: #e2efd9;
+    opacity: 1;
+    font-size: 12px;
+    color: black !important;
+    box-shadow: 0px 1px 2px #00000029, 0px 2px 4px #0000001f, 0px 1px 8px #0000001a;
+    line-height: 20px;
+    // overflow: auto !important;
+    // max-height: 300px;
+    position: relative !important;
+
+    &::after {
+        width: 0;
+        height: 0;
+        content: '';
+        position: absolute;
+        border-left: 0.5rem solid transparent;
+        border-right: 0.5rem solid transparent;
+        border-bottom: 0.5rem solid #e2efd9;
+        //   box-shadow: 0px 1px 2px #00000029, 0px 2px 4px #0000001f,0px 1px 8px #0000001a;
+    }
+
+    &.below {
+        overflow: initial;
+        margin-top: 1rem;
+
+        &:after {
+            top: -0.5rem;
+            right: calc(50% - 0.5rem);
+            transform: rotate(0);
+        }
+    }
+
+    &.above {
+        overflow: initial;
+        margin-bottom: 1rem;
+
+        &:after {
+            bottom: -0.5rem;
+            right: calc(50% - 0.5rem);
+            transform: rotate(180deg);
+        }
+    }
+
+    &.right {
+        overflow: initial;
+        margin-left: 1rem;
+
+        &:after {
+            left: -0.75rem;
+            top: calc(50% - 0.25rem);
+            transform: rotate(270deg);
+        }
+    }
+
+    &.left {
+        overflow: initial;
+        margin-right: 1rem;
+
+        &:after {
+            right: -0.75rem;
+            top: calc(50% - 0.25rem);
+            transform: rotate(90deg);
+        }
+    }
+}
+
+.secondarybutton {
+    color: $black-1;
+    font-weight: bolder;
+    background: $gray-94 0% 0% no-repeat padding-box;
+    text-align: center;
+    font-size: 13px;
+    border-radius: 60px !important;
+    text-decoration: none;
+    font-family: 'Tasty-Gothic_Demi';
+    cursor: pointer;
+}
+
+td.mat-cell {
+    font-size: 12px;
+}
+
+th.mat-header-cell {
+    color: #000000;
+}
+
+.table__box {
+    background: $main-card-bg 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 2px $box-shadow;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 35px;
+}
+
+.mat-row:nth-child(odd) {
+    background-color: $gray98;
+}
+
+.selected-list .c-btn {
+    font-size: 13px;
+    color: gray;
+}
+
+.selected-list .countplaceholder {
+    right: 39px !important;
+    width: 25px;
+}
+
+.graph_inactive {
+    display: inline-flex;
+    font-size: 13px;
+    color: $cement-1;
+    border: none;
+    background: $bg-default;
+    border-radius: 60px !important;
+}
+
+.graph_active {
+    margin: 5px;
+    width: 70px;
+    box-shadow: 0px 3px 6px $box-shadow;
+    display: inline-flex;
+    background-color: $white-1 ;
+    color: $primary;
+    text-align: center;
+    font-size: 13px;
+    border-radius: 60px !important;
+    text-decoration: none;
+    border: none;
+}
+
+.mat-select-panel-wrap {
+    top: 30px;
+    left: 18px;
+    position: relative;
+    max-width: 105px;
+}
+
+.ngx-progress-bar {
+    color: $primary !important;
+}
