@@ -19,6 +19,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.43.1",
+    "react-redux": "^8.0.5",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
     "sass": "^1.58.0",
@@ -34,7 +35,9 @@
     "typescript": "tsc --project tsconfig.json --noEmit",
     "lint": "eslint src --color",
     "prettier": "prettier src --check",
-    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\""
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint-staged": "lint-staged --config lint-staged.js",
+    "husky-install": "cd .. && husky install web/.husky"
   },
   "eslintConfig": {
     "extends": [
@@ -64,6 +67,9 @@
     "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-security": "^1.7.1",
-    "prettier": "^2.8.3"
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.1",
+    "prettier": "^2.8.3",
+    "tsc-files": "^1.1.3"
   }
 }
