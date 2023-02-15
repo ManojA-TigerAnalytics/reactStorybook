@@ -13,12 +13,11 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import Logo from "assets/login/Vit_white.png";
-import "./Header.scss";
-import { useTheme } from "@mui/material";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
-import { useAppDispatch } from "app/store/hooks";
-import { toggleTheme } from "app/store/themeSlice";
+import { useAppDispatch, useAppSelector } from "app/hooks/store-hooks";
+import { toggleTheme } from "app/store/slice/themeSlice";
+import constants from "app/constants/constant";
 
 const pages = ["Products", "Pricing", "Blog"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -46,16 +45,24 @@ function Header() {
     setAnchorElUser(null);
   };
 
-  const theme = useTheme();
+  // const theme: ThemeOptions = useTheme()
+  const currentTheme = useAppSelector((state) => state.theme.mode);
   const dispatch = useAppDispatch();
   return (
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
-          <div className="header">
-            <img src={Logo} alt="logo" />
-          </div>
+          {/* <div className='h-30 w-30'>
+            <img src={Logo} alt='logo' />
+          </div> */}
+          <Box
+            sx={{ flexGrow: 0 }}
+            className="w-12"
+            component="img"
+            src={Logo}
+            alt="Logo"
+          />
           <Typography
             variant="h6"
             noWrap
@@ -71,7 +78,7 @@ function Header() {
               textDecoration: "none",
             }}
           >
-            TA
+            {constants.organizationName}
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -127,7 +134,7 @@ function Header() {
               textDecoration: "none",
             }}
           >
-            TA
+            {constants.organizationName}
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
@@ -177,7 +184,7 @@ function Header() {
               onClick={() => dispatch(toggleTheme())}
               color="inherit"
             >
-              {theme.palette.mode === "dark" ? (
+              {currentTheme === "dark" ? (
                 <Brightness7Icon />
               ) : (
                 <Brightness4Icon />

@@ -1,7 +1,8 @@
+import Loadable from "app/components/common/Loadable";
 import { lazy } from "react";
 import { RouteObject } from "react-router-dom";
 
-const Login = lazy(() => import("./login/Login"));
+const Login = Loadable(lazy(() => import("./login/Login")));
 
 const authenticationRoutes: RouteObject[] = [
   {

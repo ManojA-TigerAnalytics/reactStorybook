@@ -1,8 +1,7 @@
-import { Button, TextField } from "@mui/material";
+import { Button, Grid, TextField } from "@mui/material";
 import { useForm } from "react-hook-form";
 import Logo from "assets/login/Login_Banner.png";
 import { yupResolver } from "@hookform/resolvers/yup";
-import "./Login.scss";
 import * as yup from "yup";
 
 type UserSubmitForm = {
@@ -36,41 +35,46 @@ function Login() {
   };
 
   return (
-    <div className="login-container">
-      <div className="left-side">
+    <Grid container>
+      <Grid item className="bg-cover bg-center">
         <img src={Logo} alt="Logo" />
-      </div>
-      <div className="right-side">
-        <div className="form-header">
-          <h1>Login</h1>
-        </div>
-        <form onSubmit={handleSubmit(loginUser)} className="form">
+      </Grid>
+      <Grid
+        item
+        className="flex flex-col items-center justify-center p-3 sm:p-5"
+      >
+        <form
+          onSubmit={handleSubmit(loginUser)}
+          className="mt-5 w-full max-w-500"
+        >
           <TextField
             {...register("email")}
             id="email"
             label="Email"
-            variant="outlined"
+            variant="standard"
             size="small"
             required
             error={!!errors?.email}
             helperText={errors?.email?.message}
+            className="mb-3"
           />
           <TextField
             {...register("password")}
             id="password"
             label="Password"
-            variant="outlined"
+            variant="standard"
             size="small"
             required
             error={!!errors?.password}
             helperText={errors?.password?.message}
+            className="mb-3"
           />
-          <Button type="submit" variant="contained">
+          <Button type="submit" variant="contained" className="w-full">
             Login
           </Button>
         </form>
-      </div>
-    </div>
+      </Grid>
+    </Grid>
   );
 }
 

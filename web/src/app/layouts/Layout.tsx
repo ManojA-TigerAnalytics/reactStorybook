@@ -1,26 +1,24 @@
 import { ThemeProvider } from "@emotion/react";
-import { createTheme, CssBaseline } from "@mui/material";
+import { CssBaseline, StyledEngineProvider } from "@mui/material";
 import Footer from "app/components/common/footer/Footer";
 import Header from "app/components/common/header/Header";
-import { useAppSelector } from "app/store/hooks";
+import { useAppSelector } from "app/hooks/store-hooks";
+import useGetTheme from "app/hooks/useGetTheme";
 import { Outlet } from "react-router-dom";
 
 function Layout() {
   const mode = useAppSelector((state) => state.theme.mode);
-  const theme = createTheme({
-    palette: {
-      mode,
-    },
-  });
+  const theme = useGetTheme(mode);
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Header />
-      <section>
+    <StyledEngineProvider injectFirst>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Header />
         <Outlet />
-      </section>
-      <Footer />
-    </ThemeProvider>
+
+        <Footer />
+      </ThemeProvider>
+    </StyledEngineProvider>
   );
 }
 
