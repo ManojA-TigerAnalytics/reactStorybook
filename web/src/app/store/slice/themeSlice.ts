@@ -1,11 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { globalConstants } from "app/constants/constant";
 
 type InitialState = {
-  mode: "dark" | "light";
+  mode: "dark" | "light" | string;
+  logoPath: string;
 };
 
 const initialState: InitialState = {
-  mode: "light",
+  mode: globalConstants.defaultTheme,
+  logoPath: globalConstants.logoLight,
 };
 
 export const themeSlice = createSlice({
@@ -14,6 +17,10 @@ export const themeSlice = createSlice({
   reducers: {
     toggleTheme: (state) => {
       state.mode = state.mode === "light" ? "dark" : "light";
+      state.logoPath =
+        state.mode === "light"
+          ? globalConstants.logoLight
+          : globalConstants.logoDark;
     },
   },
 });

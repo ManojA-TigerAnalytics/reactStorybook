@@ -11,20 +11,14 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import Logo from "assets/images/logo.svg";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 import { useAppDispatch, useAppSelector } from "app/hooks/store-hooks";
 import { toggleTheme } from "app/store/slice/themeSlice";
-import constants from "app/constants/constant";
+import { dashboardConstants, globalConstants } from "app/constants/constant";
 import { useNavigate } from "react-router-dom";
+import Logo from "../Logo";
 
-const pages = [
-  "Promo Recommender",
-  "Scenario Planner",
-  "Scenario Comparison",
-  "Feed Creation",
-];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function Header() {
@@ -58,15 +52,7 @@ function Header() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Box
-            sx={{ flexGrow: 0 }}
-            className="w-12"
-            component="img"
-            src={Logo}
-            alt="Logo"
-            onClick={() => navigate("/dashboard")}
-          />
-
+          <Logo navigateTo={globalConstants.dashBoardPath} />
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -96,9 +82,12 @@ function Header() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={() => navigate("/planner")}>
-                  <Typography textAlign="center">{page}</Typography>
+              {dashboardConstants.map((page) => (
+                <MenuItem
+                  key={page.title}
+                  onClick={() => navigate(page.routePath)}
+                >
+                  <Typography textAlign="center">{page.title}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -119,7 +108,7 @@ function Header() {
               textDecoration: "none",
             }}
           >
-            {constants.organizationName}
+            {globalConstants.organizationName}
           </Typography>
           <Box
             alignContent="center"
@@ -127,13 +116,13 @@ function Header() {
             alignItems="center"
             justifyContent="center"
           >
-            {pages.map((page) => (
+            {dashboardConstants.map((page) => (
               <Button
-                key={page}
-                onClick={handleCloseNavMenu}
+                key={page.title}
+                onClick={() => navigate(page.routePath)}
                 sx={{ my: 2, color: "inherit", display: "flex" }}
               >
-                {page}
+                {page.title}
               </Button>
             ))}
           </Box>

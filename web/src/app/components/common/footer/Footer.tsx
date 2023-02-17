@@ -1,5 +1,5 @@
 import { AppBar, Box, Container, Toolbar, Typography } from "@mui/material";
-import Logo from "assets/images/logo.svg";
+import Logo from "../Logo";
 
 function Footer() {
   return (
@@ -14,9 +14,7 @@ function Footer() {
                 justifyContent: "left",
               }}
             >
-              <div>
-                <img src={Logo} width={75} height={30} alt="Logo" />
-              </div>
+              <Logo className="w-24" />
             </Box>
 
             <Box

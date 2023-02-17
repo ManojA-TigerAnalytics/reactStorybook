@@ -34,7 +34,7 @@ function DashBoardCard({ title, description, icon, routePath }: CardProps) {
         <Button
           variant="contained"
           color="secondary"
-          className="rounded-3xl w-full"
+          className="w-full"
           onClick={() => navigate(routePath)}
         >
           View Details

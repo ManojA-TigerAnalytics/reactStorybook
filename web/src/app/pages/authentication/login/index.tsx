@@ -5,7 +5,6 @@ import {
   Typography,
 } from "@mui/material";
 import { useForm } from "react-hook-form";
-import Logo from "assets/images/logo.svg";
 import LeftLogo from "assets/images/leftlogo.svg";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -16,6 +15,8 @@ import { EmailOutlined } from "@mui/icons-material";
 import { LoadingButton } from "@mui/lab";
 import { useDispatch } from "react-redux";
 import { loggedIn } from "app/store/slice/authSlice";
+import Logo from "app/components/common/Logo";
+import { globalConstants } from "app/constants/constant";
 
 type ILogin = {
   email: string;
@@ -35,7 +36,7 @@ function Login() {
     if (status === 200) {
       setIsLoading(false);
       dispatch(loggedIn(data));
-      navigate("/dashboard");
+      navigate(globalConstants.dashBoardPath);
     } else {
       setIsLoading(false);
     }
@@ -124,7 +125,8 @@ function Login() {
         <div className="w-full max-w-80 sm:w-80 mx-auto sm:mx-0">
           <div className="w-full flex justify-center">
             <div className="w-30">
-              <img src={Logo} alt="Tiger Analytics" />
+              {/* <img src={Logo} alt='Tiger Analytics' /> */}
+              <Logo />
             </div>
           </div>
 
@@ -137,9 +139,10 @@ function Login() {
               {...register("email")}
               id="email"
               label="Email"
-              variant="filled"
+              variant="outlined"
               size="small"
               required
+              color="secondary"
               error={!!errors?.email}
               helperText={errors?.email?.message}
               className="mb-3 w-full"
@@ -148,9 +151,10 @@ function Login() {
               {...register("password")}
               id="password"
               label="Password"
-              variant="filled"
+              variant="outlined"
               size="small"
               type="password"
+              color="secondary"
               required
               error={!!errors?.password}
               helperText={errors?.password?.message}
@@ -159,25 +163,17 @@ function Login() {
 
             {/* <div className='inline-flex items-end justify-between w-full mt-1.5'> */}
             <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
+              control={<Checkbox value="remember" color="secondary" />}
               label="Remember me"
             />
-            {/* </div> */}
-            {/* <Button
-              variant='contained'
-              color='primary'
-              className='rounded-3xl bg-primary-600 px-4 py-2 hover:bg-primary-500 w-full'
-              type='submit'
-            >
-              Sign In
-            </Button> */}
             <LoadingButton
               type="submit"
               loading={isLoading}
               loadingPosition="start"
               startIcon={<EmailOutlined />}
-              variant="outlined"
-              className="rounded-3xl bg-primary-600 px-4 py-2 hover:bg-primary-500 w-full text-white text-center"
+              variant="contained"
+              color="secondary"
+              className="w-full"
             >
               Sign In
             </LoadingButton>
