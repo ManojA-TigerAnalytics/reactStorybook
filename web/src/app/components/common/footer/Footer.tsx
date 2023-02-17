@@ -1,5 +1,5 @@
 import { AppBar, Box, Container, Toolbar, Typography } from "@mui/material";
-import Logo from "assets/images/logo.png";
+import Logo from "assets/images/logo.svg";
 
 function Footer() {
   return (

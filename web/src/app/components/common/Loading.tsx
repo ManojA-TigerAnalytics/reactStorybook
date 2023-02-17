@@ -1,5 +1,5 @@
 import { Box, Grid, LinearProgress } from "@mui/material";
-import Logo from "assets/images/logo.png";
+import Logo from "assets/images/logo.svg";
 
 function Loading() {
   return (
@@ -20,7 +20,7 @@ function Loading() {
         />
       </Grid>
       <Grid xs={12} sm={12} md={12} lg={12} item>
-        <LinearProgress className="w-60" />
+        <LinearProgress color="secondary" className="w-60" />
       </Grid>
     </Grid>
   );

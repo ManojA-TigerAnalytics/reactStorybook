@@ -5,7 +5,7 @@ import {
   Typography,
 } from "@mui/material";
 import { useForm } from "react-hook-form";
-import Logo from "assets/images/logo.png";
+import Logo from "assets/images/logo.svg";
 import LeftLogo from "assets/images/leftlogo.svg";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";

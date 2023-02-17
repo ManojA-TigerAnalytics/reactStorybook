@@ -1,47 +1,45 @@
-import Card from "@mui/material/Card";
-import CardHeader from "@mui/material/CardHeader";
-import CardContent from "@mui/material/CardContent";
-import CardActions from "@mui/material/CardActions";
-import Avatar from "@mui/material/Avatar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import { red } from "@mui/material/colors";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import ShareIcon from "@mui/icons-material/Share";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
+import DashBoardCard from "app/components/comparison/DashBoardCard";
 
 export default function Dashboard() {
+  const dashboardElements = [
+    {
+      title: "Promo Recommender",
+      description:
+        "Identify optimal promos for a set of objectives and variables",
+      iconPath: "assets/dashboard/promo_recommender.svg",
+      routePath: "/recommender",
+    },
+    {
+      title: "Scenario Planner",
+      description:
+        "Simulate the impact of different sets of promos for specific time period",
+      iconPath: "assets/dashboard/Scenario_planner.svg",
+      routePath: "/planner",
+    },
+    {
+      title: "Scenario Comparison",
+      description: "Assess the comparative impact of multiple scenarios",
+      iconPath: "assets/dashboard/Scenario_Comparison.svg",
+      routePath: "/comparison",
+    },
+    {
+      title: "Feed Creation",
+      description: "Create promo feed of selected promos for execution",
+      iconPath: "assets/dashboard/Feed_Creation.svg",
+      routePath: "/feed",
+    },
+  ];
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardHeader
-        avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            R
-          </Avatar>
-        }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
-      />
-      <CardContent>
-        <Typography variant="body2" color="text.secondary">
-          This impressive paella is a perfect party dish and a fun meal to cook
-          together with your guests. Add 1 cup of frozen peas along with the
-          mussels, if you like.
-        </Typography>
-      </CardContent>
-      <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
-        </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon />
-        </IconButton>
-      </CardActions>
-    </Card>
+    <div className="p-10 grid grid-cols-4 gap-4">
+      {dashboardElements.map((element) => (
+        <DashBoardCard
+          key={element.title}
+          title={element.title}
+          description={element.description}
+          icon={element.iconPath}
+          routePath={element.routePath}
+        />
+      ))}
+    </div>
   );
 }
