@@ -3,7 +3,18 @@ import ReactDOM from "react-dom/client";
 import App from "./app/App";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import "./assets/fonts/Tasty-Gothic_Demi.ttf";
+// import "./assets/fonts/Tasty-Gothic_Demi.ttf";
+
+if (process.env.NODE_ENV === "production") {
+  // eslint-disable-next-line no-console
+  console.info = () => {};
+  // eslint-disable-next-line no-console
+  console.log = () => {};
+  // eslint-disable-next-line no-console
+  console.error = () => {};
+  // eslint-disable-next-line no-console
+  console.debug = () => {};
+}
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

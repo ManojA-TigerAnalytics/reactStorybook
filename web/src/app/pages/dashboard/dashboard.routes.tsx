@@ -2,11 +2,11 @@ import Loadable from "app/components/common/Loadable";
 import { lazy } from "react";
 import { RouteObject } from "react-router-dom";
 
-const Dashboard = Loadable(lazy(() => import("./pages/Dashboard")));
+const Dashboard = Loadable(lazy(() => import("./Dashboard")));
 
 const dashboardRoutes: RouteObject[] = [
   {
-    path: "/",
+    path: "/dashboard",
     element: <Dashboard />,
   },
 ];

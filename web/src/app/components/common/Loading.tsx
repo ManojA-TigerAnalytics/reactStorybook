@@ -1,5 +1,5 @@
 import { Box, Grid, LinearProgress } from "@mui/material";
-import Logo from "assets/login/Vit_white.png";
+import Logo from "assets/images/logo.png";
 
 function Loading() {
   return (
