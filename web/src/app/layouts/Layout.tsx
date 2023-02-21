@@ -1,6 +1,5 @@
 import { ThemeProvider } from "@emotion/react";
 import { CssBaseline, StyledEngineProvider } from "@mui/material";
-import Footer from "app/components/common/footer/Footer";
 import Header from "app/components/common/header/Header";
 import { useAppSelector } from "app/hooks/store-hooks";
 import useGetTheme from "app/hooks/useGetTheme";
@@ -15,7 +14,6 @@ function Layout() {
         <CssBaseline />
         <Header />
         <Outlet />
-        <Footer />
       </ThemeProvider>
     </StyledEngineProvider>
   );

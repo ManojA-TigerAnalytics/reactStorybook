@@ -13,6 +13,26 @@ const darkTheme = createTheme({
   shape: {
     borderRadius: 25,
   },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          "&:hover": {
+            color: "black",
+          },
+        },
+      },
+    },
+    MuiAppBar: {
+      styleOverrides: {
+        colorPrimary: {
+          "& .MuiButton-root:hover": {
+            color: "white",
+          },
+        },
+      },
+    },
+  },
 });
 
 export default darkTheme;

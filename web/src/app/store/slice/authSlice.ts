@@ -6,7 +6,7 @@ type InitialState = {
 };
 
 const initialState: InitialState = {
-  isAuthenticated: false,
+  isAuthenticated: true,
   user: {},
 };
 
