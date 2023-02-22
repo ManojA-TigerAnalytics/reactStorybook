@@ -6,10 +6,10 @@ type ILogin = {
   email: string;
   password: string;
 };
-async function useLogin(login: ILogin) {
+function useLogin(login: ILogin) {
   const [isLoading, setIsLoading] = useState(false);
   setIsLoading(true);
-  const { status, data } = await AuthenticationService.login(login);
+  const { status, data } = AuthenticationService.login(login);
   if (status === 200) {
     setIsLoading(false);
     const navigate = useNavigate();

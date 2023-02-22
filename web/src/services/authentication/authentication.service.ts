@@ -5,7 +5,7 @@ type ICredentials = {
   password: string;
 };
 const AuthenticationService = {
-  async login(credentials: ICredentials) {
+  login(credentials: ICredentials) {
     return client.post("/login", credentials);
   },
 };

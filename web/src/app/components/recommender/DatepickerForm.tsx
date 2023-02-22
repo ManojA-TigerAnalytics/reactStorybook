@@ -53,6 +53,8 @@ function DatepickerForm<T extends FieldValues>({
             onClose={() => setOpen(false)}
             onChange={onChange}
             className="w-full"
+            inputFormat="DD/MM/YYYY"
+            views={["year", "month", "day"]}
             renderInput={(params) => (
               <TextField
                 {...params}
@@ -64,6 +66,7 @@ function DatepickerForm<T extends FieldValues>({
                 helperText={error ? error.message : undefined}
                 disabled={disabled}
                 onClick={() => setOpen(true)}
+                inputProps={{ ...params.inputProps, readOnly: true }}
                 {...rest}
               />
             )}

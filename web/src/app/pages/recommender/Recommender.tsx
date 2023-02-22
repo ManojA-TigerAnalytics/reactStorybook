@@ -1,54 +1,55 @@
+/* eslint-disable camelcase */
 import { Container, Typography, Button } from "@mui/material";
 import Box from "@mui/material/Box";
-import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
+import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import { useForm } from "react-hook-form";
 import AutoCompleteCheckBox from "app/components/recommender/AutoCompleteCheckBox";
-import TextFieldHookForm from "app/components/recommender/TextFieldForm";
+import TextFieldForm from "app/components/recommender/TextFieldForm";
 import DatepickerForm from "app/components/recommender/DatepickerForm";
+import { useEffect, useState } from "react";
+import { useAppDispatch, useAppSelector } from "app/hooks/store-hooks";
+import {
+  fetchFilteredRecommendation,
+  fetchPromoRecommenderChannel,
+  fetchPromoSegment,
+  fetchPromoStatus,
+} from "./actions/recommender.actions";
 
 const columns: GridColDef[] = [
-  { field: "id", headerName: "ID", width: 90 },
-  {
-    field: "firstName",
-    headerName: "First name",
-    width: 150,
-    editable: true,
-  },
-  {
-    field: "lastName",
-    headerName: "Last name",
-    width: 150,
-    editable: true,
-  },
-  {
-    field: "age",
-    headerName: "Age",
-    type: "number",
-    width: 110,
-    editable: true,
-  },
-  {
-    field: "fullName",
-    headerName: "Full name",
-    description: "This column has a value getter and is not sortable.",
-    sortable: false,
-    width: 160,
-    valueGetter: (params: GridValueGetterParams) =>
-      `${params.row.firstName || ""} ${params.row.lastName || ""}`,
-  },
+  { field: "offerPackageId", headerName: "Package ID", flex: 0.5 },
+  { field: "offerPackageName", headerName: "Package Name", flex: 1 },
+  { field: "promoName", headerName: "Promo Channel", flex: 1 },
+  { field: "segmentSegmentName", headerName: "Segments", flex: 1 },
+  { field: "startDate", headerName: "Start Date", flex: 1 },
+  { field: "statusName", headerName: "Status", flex: 1 },
+  { field: "createdBy", headerName: "Created By", flex: 1 },
+  { field: "modifiedAt", headerName: "Last Updated", flex: 1 },
 ];
 
-const rows = [
-  { id: 1, lastName: "Snow", firstName: "Jon", age: 35 },
-  { id: 2, lastName: "Lannister", firstName: "Cersei", age: 42 },
-  { id: 3, lastName: "Lannister", firstName: "Jaime", age: 45 },
-  { id: 4, lastName: "Stark", firstName: "Arya", age: 16 },
-  { id: 5, lastName: "Targaryen", firstName: "Daenerys", age: null },
-  { id: 6, lastName: "Melisandre", firstName: null, age: 150 },
-  { id: 7, lastName: "Clifford", firstName: "Ferrara", age: 44 },
-  { id: 8, lastName: "Frances", firstName: "Rossini", age: 36 },
-  { id: 9, lastName: "Roxie", firstName: "Harvey", age: 65 },
-];
+// const rows = [
+//   {
+//     offerPackageId: '1',
+//     offerPackageName: 'package name',
+//     promoName: 'promo name',
+//     segmentSegmentName: 'segment name',
+//     startDate: 'start Date',
+//     statusName: 'status name',
+//     createdBy: 'created by',
+//     modifiedAt: 'updated at',
+//   },
+// ]
+
+type RecommendationTableData = {
+  offerPackageId: string;
+  offerPackageName: string;
+  promoName: string;
+  segmentSegmentName: string;
+  startDate: string;
+  statusName: string;
+  createdBy: string;
+  modifiedAt: string;
+};
+
 type Option = {
   id: string;
   label: string;
@@ -62,37 +63,94 @@ type FormValues = {
   createdBy: string;
   startDate: Date;
 };
-const promoChannelList: Option[] = [
-  { id: "1", label: "Online" },
-  { id: "2", label: "Offline" },
-];
-const statusList = [
-  { id: "1", label: "Saved" },
-  { id: "2", label: "Completed" },
-  { id: "3", label: "Submitted" },
-  { id: "4", label: "Failed" },
-];
-const segmentList = [
-  { id: "1", label: "Mass Online" },
-  { id: "2", label: "Pre-registration" },
-  { id: "3", label: "Offline" },
-  { id: "4", label: "Active Low Frequency" },
-];
 
 export default function DataGridDemo() {
+  const dispatch = useAppDispatch();
+  const [promoChannelList, setPromoChannelList] = useState<Option[]>([]);
+  const [segmentList, setSegmentList] = useState<Option[]>([]);
+  const [statusList, setStatusList] = useState<Option[]>([]);
+  const [recommendation, setRecommendation] = useState<
+    RecommendationTableData[]
+  >([]);
+  const {
+    promoChannel,
+    segment,
+    statusType,
+    recommendationList: {
+      data: recommendationData,
+      // count: totalRecommendationCount,
+    },
+  } = useAppSelector((state) => state.recommender);
+
+  useEffect(() => {
+    dispatch(fetchFilteredRecommendation());
+    dispatch(fetchPromoRecommenderChannel());
+    dispatch(fetchPromoSegment());
+    dispatch(fetchPromoStatus());
+  }, []);
+
+  useEffect(() => {
+    const reRecommendationData = recommendationData.map(
+      ({
+        offer_package_id: offerPackageId,
+        offer_package_name: offerPackageName,
+        promo_name: promo,
+        segments,
+        start_date: startDate,
+        status_name: statusName,
+        created_by: createdBy,
+        modified_at: modifiedAt,
+      }) => ({
+        offerPackageId,
+        offerPackageName,
+        promoName: promo[0].promo_name,
+        segmentSegmentName: segments[0].segment_name,
+        startDate,
+        statusName,
+        createdBy,
+        modifiedAt,
+      })
+    );
+    setRecommendation(reRecommendationData);
+  }, [recommendationData]);
+  useEffect(() => {
+    const reMapPromoChannel = promoChannel.map(
+      ({ promo_id: promoId, promo_name: promoName }) => ({
+        id: promoId.toString(),
+        label: promoName,
+      })
+    );
+    setPromoChannelList(reMapPromoChannel);
+  }, [promoChannel]);
+
+  useEffect(() => {
+    const reMapSegment = segment.map(
+      ({ segment_id: segmentId, segment_name: segmentName }) => ({
+        id: segmentId.toString(),
+        label: segmentName,
+      })
+    );
+    setSegmentList(reMapSegment);
+  }, [segment]);
+
+  useEffect(() => {
+    const reMapStatusType = statusType.map(
+      ({ id: statusId, status_name: statusName }) => ({
+        id: statusId.toString(),
+        label: statusName,
+      })
+    );
+    setStatusList(reMapStatusType);
+  }, [statusType]);
+
   const onSubmit = (data: FormValues) => {
     // eslint-disable-next-line no-console
     console.log(data);
   };
-  const { handleSubmit, control } = useForm<FormValues>({
+  const { handleSubmit, control, reset } = useForm<FormValues>({
     defaultValues: {
       channelFilter: [],
-      segmentFilter: [
-        { id: "1", label: "Mass Online" },
-        { id: "2", label: "Pre-registration" },
-        { id: "3", label: "Offline" },
-        { id: "4", label: "Active Low Frequency" },
-      ],
+      segmentFilter: [],
       statusFilter: [],
       packageId: "",
       packageName: "",
@@ -100,20 +158,20 @@ export default function DataGridDemo() {
       startDate: new Date(),
     },
   });
+  const onReset = () => {
+    reset();
+  };
   return (
-    <Container maxWidth="xl" className="mt-6">
-      <Typography>Filter By</Typography>
+    <Container maxWidth="xl" className="px-10 py-4">
+      <Typography variant="h6">Promo Recommender Summary</Typography>
+      {/* <Typography variant='body2'>Filter By</Typography> */}
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-row space-x-4 items-center p-4"
+        className="flex flex-row space-x-4 items-center "
         color="primary"
       >
-        <TextFieldHookForm
-          control={control}
-          name="packageId"
-          label="Package Id"
-        />
-        <TextFieldHookForm
+        <TextFieldForm control={control} name="packageId" label="Package Id" />
+        <TextFieldForm
           control={control}
           name="packageName"
           label="Package Name"
@@ -135,11 +193,7 @@ export default function DataGridDemo() {
 
         <DatepickerForm control={control} label="Start Date" name="startDate" />
 
-        <TextFieldHookForm
-          control={control}
-          name="createdBy"
-          label="Created By"
-        />
+        <TextFieldForm control={control} name="createdBy" label="Created By" />
         <AutoCompleteCheckBox
           control={control}
           label="Status"
@@ -147,19 +201,32 @@ export default function DataGridDemo() {
           options={statusList}
         />
 
-        <Button variant="contained" color="secondary" type="submit">
+        <Button
+          variant="contained"
+          color="secondary"
+          type="submit"
+          size="small"
+        >
           Filter
         </Button>
+        <Button
+          variant="contained"
+          color="secondary"
+          onClick={onReset}
+          size="small"
+        >
+          Reset
+        </Button>
       </form>
-      <Box sx={{ height: 525, width: "100%" }} className="p-10">
+      <Box sx={{ height: 500, width: "100%" }} className="mt-7">
         <DataGrid
-          rows={rows}
+          rows={recommendation}
           columns={columns}
-          pageSize={5}
-          rowsPerPageOptions={[5]}
-          checkboxSelection
+          pageSize={7}
+          rowsPerPageOptions={[7]}
           disableSelectionOnClick
-          experimentalFeatures={{ newEditingApi: true }}
+          // experimentalFeatures={{ newEditingApi: true }}
+          getRowId={(row) => row.offerPackageId}
         />
       </Box>
     </Container>

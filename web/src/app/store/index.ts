@@ -1,4 +1,11 @@
-import { combineReducers, configureStore, Middleware } from "@reduxjs/toolkit";
+import {
+  AnyAction,
+  combineReducers,
+  configureStore,
+  Middleware,
+  ThunkDispatch,
+} from "@reduxjs/toolkit";
+import recommenderReducer from "app/pages/recommender/slice/recommender.slice";
 import { createLogger } from "redux-logger";
 import authReducer from "./slice/authSlice";
 import themeReducer from "./slice/themeSlice";
@@ -16,6 +23,7 @@ if (development) {
 const reducer = combineReducers({
   theme: themeReducer,
   auth: authReducer,
+  recommender: recommenderReducer,
 });
 
 const store = configureStore({
@@ -31,5 +39,6 @@ const store = configureStore({
 export type RootState = ReturnType<typeof store.getState>;
 // Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
 export type AppDispatch = typeof store.dispatch;
+export type TypedDispatch<T> = ThunkDispatch<T, any, AnyAction>;
 
 export default store;
