@@ -17,7 +17,7 @@ import { useAppDispatch, useAppSelector } from "app/hooks/store-hooks";
 import { toggleTheme } from "app/store/slice/themeSlice";
 import { dashboardConstants, globalConstants } from "app/constants/constant";
 import { useNavigate } from "react-router-dom";
-import Logo from "../Logo";
+import Logo from "./Logo";
 
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 

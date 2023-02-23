@@ -1,0 +1,119 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "bruno@email.com",
+      "password": "bruno"
+    },
+    {
+      "id": 2,
+      "email": "madhuri.gollakota@tigeranalytics.com",
+      "password": "madhuri",
+      "first_name": "madhuri",
+      "last_name": "gollakota",
+      "phone": "1",
+      "promo_group_id": 1,
+      "region_id": 1,
+      "language_Code": 1,
+      "password_changed_date": null,
+      "last_login_date": "2022-11-14T09:58:42.694121Z",
+      "is_active": true,
+      "is_deleted": false,
+      "created_at": "2022-01-01T18:30:00Z",
+      "modified_at": null,
+      "created_by": null,
+      "user_role_id": 1,
+      "username": "ravi.kansal@tigeranalytics.com",
+      "uuid": "16c94a6bc0b34e0ea37bff6b108322cb",
+
+      "featureFlag": {
+        "home": {
+          "home_page": {
+            "link": "/mcd/dashboard",
+            "show_page": true,
+            "show_scenario_planner_card": false
+          }
+        },
+        "promo_recommender": {
+          "summary_list_page": {
+            "link": "/mcd/discount",
+            "show_page": true,
+            "show_promo_config_button": false,
+            "show_edit_copy_menu_option": false
+          },
+          "promo_recommendation_page": {
+            "link": "/mcd/discount/offer-configuration",
+            "show_page": false
+          },
+          "summary_details_page": {
+            "link": "/mcd/discount/offer-package-summary/",
+            "show_page": true
+          },
+          "impact_by_pc_page": {
+            "link": "/mcd/planner/scenario-impact/",
+            "show_page": true
+          },
+          "offer_preview_page": {
+            "link": "/mcd/discount/offer-recommender",
+            "show_page": true
+          }
+        }
+      }
+    },
+    {
+      "id": 3,
+      "email": "test@mail.com",
+      "password": "test12345",
+      "first_name": "test",
+      "last_name": "man",
+      "phone": "1",
+      "promo_group_id": 1,
+      "region_id": 1,
+      "language_Code": 1,
+      "password_changed_date": null,
+      "last_login_date": "2022-11-14T09:58:42.694121Z",
+      "is_active": true,
+      "is_deleted": false,
+      "created_at": "2022-01-01T18:30:00Z",
+      "modified_at": null,
+      "created_by": null,
+      "user_role_id": 1,
+      "username": "ravi.kansal@tigeranalytics.com",
+      "uuid": "16c94a6bc0b34e0ea37bff6b108322cb",
+
+      "featureFlag": {
+        "home": {
+          "home_page": {
+            "link": "/mcd/dashboard",
+            "show_page": true,
+            "show_scenario_planner_card": false
+          }
+        },
+        "promo_recommender": {
+          "summary_list_page": {
+            "link": "/mcd/discount",
+            "show_page": true,
+            "show_promo_config_button": false,
+            "show_edit_copy_menu_option": false
+          },
+          "promo_recommendation_page": {
+            "link": "/mcd/discount/offer-configuration",
+            "show_page": false
+          },
+          "summary_details_page": {
+            "link": "/mcd/discount/offer-package-summary/",
+            "show_page": true
+          },
+          "impact_by_pc_page": {
+            "link": "/mcd/planner/scenario-impact/",
+            "show_page": true
+          },
+          "offer_preview_page": {
+            "link": "/mcd/discount/offer-recommender",
+            "show_page": true
+          }
+        }
+      }
+    }
+  ]
+}

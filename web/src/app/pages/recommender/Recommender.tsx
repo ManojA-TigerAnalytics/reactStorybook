@@ -1,92 +1,147 @@
 /* eslint-disable camelcase */
-import { Container, Typography, Button } from "@mui/material";
+import {
+  Container,
+  Typography,
+  Tooltip,
+  Chip,
+  ChipProps,
+  Button,
+} from "@mui/material";
 import Box from "@mui/material/Box";
-import { DataGrid, GridColDef } from "@mui/x-data-grid";
-import { useForm } from "react-hook-form";
-import AutoCompleteCheckBox from "app/components/recommender/AutoCompleteCheckBox";
-import TextFieldForm from "app/components/recommender/TextFieldForm";
-import DatepickerForm from "app/components/recommender/DatepickerForm";
+import {
+  DataGrid,
+  GridCellParams,
+  GridColDef,
+  GridRenderCellParams,
+} from "@mui/x-data-grid";
 import { useEffect, useState } from "react";
 import { useAppDispatch, useAppSelector } from "app/hooks/store-hooks";
-import {
-  fetchFilteredRecommendation,
-  fetchPromoRecommenderChannel,
-  fetchPromoSegment,
-  fetchPromoStatus,
-} from "./actions/recommender.actions";
+import dayjs from "dayjs";
+import { useNavigate } from "react-router-dom";
+import { fetchFilteredRecommendation } from "./actions/recommender.actions";
+import RecommenderFilter from "./RecommenderFilter";
 
+function getChipProps(params: GridRenderCellParams): ChipProps {
+  if (params.value === "Saved") {
+    return {
+      label: params.value,
+      color: "success",
+    };
+  }
+  if (params.value === "Submitted") {
+    return {
+      label: params.value,
+      color: "info",
+    };
+  }
+  if (params.value === "Failed") {
+    return {
+      label: params.value,
+      color: "error",
+    };
+  }
+  if (params.value === "Completed Partial") {
+    return {
+      label: params.value,
+      color: "warning",
+    };
+  }
+  return {
+    label: params.value,
+  };
+}
 const columns: GridColDef[] = [
   { field: "offerPackageId", headerName: "Package ID", flex: 0.5 },
   { field: "offerPackageName", headerName: "Package Name", flex: 1 },
-  { field: "promoName", headerName: "Promo Channel", flex: 1 },
-  { field: "segmentSegmentName", headerName: "Segments", flex: 1 },
-  { field: "startDate", headerName: "Start Date", flex: 1 },
-  { field: "statusName", headerName: "Status", flex: 1 },
+  { field: "promoName", headerName: "Promo Channel", flex: 0.5 },
+  {
+    field: "segmentList",
+    headerName: "Segments",
+    flex: 1,
+    renderCell: (params: GridCellParams) => {
+      const segment = params.row.segmentList[0];
+      const hiddenSegmentList = params.row.segmentList.slice(1);
+      return (
+        <Tooltip
+          title={
+            hiddenSegmentList.length > 0 ? (
+              <ul className="list-disc">
+                {hiddenSegmentList.map((segment: Segment) => (
+                  <li key={segment.segment_id}>{segment.segment_name}</li>
+                ))}
+              </ul>
+            ) : (
+              ""
+            )
+          }
+          placement="right"
+        >
+          <span className="cursor-pointer">
+            {segment.segment_name}
+            {hiddenSegmentList.length > 0 && ` (+${hiddenSegmentList.length})`}
+          </span>
+        </Tooltip>
+      );
+    },
+  },
+  {
+    field: "startDate",
+    headerName: "Start Date",
+    flex: 0.5,
+    valueFormatter: (params) => dayjs(params.value).format("DD/MM/YYYY"),
+  },
+  {
+    field: "statusName",
+    headerName: "Status",
+    flex: 1,
+    renderCell: (params) => <Chip size="small" {...getChipProps(params)} />,
+  },
   { field: "createdBy", headerName: "Created By", flex: 1 },
-  { field: "modifiedAt", headerName: "Last Updated", flex: 1 },
+  {
+    field: "modifiedAt",
+    headerName: "Last Updated",
+    flex: 0.5,
+    valueFormatter: (params) => dayjs(params.value).format("DD/MM/YYYY"),
+  },
 ];
 
-// const rows = [
-//   {
-//     offerPackageId: '1',
-//     offerPackageName: 'package name',
-//     promoName: 'promo name',
-//     segmentSegmentName: 'segment name',
-//     startDate: 'start Date',
-//     statusName: 'status name',
-//     createdBy: 'created by',
-//     modifiedAt: 'updated at',
-//   },
-// ]
-
+type Segment = {
+  segment_config_id: number;
+  segment_id: number;
+  offer_config_id: number;
+  promo_id: number;
+  maximize: number;
+  segment_name: string;
+  promo_name: string;
+};
 type RecommendationTableData = {
   offerPackageId: string;
   offerPackageName: string;
   promoName: string;
-  segmentSegmentName: string;
+  segmentList: Segment[];
   startDate: string;
   statusName: string;
   createdBy: string;
   modifiedAt: string;
 };
 
-type Option = {
-  id: string;
-  label: string;
-};
-type FormValues = {
-  channelFilter: Option[];
-  segmentFilter: Option[];
-  statusFilter: Option[];
-  packageId: string;
-  packageName: string;
-  createdBy: string;
-  startDate: Date;
-};
-
 export default function DataGridDemo() {
   const dispatch = useAppDispatch();
-  const [promoChannelList, setPromoChannelList] = useState<Option[]>([]);
-  const [segmentList, setSegmentList] = useState<Option[]>([]);
-  const [statusList, setStatusList] = useState<Option[]>([]);
+  const navigate = useNavigate();
+  const [pageNo, setPageNo] = useState("1");
   const [recommendation, setRecommendation] = useState<
     RecommendationTableData[]
   >([]);
+
   const {
-    promoChannel,
-    segment,
-    statusType,
     recommendationList: {
       data: recommendationData,
-      // count: totalRecommendationCount,
+      count: totalRecommendationCount,
     },
   } = useAppSelector((state) => state.recommender);
 
   useEffect(() => {
-    dispatch(fetchFilteredRecommendation());
-    dispatch(fetchPromoRecommenderChannel());
-    dispatch(fetchPromoSegment());
-    dispatch(fetchPromoStatus());
+    dispatch(fetchFilteredRecommendation({ page: pageNo, page_size: "7" }));
   }, []);
 
   useEffect(() => {
@@ -103,8 +158,11 @@ export default function DataGridDemo() {
       }) => ({
         offerPackageId,
         offerPackageName,
-        promoName: promo[0].promo_name,
-        segmentSegmentName: segments[0].segment_name,
+        promoName:
+          promo.length > 1
+            ? promo[0].promo_name
+            : promo.map(({ promo_name: name }) => name).join(" "),
+        segmentList: segments,
         startDate,
         statusName,
         createdBy,
@@ -113,119 +171,28 @@ export default function DataGridDemo() {
     );
     setRecommendation(reRecommendationData);
   }, [recommendationData]);
-  useEffect(() => {
-    const reMapPromoChannel = promoChannel.map(
-      ({ promo_id: promoId, promo_name: promoName }) => ({
-        id: promoId.toString(),
-        label: promoName,
-      })
-    );
-    setPromoChannelList(reMapPromoChannel);
-  }, [promoChannel]);
 
-  useEffect(() => {
-    const reMapSegment = segment.map(
-      ({ segment_id: segmentId, segment_name: segmentName }) => ({
-        id: segmentId.toString(),
-        label: segmentName,
-      })
-    );
-    setSegmentList(reMapSegment);
-  }, [segment]);
-
-  useEffect(() => {
-    const reMapStatusType = statusType.map(
-      ({ id: statusId, status_name: statusName }) => ({
-        id: statusId.toString(),
-        label: statusName,
-      })
-    );
-    setStatusList(reMapStatusType);
-  }, [statusType]);
-
-  const onSubmit = (data: FormValues) => {
-    // eslint-disable-next-line no-console
-    console.log(data);
-  };
-  const { handleSubmit, control, reset } = useForm<FormValues>({
-    defaultValues: {
-      channelFilter: [],
-      segmentFilter: [],
-      statusFilter: [],
-      packageId: "",
-      packageName: "",
-      createdBy: "",
-      startDate: new Date(),
-    },
-  });
-  const onReset = () => {
-    reset();
-  };
   return (
     <Container maxWidth="xl" className="px-10 py-4">
-      <Typography variant="h6">Promo Recommender Summary</Typography>
-      {/* <Typography variant='body2'>Filter By</Typography> */}
-      <form
-        onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-row space-x-4 items-center "
-        color="primary"
-      >
-        <TextFieldForm control={control} name="packageId" label="Package Id" />
-        <TextFieldForm
-          control={control}
-          name="packageName"
-          label="Package Name"
-        />
-
-        <AutoCompleteCheckBox
-          control={control}
-          label="Promo channel"
-          name="channelFilter"
-          options={promoChannelList}
-        />
-
-        <AutoCompleteCheckBox
-          control={control}
-          label="Segment"
-          name="segmentFilter"
-          options={segmentList}
-        />
-
-        <DatepickerForm control={control} label="Start Date" name="startDate" />
-
-        <TextFieldForm control={control} name="createdBy" label="Created By" />
-        <AutoCompleteCheckBox
-          control={control}
-          label="Status"
-          name="statusFilter"
-          options={statusList}
-        />
-
+      <Box className="flex justify-between py-4">
+        <Typography variant="h6">Promo Recommender Summary</Typography>
         <Button
+          onClick={() => navigate("/recommender/configuration")}
           variant="contained"
           color="secondary"
-          type="submit"
-          size="small"
         >
-          Filter
+          + Configure Promo
         </Button>
-        <Button
-          variant="contained"
-          color="secondary"
-          onClick={onReset}
-          size="small"
-        >
-          Reset
-        </Button>
-      </form>
+      </Box>
+      <RecommenderFilter page={pageNo} pageSize="7" />
       <Box sx={{ height: 500, width: "100%" }} className="mt-7">
         <DataGrid
           rows={recommendation}
           columns={columns}
           pageSize={7}
-          rowsPerPageOptions={[7]}
+          onPageChange={(newPage) => setPageNo(`${newPage + 1}`)}
+          rowsPerPageOptions={[totalRecommendationCount]}
           disableSelectionOnClick
-          // experimentalFeatures={{ newEditingApi: true }}
           getRowId={(row) => row.offerPackageId}
         />
       </Box>

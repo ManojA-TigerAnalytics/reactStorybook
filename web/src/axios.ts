@@ -1,6 +1,7 @@
 // @ts-nocheck
 /* eslint-disable no-console */
 import axios from "axios";
+import qs from "qs";
 import type {
   AxiosError,
   AxiosInstance,
@@ -43,6 +44,9 @@ const options: Params = {
   headers: {
     "Content-Type": "application/json;charset=UTF-8",
     "Access-Control-Allow-Origin": "*",
+  },
+  paramsSerializer: {
+    serialize: (params) => qs.stringify(params, { arrayFormat: "repeat" }),
   },
 };
 

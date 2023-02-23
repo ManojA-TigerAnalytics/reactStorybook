@@ -1,0 +1,4066 @@
+{
+  "scenario_planner_scenario_results": {
+    "data": [
+      {
+        "offer_package_name": "Scenario_madhuri gollakota_2022-12-16 12:06",
+        "start_date": "2022-12-19 12:00:00+00:00",
+        "offer_duration": "2 weeks",
+        "scenario_offer_data": [
+          {
+            "offer_id": 1815,
+            "creative_color": null,
+            "creative_background": null,
+            "regular_price": 110.0,
+            "promo_price": 1.0,
+            "discount_depth": 1,
+            "impact_index": 99,
+            "offer_usage": null,
+            "segment_config_id": 2102,
+            "product_type": {
+              "promo_type_name": "Set of 2",
+              "promo_type_id": 3,
+              "promo_type_code": "set2"
+            },
+            "dicount_mechanic": {
+              "promomech_name": "Favorable prices: Product for XX Rubles",
+              "promomech_id": 2,
+              "promomech_code": "fp"
+            },
+            "segment_name": "Offline",
+            "promo_id": 2,
+            "promo_name": "Offline",
+            "items": [
+              {
+                "item_id": "1020",
+                "item_name": "BF Sausage McMuffin w/o egg"
+              },
+              {
+                "item_id": "1030",
+                "item_name": "BF Chicken Fresh McMuffin"
+              }
+            ]
+          },
+          {
+            "offer_id": 1816,
+            "creative_color": null,
+            "creative_background": null,
+            "regular_price": 55.0,
+            "promo_price": 55.0,
+            "discount_depth": 50,
+            "impact_index": 100,
+            "offer_usage": null,
+            "segment_config_id": 2102,
+            "product_type": {
+              "promo_type_name": "Individual",
+              "promo_type_id": 1,
+              "promo_type_code": "ind"
+            },
+            "dicount_mechanic": {
+              "promomech_name": "Price Discount - 2 for price of 1",
+              "promomech_id": 1,
+              "promomech_code": "bogo"
+            },
+            "segment_name": "Offline",
+            "promo_id": 2,
+            "promo_name": "Offline",
+            "items": [
+              {
+                "item_id": "7150",
+                "item_name": "DRh Americano Small"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "OK",
+    "http_code": 200
+  },
+  "users": [
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$WTjBhOq2yQ1O9nVl/vAzQeM0uRkeZQGHWWiGVqwHactgLhruTpJ9a",
+      "id": 1
+    }
+  ],
+  "language_list": {
+    "data": [
+      {
+        "language_id": 1,
+        "language_description": "English",
+        "language_code": "en",
+        "default_language": "1",
+        "currency_symbol": "₽"
+      }
+    ],
+    "status": "OK",
+    "http_code": 200
+  },
+  "resetpasswordtoken": {
+    "data": {
+      "status": "success",
+      "message": "Password reset link has been sent to your email"
+    },
+    "status": "OK",
+    "http_code": 200
+  },
+  "support_email": {
+    "data": {
+      "support_email": "support.discount@mcdpricing.com"
+    },
+    "status": "OK",
+    "http_code": 200
+  },
+  "get_user_group_details": {
+    "data": [
+      {
+        "page_id": "home_sp_grid",
+        "is_access": true
+      }
+    ],
+    "status": "OK",
+    "http_code": 200
+  },
+  "senario_planner_offer_configuration": {
+    "data": [
+      {
+        "offer_config_id": 159,
+        "offer_package_id": "1158",
+        "offer_package_name": "Discount 006",
+        "status": 1,
+        "offer_duration": 2,
+        "start_date": "2021-12-22T18:30:00Z",
+        "segments": [
+          {
+            "segment_id": 1,
+            "segment_name": "Mass Online"
+          },
+          {
+            "segment_id": 2,
+            "segment_name": "Pre-registration"
+          }
+        ],
+        "created_by": "admin"
+      },
+      {
+        "offer_config_id": 158,
+        "offer_package_id": "1157",
+        "offer_package_name": "Discount Package 007",
+        "status": 1,
+        "offer_duration": 2,
+        "start_date": "2021-12-22T18:30:00Z",
+        "segments": [
+          {
+            "segment_id": 1,
+            "segment_name": "Mass Online"
+          },
+          {
+            "segment_id": 2,
+            "segment_name": "Pre-registration"
+          }
+        ],
+        "created_by": "admin"
+      },
+      {
+        "offer_config_id": 157,
+        "offer_package_id": "1156",
+        "offer_package_name": "Discount Package 006",
+        "status": 1,
+        "offer_duration": 1,
+        "start_date": "2021-12-07T18:30:00Z",
+        "segments": [
+          {
+            "segment_id": 1,
+            "segment_name": "Mass Online"
+          },
+          {
+            "segment_id": 2,
+            "segment_name": "Pre-registration"
+          },
+          {
+            "segment_id": 3,
+            "segment_name": "Active - Low Frequency"
+          }
+        ],
+        "created_by": "admin"
+      },
+      {
+        "offer_config_id": 156,
+        "offer_package_id": "1155",
+        "offer_package_name": "Discount 006",
+        "status": 1,
+        "offer_duration": 2,
+        "start_date": "2021-12-24T18:30:00Z",
+        "segments": [
+          {
+            "segment_id": 1,
+            "segment_name": "Mass Online"
+          }
+        ],
+        "created_by": "admin"
+      },
+      {
+        "offer_config_id": 154,
+        "offer_package_id": "1153",
+        "offer_package_name": "offer package summary13",
+        "status": 1,
+        "offer_duration": 2,
+        "start_date": "2021-12-07T18:30:00Z",
+        "segments": [
+          {
+            "segment_id": 1,
+            "segment_name": "Mass Online"
+          }
+        ],
+        "created_by": "admin"
+      },
+      {
+        "offer_config_id": 150,
+        "offer_package_id": "1149",
+        "offer_package_name": "148 offer id check",
+        "status": 1,
+        "offer_duration": 1,
+        "start_date": "2021-12-23T18:30:00Z",
+        "segments": [
+          {
+            "segment_id": 1,
+            "segment_name": "Mass Online"
+          }
+        ],
+        "created_by": "admin"
+      },
+      {
+        "offer_config_id": 147,
+        "offer_package_id": "1146",
+        "offer_package_name": "146 offer id check",
+        "status": 1,
+        "offer_duration": 1,
+        "start_date": "2021-12-24T18:30:00Z",
+        "segments": [
+          {
+            "segment_id": 1,
+            "segment_name": "Mass Online"
+          },
+          {
+            "segment_id": 2,
+            "segment_name": "Pre-registration"
+          },
+          {
+            "segment_id": 3,
+            "segment_name": "Active - Low Frequency"
+          }
+        ],
+        "created_by": "admin"
+      },
+      {
+        "offer_config_id": 145,
+        "offer_package_id": "1144",
+        "offer_package_name": "144 offer id check",
+        "status": 1,
+        "offer_duration": 1,
+        "start_date": "2021-12-24T18:30:00Z",
+        "segments": [
+          {
+            "segment_id": 1,
+            "segment_name": "Mass Online"
+          }
+        ],
+        "created_by": "admin"
+      },
+      {
+        "offer_config_id": 140,
+        "offer_package_id": "1139",
+        "offer_package_name": "offer packge 139",
+        "status": 1,
+        "offer_duration": 2,
+        "start_date": "2021-12-17T18:30:00Z",
+        "segments": [
+          {
+            "segment_id": 1,
+            "segment_name": "Mass Online"
+          }
+        ],
+        "created_by": "admin"
+      },
+      {
+        "offer_config_id": 134,
+        "offer_package_id": "1133",
+        "offer_package_name": "dfdf",
+        "status": 1,
+        "offer_duration": 2,
+        "start_date": "2021-12-07T18:30:00Z",
+        "segments": [
+          {
+            "segment_id": 1,
+            "segment_name": "Mass Online"
+          }
+        ],
+        "created_by": "admin"
+      }
+    ],
+    "status": "OK",
+    "http_code": 200
+  },
+  "config_master": {
+    "data": {
+      "offer_config_start_date_value": "1",
+      "offer_config_end_date_value": "30",
+      "lower_bond_perc": "0",
+      "set_max_offer_default": "10",
+      "discount_depth_range_min": "20",
+      "discount_depth_range_max": "50",
+      "discount_depth_min": "10",
+      "discount_depth_max": "50",
+      "no_of_offer_range_min": "5",
+      "no_of_offer_range_max": "7",
+      "no_of_offer_min": "1",
+      "no_of_offer_max": "10",
+      "competition_min_depth": "10",
+      "competition_max_depth": "45",
+      "competition_default_depth": "23",
+      "default_min_start_date": "1",
+      "default_max_start_date": "21",
+      "support_email": "support.discount@vitpricing.com",
+      "created_at_date": "2",
+      "faq_link": "https://collaborate.mcd.com/:b:/s/Segmentedoffers_Russia/ETushkNCA2RPtYP-9c0D1IwBSNICO2l0m6n8xVC_nxBWuw?e=aw1ZgX",
+      "user_manual": "https://collaborate.mcd.com/:b:/s/Segmentedoffers_Russia/Ee-sx5qOuChJrZap1HTYWxABK7JC0MBwUOUYZ4dEAbROCw?e=8XTC5E",
+      "training_video": "https://collaborate.mcd.com/:f:/s/Segmentedoffers_Russia/EqrcKPg4YltGo5Vih8V-MoEBmk5QHjaJg2MRvvLlQYeRWg?e=u5v48W"
+    },
+    "status": "success"
+  },
+  "offer_duration": {
+    "data": [
+      {
+        "offer_duration_id": 1,
+        "offer_week_name": "1 Week",
+        "description": "1 Week"
+      },
+      {
+        "offer_duration_id": 2,
+        "offer_week_name": "2 Week",
+        "description": "2 Week"
+      },
+      {
+        "offer_duration_id": 3,
+        "offer_week_name": "3 Week",
+        "description": "3 Week"
+      },
+      {
+        "offer_duration_id": 4,
+        "offer_week_name": "4 Week",
+        "description": "4 Week"
+      },
+      {
+        "offer_duration_id": 5,
+        "offer_week_name": "5 Week",
+        "description": "5 Week"
+      },
+      {
+        "offer_duration_id": 6,
+        "offer_week_name": "6 Week",
+        "description": "6 Week"
+      }
+    ],
+    "status": "OK",
+    "http_code": 200
+  },
+  "promochannel": {
+    "data": [
+      {
+        "promo_id": 1,
+        "promo_name": "Online",
+        "channel_code": "digital"
+      },
+      {
+        "promo_id": 2,
+        "promo_name": "Offline",
+        "channel_code": "offline"
+      }
+    ],
+    "status": "OK",
+    "http_code": 200
+  },
+  "status_list": {
+    "data": [
+      {
+        "id": 1,
+        "status_name": "Saved"
+      },
+      {
+        "id": 2,
+        "status_name": "Submitted"
+      },
+      {
+        "id": 3,
+        "status_name": "Completed"
+      },
+      {
+        "id": 4,
+        "status_name": "Failed"
+      }
+    ],
+    "status": "OK",
+    "http_code": 200
+  },
+  "brands": {
+    "data": [
+      {
+        "brand_id": 1,
+        "brand_name": "KFC"
+      },
+      {
+        "brand_id": 2,
+        "brand_name": "Burger King"
+      }
+    ],
+    "status": "OK",
+    "http_code": 200
+  },
+  "segments": {
+    "data": [
+      {
+        "segment_id": 1,
+        "segment_name": "Mass Online",
+        "promo_id": 1,
+        "user_count": null
+      },
+      {
+        "segment_id": 2,
+        "segment_name": "Pre-registration",
+        "promo_id": 2,
+        "user_count": null
+      },
+      {
+        "segment_id": 3,
+        "segment_name": "Offline",
+        "promo_id": 3,
+        "user_count": null
+      },
+      {
+        "segment_id": 4,
+        "segment_name": "Active-Low frequency",
+        "promo_id": 4,
+        "user_count": null
+      }
+    ],
+    "status": "OK",
+    "http_code": 200
+  },
+  "discounts": {
+    "data": [
+      {
+        "discount_id": 1,
+        "discount_name": "Nuggets 9@XX"
+      },
+      {
+        "discount_id": 2,
+        "discount_name": "Sanders Basket@XX"
+      },
+      {
+        "discount_id": 3,
+        "discount_name": "LUNCH BASKET 5@XX"
+      },
+      {
+        "discount_id": 4,
+        "discount_name": "Coffee from XX"
+      },
+      {
+        "discount_id": 5,
+        "discount_name": "TVISTER sandwich@XX"
+      },
+      {
+        "discount_id": 6,
+        "discount_name": "SHEFBURGER@XX"
+      },
+      {
+        "discount_id": 7,
+        "discount_name": "Twister 2 at price of 1"
+      },
+      {
+        "discount_id": 8,
+        "discount_name": "Shefburger 2 at price of 1"
+      },
+      {
+        "discount_id": 9,
+        "discount_name": "King Box 5 in 1@XX"
+      },
+      {
+        "discount_id": 10,
+        "discount_name": "6@XX with Mexican Hamburger"
+      },
+      {
+        "discount_id": 11,
+        "discount_name": "Big King Combo @ XX"
+      },
+      {
+        "discount_id": 12,
+        "discount_name": "Ice Cream for XX"
+      },
+      {
+        "discount_id": 13,
+        "discount_name": "Combo for 2 with Whooper @XX"
+      }
+    ],
+    "status": "OK",
+    "http_code": 200
+  },
+  "promomechanics": {
+    "data": [
+      {
+        "promomech_id": 1,
+        "promomech_name": "Price Discount - 2 for price of 1",
+        "promomech_code": "bogo",
+        "recommender_flag": 1,
+        "scenario_planner_flag": 1,
+        "active": true,
+        "date_created": "2022-01-03T09:59:39Z"
+      },
+      {
+        "promomech_id": 2,
+        "promomech_name": "Favorable prices: Product for XX Rubles",
+        "promomech_code": "fp",
+        "recommender_flag": 1,
+        "scenario_planner_flag": 1,
+        "active": true,
+        "date_created": "2022-01-03T09:59:40Z"
+      },
+      {
+        "promomech_id": 3,
+        "promomech_name": "Price Discount - @Price Point",
+        "promomech_code": "atpp",
+        "recommender_flag": 1,
+        "scenario_planner_flag": 1,
+        "active": true,
+        "date_created": "2022-01-03T09:59:40Z"
+      },
+      {
+        "promomech_id": 4,
+        "promomech_name": "Price Discount - Strike old show new",
+        "promomech_code": "sosn",
+        "recommender_flag": 1,
+        "scenario_planner_flag": 1,
+        "active": true,
+        "date_created": "2022-01-03T09:59:40Z"
+      },
+      {
+        "promomech_id": 5,
+        "promomech_name": "Price Discount - second @Price Point",
+        "promomech_code": "satpp",
+        "recommender_flag": 1,
+        "scenario_planner_flag": 1,
+        "active": true,
+        "date_created": "2022-01-03T09:59:40Z"
+      },
+      {
+        "promomech_id": 127,
+        "promomech_name": "Check Threshold",
+        "promomech_code": "ctp",
+        "recommender_flag": 1,
+        "scenario_planner_flag": 0,
+        "active": true,
+        "date_created": "2022-01-03T10:10:08Z"
+      }
+    ],
+    "status": "OK",
+    "http_code": 200
+  },
+  "promotypes": {
+    "data": [
+      {
+        "promo_type_name": "Individual",
+        "promo_type_id": 1,
+        "promo_type_code": "ind"
+      }
+    ],
+    "status": "OK",
+    "http_code": 200
+  },
+  "items": {
+    "data": [
+      {
+        "item_name": "SN Big Mac",
+        "item_id": 11,
+        "item_code": "2100"
+      },
+      {
+        "item_name": "BF Chicken Fresh McMuffin",
+        "item_id": 2,
+        "item_code": "1030"
+      }
+    ],
+    "status": "OK",
+    "http_code": 200
+  },
+  "prices": {
+    "data": [
+      {
+        "price_id": 1,
+        "item_code": "1010",
+        "regular_price": 99,
+        "min_discount_price": 35
+      }
+    ],
+    "status": "OK",
+    "http_code": 200
+  },
+  "minprice": {
+    "data": [
+      {
+        "min_discount_price": 35
+      }
+    ],
+    "status": "OK",
+    "http_code": 200
+  },
+  "scenario_planner_selection": {
+    "data": {
+      "count": 270,
+      "data": [
+        {
+          "scenario": {
+            "scenario_id": 752,
+            "scenario_package_id": "1668",
+            "scenario_name": "Test Package_Balaji B_2021-12-29 10:37",
+            "discount_duration": "2 Week",
+            "created_by": "Balaji B",
+            "start_date": "2022-06-03",
+            "last_updated": "2021-12-29T10:37:02Z"
+          },
+          "segment_configuration": [
+            {
+              "offer_config_id": 752,
+              "offer_id": 652,
+              "segment_name": "Mass Online",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [
+                {
+                  "item_code": "1020",
+                  "item_name": "BF Sausage McMuffin w/o egg",
+                  "item_id": 42
+                }
+              ],
+              "discount_depth": 11,
+              "regular_price": 110.0,
+              "discount_price": 97.9
+            },
+            {
+              "offer_config_id": 752,
+              "offer_id": 653,
+              "segment_name": "Offline",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [
+                {
+                  "item_code": "1020",
+                  "item_name": "BF Sausage McMuffin w/o egg",
+                  "item_id": 42
+                }
+              ],
+              "discount_depth": 13,
+              "regular_price": 99.0,
+              "discount_price": 86.1
+            }
+          ],
+          "overall_impact": [
+            {
+              "granularity": "1000",
+              "granularity_value": "overall",
+              "gc_scenario": 0,
+              "gc_lift": 0.0,
+              "avg_scenario": "",
+              "avg_lift": "",
+              "netsales_scenario": 0,
+              "netsales_lift": 0.0,
+              "gp_scenario": "",
+              "gp_lift": "",
+              "uc_scenario": "",
+              "uc_lift": "",
+              "upt_scenario": 0,
+              "upt_lift": 0.0,
+              "urw_scenario": "",
+              "urw_lift": "",
+              "effect_on_margin_scenario": "",
+              "effect_on_margin_lift": ""
+            }
+          ]
+        },
+        {
+          "scenario": {
+            "scenario_id": 746,
+            "scenario_package_id": "1662",
+            "scenario_name": "Test Package_Balaji B_2021-12-28 10:41:32",
+            "discount_duration": "2 Week",
+            "created_by": "Balaji B",
+            "start_date": "2022-06-03",
+            "last_updated": "2021-12-28T10:41:33Z"
+          },
+          "segment_configuration": [
+            {
+              "offer_config_id": 746,
+              "offer_id": 648,
+              "segment_name": "Mass Online",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [
+                {
+                  "item_code": "1020",
+                  "item_name": "BF Sausage McMuffin w/o egg",
+                  "item_id": 42
+                }
+              ],
+              "discount_depth": 21,
+              "regular_price": 110.0,
+              "discount_price": 86.9
+            },
+            {
+              "offer_config_id": 746,
+              "offer_id": 650,
+              "segment_name": "Mass Online",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [
+                {
+                  "item_code": "1029",
+                  "item_name": "BF Double Fresh McMuffin",
+                  "item_id": 1
+                }
+              ],
+              "discount_depth": 11,
+              "regular_price": 149.0,
+              "discount_price": 132.6
+            },
+            {
+              "offer_config_id": 746,
+              "offer_id": 649,
+              "segment_name": "Offline",
+              "discount_mechanic": "Favorable prices: Product for XX Rubles",
+              "item": [
+                {
+                  "item_code": "2010-7152",
+                  "item_name": "SN Cheeseburger + DRh Cappuccino Small",
+                  "item_id": 97
+                }
+              ],
+              "discount_depth": 11,
+              "regular_price": 111.0,
+              "discount_price": 98.8
+            },
+            {
+              "offer_config_id": 746,
+              "offer_id": 651,
+              "segment_name": "Offline",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [
+                {
+                  "item_code": "1022",
+                  "item_name": "BF Double Sausage & Egg McMuffin",
+                  "item_id": 44
+                }
+              ],
+              "discount_depth": 22,
+              "regular_price": 155.0,
+              "discount_price": 120.9
+            }
+          ],
+          "overall_impact": [
+            {
+              "granularity": "1000",
+              "granularity_value": "overall",
+              "gc_scenario": 0,
+              "gc_lift": 0.0,
+              "avg_scenario": "",
+              "avg_lift": "",
+              "netsales_scenario": 0,
+              "netsales_lift": 0.0,
+              "gp_scenario": "",
+              "gp_lift": "",
+              "uc_scenario": "",
+              "uc_lift": "",
+              "upt_scenario": 0,
+              "upt_lift": 0.0,
+              "urw_scenario": "",
+              "urw_lift": "",
+              "effect_on_margin_scenario": "",
+              "effect_on_margin_lift": ""
+            }
+          ]
+        },
+        {
+          "scenario": {
+            "scenario_id": 744,
+            "scenario_package_id": "1660",
+            "scenario_name": "Scenario_Balaji B_2021-12-28 09:50:39",
+            "discount_duration": "2 Week",
+            "created_by": "Balaji B",
+            "start_date": "2022-06-03",
+            "last_updated": "2021-12-28T09:50:39Z"
+          },
+          "segment_configuration": [
+            {
+              "offer_config_id": 744,
+              "offer_id": 647,
+              "segment_name": "Offline",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [
+                {
+                  "item_code": "1020",
+                  "item_name": "BF Sausage McMuffin w/o egg",
+                  "item_id": 42
+                }
+              ],
+              "discount_depth": 11,
+              "regular_price": 105.0,
+              "discount_price": 93.5
+            }
+          ],
+          "overall_impact": [
+            {
+              "granularity": "1000",
+              "granularity_value": "overall",
+              "gc_scenario": 0,
+              "gc_lift": 0.0,
+              "avg_scenario": "",
+              "avg_lift": "",
+              "netsales_scenario": 0,
+              "netsales_lift": 0.0,
+              "gp_scenario": "",
+              "gp_lift": "",
+              "uc_scenario": "",
+              "uc_lift": "",
+              "upt_scenario": 0,
+              "upt_lift": 0.0,
+              "urw_scenario": "",
+              "urw_lift": "",
+              "effect_on_margin_scenario": "",
+              "effect_on_margin_lift": ""
+            }
+          ]
+        },
+        {
+          "scenario": {
+            "scenario_id": 742,
+            "scenario_package_id": "1658",
+            "scenario_name": "Russia Discount Engine_Balaji B_2021-12-28 08:16:51",
+            "discount_duration": "2 Week",
+            "created_by": "Balaji B",
+            "start_date": "2022-01-03",
+            "last_updated": "2021-12-28T08:16:51Z"
+          },
+          "segment_configuration": [
+            {
+              "offer_config_id": 742,
+              "offer_id": 605,
+              "segment_name": "Pre-registration",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [],
+              "discount_depth": 18,
+              "regular_price": 100.0,
+              "discount_price": 82.0
+            },
+            {
+              "offer_config_id": 742,
+              "offer_id": 606,
+              "segment_name": "Pre-registration",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [],
+              "discount_depth": 11,
+              "regular_price": 104.0,
+              "discount_price": 93.0
+            },
+            {
+              "offer_config_id": 742,
+              "offer_id": 607,
+              "segment_name": "Pre-registration",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [],
+              "discount_depth": 31,
+              "regular_price": 135.0,
+              "discount_price": 104.0
+            },
+            {
+              "offer_config_id": 742,
+              "offer_id": 608,
+              "segment_name": "Pre-registration",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [],
+              "discount_depth": 14,
+              "regular_price": 39.0,
+              "discount_price": 25.0
+            },
+            {
+              "offer_config_id": 742,
+              "offer_id": 609,
+              "segment_name": "Pre-registration",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [],
+              "discount_depth": 22,
+              "regular_price": 104.0,
+              "discount_price": 82.0
+            },
+            {
+              "offer_config_id": 742,
+              "offer_id": 610,
+              "segment_name": "Pre-registration",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [],
+              "discount_depth": 4,
+              "regular_price": 69.0,
+              "discount_price": 65.0
+            },
+            {
+              "offer_config_id": 742,
+              "offer_id": 611,
+              "segment_name": "Pre-registration",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [],
+              "discount_depth": 11,
+              "regular_price": 93.0,
+              "discount_price": 82.0
+            },
+            {
+              "offer_config_id": 742,
+              "offer_id": 612,
+              "segment_name": "Active - Low Frequency",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [],
+              "discount_depth": 18,
+              "regular_price": 50.0,
+              "discount_price": 32.0
+            },
+            {
+              "offer_config_id": 742,
+              "offer_id": 613,
+              "segment_name": "Active - Low Frequency",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [],
+              "discount_depth": 50,
+              "regular_price": 249.0,
+              "discount_price": 199.0
+            },
+            {
+              "offer_config_id": 742,
+              "offer_id": 614,
+              "segment_name": "Active - Low Frequency",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [],
+              "discount_depth": 18,
+              "regular_price": 135.0,
+              "discount_price": 117.0
+            },
+            {
+              "offer_config_id": 742,
+              "offer_id": 615,
+              "segment_name": "Active - Low Frequency",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [],
+              "discount_depth": 22,
+              "regular_price": 104.0,
+              "discount_price": 82.0
+            },
+            {
+              "offer_config_id": 742,
+              "offer_id": 616,
+              "segment_name": "Active - Low Frequency",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [],
+              "discount_depth": 4,
+              "regular_price": 69.0,
+              "discount_price": 65.0
+            },
+            {
+              "offer_config_id": 742,
+              "offer_id": 617,
+              "segment_name": "Active - Low Frequency",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [],
+              "discount_depth": 6,
+              "regular_price": 95.0,
+              "discount_price": 89.0
+            },
+            {
+              "offer_config_id": 742,
+              "offer_id": 618,
+              "segment_name": "Active - Low Frequency",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [],
+              "discount_depth": 11,
+              "regular_price": 93.0,
+              "discount_price": 82.0
+            },
+            {
+              "offer_config_id": 742,
+              "offer_id": 598,
+              "segment_name": "Offline",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [],
+              "discount_depth": 65,
+              "regular_price": 498.0,
+              "discount_price": 433.0
+            },
+            {
+              "offer_config_id": 742,
+              "offer_id": 599,
+              "segment_name": "Offline",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [],
+              "discount_depth": 0,
+              "regular_price": 145.0,
+              "discount_price": 145.0
+            },
+            {
+              "offer_config_id": 742,
+              "offer_id": 600,
+              "segment_name": "Offline",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [],
+              "discount_depth": 46,
+              "regular_price": 270.0,
+              "discount_price": 224.0
+            },
+            {
+              "offer_config_id": 742,
+              "offer_id": 601,
+              "segment_name": "Offline",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [],
+              "discount_depth": 0,
+              "regular_price": 100.0,
+              "discount_price": 100.0
+            },
+            {
+              "offer_config_id": 742,
+              "offer_id": 602,
+              "segment_name": "Offline",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [],
+              "discount_depth": 15,
+              "regular_price": 52.0,
+              "discount_price": 37.0
+            },
+            {
+              "offer_config_id": 742,
+              "offer_id": 603,
+              "segment_name": "Offline",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [],
+              "discount_depth": 9,
+              "regular_price": 55.0,
+              "discount_price": 46.0
+            },
+            {
+              "offer_config_id": 742,
+              "offer_id": 604,
+              "segment_name": "Offline",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [],
+              "discount_depth": 30,
+              "regular_price": 118.0,
+              "discount_price": 88.0
+            }
+          ],
+          "overall_impact": []
+        },
+        {
+          "scenario": {
+            "scenario_id": 722,
+            "scenario_package_id": "1638",
+            "scenario_name": "Scenario_Balaji B_2021-12-28 06:43:06",
+            "discount_duration": "1 Week",
+            "created_by": "Balaji B",
+            "start_date": "2022-06-03",
+            "last_updated": "2021-12-28T06:43:06Z"
+          },
+          "segment_configuration": [
+            {
+              "offer_config_id": 722,
+              "offer_id": 597,
+              "segment_name": "Offline",
+              "discount_mechanic": "Check Threshold - 149 Rubles - Product for 0 Ruble",
+              "item": [
+                {
+                  "item_code": "2000",
+                  "item_name": "SN Hamburger",
+                  "item_id": 4
+                }
+              ],
+              "discount_depth": 10,
+              "regular_price": 50.0,
+              "discount_price": 45.0
+            }
+          ],
+          "overall_impact": [
+            {
+              "granularity": "1000",
+              "granularity_value": "overall",
+              "gc_scenario": 0,
+              "gc_lift": 0.0,
+              "avg_scenario": "",
+              "avg_lift": "",
+              "netsales_scenario": 17407810,
+              "netsales_lift": 0.1,
+              "gp_scenario": "",
+              "gp_lift": "",
+              "uc_scenario": "",
+              "uc_lift": "",
+              "upt_scenario": 0,
+              "upt_lift": 0.0,
+              "urw_scenario": "",
+              "urw_lift": "",
+              "effect_on_margin_scenario": "",
+              "effect_on_margin_lift": ""
+            }
+          ]
+        }
+      ]
+    },
+    "status": "OK",
+    "http_code": 200
+  },
+  "scenario_comparision_kpi": {
+    "data": [
+      {
+        "metric_name": "net_sales",
+        "metric_code": "1007",
+        "kpi_label_name": "Net Sales"
+      },
+      {
+        "metric_name": "gross_profit",
+        "metric_code": "1008",
+        "kpi_label_name": "Gross Profit"
+      },
+      {
+        "metric_name": "effect_on_margin",
+        "meti_code": "1010",
+        "kpi_label_name": "Effect On Margin"
+      },
+      {
+        "metric_name": "UPT",
+        "metric_code": "1011",
+        "kpi_label_name": "UPT"
+      },
+      {
+        "metric_name": "URW",
+        "metric_code": "1012",
+        "kpi_label_name": "URW"
+      }
+    ],
+    "status": "ERROR",
+    "http_code": 200
+  },
+  "save": {
+    "data": 526,
+    "status": "OK",
+    "http_code": 200
+  },
+  "impact": {
+    "data": {
+      "data": [
+        {
+          "granularity": "1000",
+          "granularity_value": "offline",
+          "gc_scenario": 10577565,
+          "gc_lift": 6.4,
+          "avg_scenario": 305,
+          "avg_lift": -5.8,
+          "netsales_scenario": 3228177352,
+          "netsales_lift": 0.2,
+          "gp_scenario": 1877422681,
+          "gp_lift": 0.1,
+          "uc_scenario": "",
+          "uc_lift": "",
+          "upt_scenario": 3704,
+          "upt_lift": -4.9,
+          "urw_scenario": 27401,
+          "urw_lift": 1.2,
+          "effect_on_margin_scenario": 0,
+          "effect_on_margin_lift": 0.8
+        },
+        {
+          "granularity": "1000",
+          "granularity_value": "overall",
+          "gc_scenario": 10577565,
+          "gc_lift": 6.4,
+          "avg_scenario": 305,
+          "avg_lift": -5.8,
+          "netsales_scenario": 3228177352,
+          "netsales_lift": 0.2,
+          "gp_scenario": 1877422681,
+          "gp_lift": 0.1,
+          "uc_scenario": "",
+          "uc_lift": "",
+          "upt_scenario": 3704,
+          "upt_lift": -4.9,
+          "urw_scenario": 27401,
+          "urw_lift": 1.2,
+          "effect_on_margin_scenario": 0,
+          "effect_on_margin_lift": 0.8
+        }
+      ],
+      "request_id": ""
+    },
+    "status": "ERROR",
+    "http_code": 200
+  },
+  "scenario_metrics": {
+    "data": [
+      {
+        "scenario_metric_id": 8,
+        "segment_config_id": 1,
+        "granularity": "Product Category",
+        "granularity_value": "Burgers",
+        "metric_name": "GC",
+        "scenario_value": 156590,
+        "baseline_value": 153665,
+        "change": 2925,
+        "lift": 0
+      },
+      {
+        "scenario_metric_id": 9,
+        "segment_config_id": 1,
+        "granularity": "Product Category",
+        "granularity_value": "Burgers",
+        "metric_name": "GP",
+        "scenario_value": 186057366,
+        "baseline_value": 178983493,
+        "change": 7073873,
+        "lift": 0
+      },
+      {
+        "scenario_metric_id": 10,
+        "segment_config_id": 1,
+        "granularity": "Product Category",
+        "granularity_value": "Burgers",
+        "metric_name": "Net sales",
+        "scenario_value": 300255451,
+        "baseline_value": 294999001,
+        "change": 5256450,
+        "lift": 0
+      }
+    ],
+    "status": "OK",
+    "http_code": 200
+  },
+  "report": {
+    "data": {
+      "scenario": [
+        "Breakfast",
+        "Breakfast EVM/Combo",
+        "Dessert",
+        "Drinks Cold",
+        "Drinks Hot",
+        "EVM",
+        "Fries",
+        "Happy",
+        "Meals",
+        "Juices",
+        "Nuggets",
+        "Sandwiches",
+        "Sauces",
+        "Shakes",
+        "Starters"
+      ],
+      "series": {
+        "name": "Net Sales",
+        "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 791.7, 828.7, 0, 0, 0]
+      }
+    },
+    "status": "ERROR",
+    "http_code": 200
+  },
+  "edit": {
+    "data": {
+      "scenario_name": "Offer package 1000",
+      "start_date": "2021-11-26 18:30:00+00:00",
+      "discount_duration": 2,
+      "discount_duration_name": "2 Week",
+      "segment_configuration": [
+        {
+          "offer_id": 1,
+          "creative_color": "Solid Red",
+          "creative_background": "B1",
+          "regular_price": 50,
+          "promo_price": 30,
+          "discount_depth": 40,
+          "impact_index": 2,
+          "offer_usage": 31.2,
+          "segment_config_id": 1,
+          "product_type": {
+            "promo_type_name": "Individual",
+            "promo_type_id": 1,
+            "promo_type_code": "individual"
+          },
+          "dicount_mechanic": {
+            "promomech_name": "Price Discount - % Off",
+            "promomech_id": 7,
+            "promomech_code": "pd_peroff"
+          },
+          "segment": {
+            "segment_name": "Mass Online",
+            "segment_id": 1
+          },
+          "discount_channel": {
+            "promo_id": 1,
+            "promo_name": "Online"
+          },
+          "items": [
+            {
+              "item_name": "BF Pancakes",
+              "item_id": 1,
+              "item_code": "1010"
+            }
+          ]
+        },
+        {
+          "offer_id": 2,
+          "creative_color": "Solid Red",
+          "creative_background": "B1",
+          "regular_price": 270,
+          "promo_price": 180,
+          "discount_depth": 33,
+          "impact_index": 1,
+          "offer_usage": 29.5,
+          "segment_config_id": 1,
+          "product_type": {
+            "promo_type_name": "Pair",
+            "promo_type_id": 2,
+            "promo_type_code": "pair"
+          },
+          "dicount_mechanic": {
+            "promomech_name": "Price Discount - @Price Point",
+            "promomech_id": 4,
+            "promomech_code": "pd_pricepoint"
+          },
+          "segment": {
+            "segment_name": "Mass Online",
+            "segment_id": 1
+          },
+          "discount_channel": {
+            "promo_id": 1,
+            "promo_name": "Online"
+          },
+          "items": [
+            {
+              "item_name": "BF Sausage & Egg McMuffin",
+              "item_id": 2,
+              "item_code": "1011"
+            },
+            {
+              "item_name": "BF Sausage & Egg McMuffin",
+              "item_id": 2,
+              "item_code": "1011"
+            }
+          ]
+        },
+        {
+          "offer_id": 3,
+          "creative_color": "Solid Yellow",
+          "creative_background": "B1",
+          "regular_price": 149,
+          "promo_price": 135,
+          "discount_depth": 9,
+          "impact_index": 3,
+          "offer_usage": 22.1,
+          "segment_config_id": 1,
+          "product_type": {
+            "promo_type_name": "Set of 2",
+            "promo_type_id": 3,
+            "promo_type_code": "set_2"
+          },
+          "dicount_mechanic": {
+            "promomech_name": "Price Discount - 2 for price of 1",
+            "promomech_id": 1,
+            "promomech_code": "bogo"
+          },
+          "segment": {
+            "segment_name": "Mass Online",
+            "segment_id": 1
+          },
+          "discount_channel": {
+            "promo_id": 1,
+            "promo_name": "Online"
+          },
+          "items": [
+            {
+              "item_name": "BF Big Breakfast",
+              "item_id": 3,
+              "item_code": "1017"
+            },
+            {
+              "item_name": "BF Cheese & Egg McMuffin",
+              "item_id": 4,
+              "item_code": "1019"
+            }
+          ]
+        }
+      ],
+      "competition_disount": [
+        {
+          "competition_id": 1,
+          "brand_id": 1,
+          "discount_id": 1,
+          "discount_depth": 10,
+          "offer_config_id": 1,
+          "brand_name": "KFC",
+          "discount_name": "Nuggets 9@XX"
+        }
+      ]
+    },
+    "status": "OK",
+    "http_code": 200
+  },
+  "scenario_comparision_segments": {
+    "data": [
+      {
+        "kpi_name": "offline",
+        "scenarios": [
+          {
+            "Scenario_Lokesh A_2021-12-15 20:24:19": {
+              "scenario_value": 0,
+              "lift": 0
+            }
+          },
+          {
+            "Test Package": {
+              "scenario_value": 0,
+              "lift": 0
+            }
+          },
+          {
+            "Test Package_Harish H_2021-12-15 15:31:33": {
+              "scenario_value": 0,
+              "lift": 0
+            }
+          }
+        ]
+      }
+    ],
+    "status": "ERROR",
+    "http_code": 200
+  },
+  "scenario_comparision_products": {
+    "data": [
+      {
+        "kpi_name": "Drinks Cold",
+        "scenarios": [
+          {
+            "Scenario_Lokesh A_2021-12-15 20:24:19": {
+              "scenario_value": 0,
+              "lift": 0
+            }
+          },
+          {
+            "Test Package": {
+              "scenario_value": 0,
+              "lift": 0
+            }
+          },
+          {
+            "Test Package_Harish H_2021-12-15 15:31:33": {
+              "scenario_value": 0,
+              "lift": 0
+            }
+          }
+        ]
+      },
+      {
+        "kpi_name": "McCafe",
+        "scenarios": [
+          {
+            "Scenario_Lokesh A_2021-12-15 20:24:19": {
+              "scenario_value": 0,
+              "lift": 0
+            }
+          },
+          {
+            "Test Package": {
+              "scenario_value": 0,
+              "lift": 0
+            }
+          },
+          {
+            "Test Package_Harish H_2021-12-15 15:31:33": {
+              "scenario_value": 0,
+              "lift": 0
+            }
+          }
+        ]
+      }
+    ],
+    "status": "ERROR",
+    "http_code": 200
+  },
+  "scenario_comparision_overall": {
+    "data": [
+      {
+        "kpi_name": "Guest Count",
+        "scenarios": [
+          {
+            "Scenario_Lokesh A_2021-12-15 20:24:19": {
+              "scenario_value": 46058,
+              "lift": 0.00441286
+            }
+          },
+          {
+            "Test Package": {
+              "scenario_value": 0,
+              "lift": 0
+            }
+          },
+          {
+            "Test Package_Harish H_2021-12-15 15:31:33": {
+              "scenario_value": 0,
+              "lift": 0
+            }
+          }
+        ]
+      },
+      {
+        "kpi_name": "User Count",
+        "scenarios": []
+      },
+      {
+        "kpi_name": "Net Sales",
+        "scenarios": [
+          {
+            "Scenario_Lokesh A_2021-12-15 20:24:19": {
+              "scenario_value": 0,
+              "lift": 0
+            }
+          },
+          {
+            "Test Package": {
+              "scenario_value": 0,
+              "lift": 0
+            }
+          },
+          {
+            "Test Package_Harish H_2021-12-15 15:31:33": {
+              "scenario_value": 0,
+              "lift": 0
+            }
+          }
+        ]
+      },
+      {
+        "kpi_name": "Gross Profit",
+        "scenarios": []
+      },
+      {
+        "kpi_name": "Effect On Margin",
+        "scenarios": []
+      },
+      {
+        "kpi_name": "UPT",
+        "scenarios": [
+          {
+            "Scenario_Lokesh A_2021-12-15 20:24:19": {
+              "scenario_value": 4802,
+              "lift": 2.07054
+            }
+          },
+          {
+            "Test Package": {
+              "scenario_value": 0,
+              "lift": 0
+            }
+          },
+          {
+            "Test Package_Harish H_2021-12-15 15:31:33": {
+              "scenario_value": 0,
+              "lift": 0
+            }
+          }
+        ]
+      },
+      {
+        "kpi_name": "URW",
+        "scenarios": []
+      },
+      {
+        "kpi_name": "Average Check Value",
+        "scenarios": []
+      }
+    ],
+    "status": "ERROR",
+    "http_code": 200
+  },
+  "scenario_comparision_overall_report": {
+    "data": [
+      {
+        "scenario": [
+          "Scenario_Lokesh A_2021-12-15 20:24:19",
+          "Test Package",
+          "Test Package_Harish H_2021-12-15 15:31:33"
+        ],
+        "series": [
+          {
+            "name": "Guest Count",
+            "data": [0.00441286, 0, 0]
+          },
+          {
+            "name": "User Count",
+            "data": []
+          },
+          {
+            "name": "Net Sales",
+            "data": [0, 0, 0]
+          },
+          {
+            "name": "Gross Profit",
+            "data": []
+          },
+          {
+            "name": "Effect On Margin",
+            "data": []
+          },
+          {
+            "name": "UPT",
+            "data": [2.07054, 0, 0]
+          },
+          {
+            "name": "URW",
+            "data": []
+          },
+          {
+            "name": "Average Check Value",
+            "data": []
+          }
+        ]
+      }
+    ],
+    "status": "ERROR",
+    "http_code": 200
+  },
+  "scenario_comparision_segments_report": {
+    "data": [
+      {
+        "scenario": [
+          "Scenario_Lokesh A_2021-12-15 20:24:19",
+          "Test Package",
+          "Test Package_Harish H_2021-12-15 15:31:33"
+        ],
+        "series": [
+          {
+            "name": "offline",
+            "data": [0, 0, 0]
+          }
+        ]
+      }
+    ],
+    "status": "ERROR",
+    "http_code": 200
+  },
+  "scenario_comparision_products_report": {
+    "data": [
+      {
+        "scenario": [
+          "Scenario_Lokesh A_2021-12-15 20:24:19",
+          "Test Package",
+          "Test Package_Harish H_2021-12-15 15:31:33"
+        ],
+        "series": [
+          {
+            "name": "Drinks Cold",
+            "data": [0, 0, 0]
+          },
+          {
+            "name": "McCafe",
+            "data": [0, 0, 0]
+          }
+        ]
+      }
+    ],
+    "status": "ERROR",
+    "http_code": 200
+  },
+  "offer_configuration_offer_duration": {
+    "data": [
+      {
+        "offer_week_name": "2 Week",
+        "description": "2 weeks",
+        "offer_duration_id": 2
+      },
+      {
+        "offer_week_name": "1 Week",
+        "description": "1 week",
+        "offer_duration_id": 1
+      }
+    ],
+    "status": "OK",
+    "http_code": 200
+  },
+  "offer_configuration_edit_id": {
+    "data": [
+      {
+        "offer_config_id": 742,
+        "offer_package_id": "1658",
+        "offer_package_name": "Russia Discount Engine_Balaji B_2021-12-28 08:16:51",
+        "status": 3,
+        "start_date": "2022-01-03T18:30:00Z",
+        "status_name": "Completed",
+        "segment": [
+          {
+            "segment_config_id": 1063,
+            "promo_id": 1,
+            "segment_id": 1,
+            "maximize": 5,
+            "segment_name": "Mass Online",
+            "objective": {
+              "maximize": [
+                {
+                  "objective_name": "Net Sales Lift",
+                  "objective_id": 5,
+                  "promo_id": 1,
+                  "promo_objective_id": 5
+                }
+              ],
+              "lower_bound": [
+                {
+                  "lower_bound_name": "Gross Profit Lift",
+                  "lower_bound_percentage": -1
+                },
+                {
+                  "lower_bound_name": "Average Check Lift",
+                  "lower_bound_percentage": -1
+                }
+              ]
+            },
+            "product": {
+              "product_item": [
+                {
+                  "category": "Breakfast",
+                  "category_id": 1
+                },
+                {
+                  "category": "Happy Meals",
+                  "category_id": 2
+                },
+                {
+                  "category": "Breakfast EVM/Combo",
+                  "category_id": 3
+                },
+                {
+                  "category": "Sandwiches",
+                  "category_id": 4
+                },
+                {
+                  "category": "Starters",
+                  "category_id": 5
+                },
+                {
+                  "category": "EVM",
+                  "category_id": 6
+                },
+                {
+                  "category": "Nuggets",
+                  "category_id": 7
+                },
+                {
+                  "category": "Fries",
+                  "category_id": 8
+                },
+                {
+                  "category": "Dessert",
+                  "category_id": 9
+                },
+                {
+                  "category": "Shakes",
+                  "category_id": 10
+                },
+                {
+                  "category": "Drinks Cold",
+                  "category_id": 11
+                },
+                {
+                  "category": "Drinks Hot",
+                  "category_id": 12
+                },
+                {
+                  "category": "Juices",
+                  "category_id": 13
+                },
+                {
+                  "category": "Sauces",
+                  "category_id": 14
+                }
+              ],
+              "item": [
+                {
+                  "category_id": 4,
+                  "item_id": 7,
+                  "category": "Sandwiches",
+                  "item_name": "SN Double Cheeseburger"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 8,
+                  "category": "Sandwiches",
+                  "item_name": "SN Royal Cheeseburger"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 9,
+                  "category": "Sandwiches",
+                  "item_name": "SN Double Royal Cheeseburger"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 10,
+                  "category": "Sandwiches",
+                  "item_name": "SN Caesar Wrap"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 11,
+                  "category": "Sandwiches",
+                  "item_name": "SN Big Mac"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 12,
+                  "category": "Sandwiches",
+                  "item_name": "SN Double Big Mac"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 13,
+                  "category": "Sandwiches",
+                  "item_name": "SN Royal Deluxe"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 14,
+                  "category": "Sandwiches",
+                  "item_name": "SN McChicken Premier + DRc Medium Coke"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 19,
+                  "category": "Sandwiches",
+                  "item_name": "SN McChicken Spicy"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 20,
+                  "category": "Sandwiches",
+                  "item_name": "SN Big Tasty Junior"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 21,
+                  "category": "Sandwiches",
+                  "item_name": "DS Pie Cherry"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 22,
+                  "category": "Sandwiches",
+                  "item_name": "S&S Snack Box Wings"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 42,
+                  "category": "Sandwiches",
+                  "item_name": "BF Sausage McMuffin w/o egg"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 43,
+                  "category": "Sandwiches",
+                  "item_name": "BF Fresh McMuffin"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 44,
+                  "category": "Sandwiches",
+                  "item_name": "BF Double Sausage & Egg McMuffin"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 45,
+                  "category": "Sandwiches",
+                  "item_name": "SN McChicken Premier"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 46,
+                  "category": "Sandwiches",
+                  "item_name": "SN Chicken strips_3 pcs"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 47,
+                  "category": "Sandwiches",
+                  "item_name": "SN Chicken strips_2 pcs"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 48,
+                  "category": "Sandwiches",
+                  "item_name": "SN McChicken"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 49,
+                  "category": "Sandwiches",
+                  "item_name": "SN Chicken McNuggets 9 pcs"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 50,
+                  "category": "Sandwiches",
+                  "item_name": "SN Chicken McNuggets 20 pcs"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 51,
+                  "category": "Sandwiches",
+                  "item_name": "S&S Greek Cheese Sticks"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 52,
+                  "category": "Sandwiches",
+                  "item_name": "DS Caramel Sundae"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 53,
+                  "category": "Sandwiches",
+                  "item_name": "DS McFlurry Chocolate-Caramel (12)"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 54,
+                  "category": "Sandwiches",
+                  "item_name": "DS Vanilla Cone New"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 55,
+                  "category": "Sandwiches",
+                  "item_name": "DRh Americano Small"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 56,
+                  "category": "Sandwiches",
+                  "item_name": "EVMR SN Big Mac"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 57,
+                  "category": "Sandwiches",
+                  "item_name": "SN Chicken strips_5 pcs"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 58,
+                  "category": "Sandwiches",
+                  "item_name": "FR Small Fries"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 59,
+                  "category": "Sandwiches",
+                  "item_name": "SN Big Tasty Spicy"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 1,
+                  "category": "Breakfast",
+                  "item_name": "BF Double Fresh McMuffin"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 2,
+                  "category": "Breakfast",
+                  "item_name": "BF Chicken Fresh McMuffin"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 3,
+                  "category": "Breakfast",
+                  "item_name": "BF Big Breakfast Wrap"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 4,
+                  "category": "Breakfast",
+                  "item_name": "SN Hamburger"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 5,
+                  "category": "Breakfast",
+                  "item_name": "SN Big Tasty"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 6,
+                  "category": "Breakfast",
+                  "item_name": "SN Cheeseburger"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 40,
+                  "category": "Breakfast",
+                  "item_name": "DRc Aqua Minerale Still"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 41,
+                  "category": "Breakfast",
+                  "item_name": "VM HM Toy KubRub"
+                }
+              ],
+              "max_offers": []
+            },
+            "offer": [
+              {
+                "promo_mechanic": [
+                  {
+                    "promomech_id": 7,
+                    "promomech_name": "Check Threshold - 149 Rubles - Product for 0 Ruble"
+                  },
+                  {
+                    "promomech_id": 4,
+                    "promomech_name": "Price Discount - Strike old show new"
+                  }
+                ],
+                "discount_depth": [20, 50],
+                "no_of_offers": [5, 7]
+              }
+            ]
+          },
+          {
+            "segment_config_id": 1064,
+            "promo_id": 1,
+            "segment_id": 2,
+            "maximize": 5,
+            "segment_name": "Pre-registration",
+            "objective": {
+              "maximize": [
+                {
+                  "objective_name": "Net Sales Lift",
+                  "objective_id": 5,
+                  "promo_id": 1,
+                  "promo_objective_id": 5
+                }
+              ],
+              "lower_bound": [
+                {
+                  "lower_bound_name": "Gross Profit Lift",
+                  "lower_bound_percentage": -1
+                },
+                {
+                  "lower_bound_name": "Average Check Lift",
+                  "lower_bound_percentage": -1
+                }
+              ]
+            },
+            "product": {
+              "product_item": [
+                {
+                  "category": "Breakfast",
+                  "category_id": 1
+                },
+                {
+                  "category": "Happy Meals",
+                  "category_id": 2
+                },
+                {
+                  "category": "Breakfast EVM/Combo",
+                  "category_id": 3
+                },
+                {
+                  "category": "Sandwiches",
+                  "category_id": 4
+                },
+                {
+                  "category": "Starters",
+                  "category_id": 5
+                },
+                {
+                  "category": "EVM",
+                  "category_id": 6
+                },
+                {
+                  "category": "Nuggets",
+                  "category_id": 7
+                },
+                {
+                  "category": "Fries",
+                  "category_id": 8
+                },
+                {
+                  "category": "Dessert",
+                  "category_id": 9
+                },
+                {
+                  "category": "Shakes",
+                  "category_id": 10
+                },
+                {
+                  "category": "Drinks Cold",
+                  "category_id": 11
+                },
+                {
+                  "category": "Drinks Hot",
+                  "category_id": 12
+                },
+                {
+                  "category": "Juices",
+                  "category_id": 13
+                },
+                {
+                  "category": "Sauces",
+                  "category_id": 14
+                }
+              ],
+              "item": [
+                {
+                  "category_id": 4,
+                  "item_id": 7,
+                  "category": "Sandwiches",
+                  "item_name": "SN Double Cheeseburger"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 8,
+                  "category": "Sandwiches",
+                  "item_name": "SN Royal Cheeseburger"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 9,
+                  "category": "Sandwiches",
+                  "item_name": "SN Double Royal Cheeseburger"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 10,
+                  "category": "Sandwiches",
+                  "item_name": "SN Caesar Wrap"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 11,
+                  "category": "Sandwiches",
+                  "item_name": "SN Big Mac"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 12,
+                  "category": "Sandwiches",
+                  "item_name": "SN Double Big Mac"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 13,
+                  "category": "Sandwiches",
+                  "item_name": "SN Royal Deluxe"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 14,
+                  "category": "Sandwiches",
+                  "item_name": "SN McChicken Premier + DRc Medium Coke"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 19,
+                  "category": "Sandwiches",
+                  "item_name": "SN McChicken Spicy"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 20,
+                  "category": "Sandwiches",
+                  "item_name": "SN Big Tasty Junior"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 21,
+                  "category": "Sandwiches",
+                  "item_name": "DS Pie Cherry"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 22,
+                  "category": "Sandwiches",
+                  "item_name": "S&S Snack Box Wings"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 42,
+                  "category": "Sandwiches",
+                  "item_name": "BF Sausage McMuffin w/o egg"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 43,
+                  "category": "Sandwiches",
+                  "item_name": "BF Fresh McMuffin"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 44,
+                  "category": "Sandwiches",
+                  "item_name": "BF Double Sausage & Egg McMuffin"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 45,
+                  "category": "Sandwiches",
+                  "item_name": "SN McChicken Premier"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 46,
+                  "category": "Sandwiches",
+                  "item_name": "SN Chicken strips_3 pcs"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 47,
+                  "category": "Sandwiches",
+                  "item_name": "SN Chicken strips_2 pcs"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 48,
+                  "category": "Sandwiches",
+                  "item_name": "SN McChicken"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 49,
+                  "category": "Sandwiches",
+                  "item_name": "SN Chicken McNuggets 9 pcs"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 50,
+                  "category": "Sandwiches",
+                  "item_name": "SN Chicken McNuggets 20 pcs"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 51,
+                  "category": "Sandwiches",
+                  "item_name": "S&S Greek Cheese Sticks"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 52,
+                  "category": "Sandwiches",
+                  "item_name": "DS Caramel Sundae"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 53,
+                  "category": "Sandwiches",
+                  "item_name": "DS McFlurry Chocolate-Caramel (12)"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 54,
+                  "category": "Sandwiches",
+                  "item_name": "DS Vanilla Cone New"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 55,
+                  "category": "Sandwiches",
+                  "item_name": "DRh Americano Small"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 56,
+                  "category": "Sandwiches",
+                  "item_name": "EVMR SN Big Mac"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 57,
+                  "category": "Sandwiches",
+                  "item_name": "SN Chicken strips_5 pcs"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 58,
+                  "category": "Sandwiches",
+                  "item_name": "FR Small Fries"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 59,
+                  "category": "Sandwiches",
+                  "item_name": "SN Big Tasty Spicy"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 1,
+                  "category": "Breakfast",
+                  "item_name": "BF Double Fresh McMuffin"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 2,
+                  "category": "Breakfast",
+                  "item_name": "BF Chicken Fresh McMuffin"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 3,
+                  "category": "Breakfast",
+                  "item_name": "BF Big Breakfast Wrap"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 4,
+                  "category": "Breakfast",
+                  "item_name": "SN Hamburger"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 5,
+                  "category": "Breakfast",
+                  "item_name": "SN Big Tasty"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 6,
+                  "category": "Breakfast",
+                  "item_name": "SN Cheeseburger"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 40,
+                  "category": "Breakfast",
+                  "item_name": "DRc Aqua Minerale Still"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 41,
+                  "category": "Breakfast",
+                  "item_name": "VM HM Toy KubRub"
+                }
+              ],
+              "max_offers": []
+            },
+            "offer": [
+              {
+                "promo_mechanic": [
+                  {
+                    "promomech_id": 7,
+                    "promomech_name": "Check Threshold - 149 Rubles - Product for 0 Ruble"
+                  },
+                  {
+                    "promomech_id": 4,
+                    "promomech_name": "Price Discount - Strike old show new"
+                  }
+                ],
+                "discount_depth": [20, 50],
+                "no_of_offers": [5, 7]
+              }
+            ]
+          },
+          {
+            "segment_config_id": 1065,
+            "promo_id": 1,
+            "segment_id": 3,
+            "maximize": 5,
+            "segment_name": "Active - Low Frequency",
+            "objective": {
+              "maximize": [
+                {
+                  "objective_name": "Net Sales Lift",
+                  "objective_id": 5,
+                  "promo_id": 1,
+                  "promo_objective_id": 5
+                }
+              ],
+              "lower_bound": [
+                {
+                  "lower_bound_name": "Gross Profit Lift",
+                  "lower_bound_percentage": -1
+                },
+                {
+                  "lower_bound_name": "Average Check Lift",
+                  "lower_bound_percentage": -1
+                }
+              ]
+            },
+            "product": {
+              "product_item": [
+                {
+                  "category": "Breakfast",
+                  "category_id": 1
+                },
+                {
+                  "category": "Happy Meals",
+                  "category_id": 2
+                },
+                {
+                  "category": "Breakfast EVM/Combo",
+                  "category_id": 3
+                },
+                {
+                  "category": "Sandwiches",
+                  "category_id": 4
+                },
+                {
+                  "category": "Starters",
+                  "category_id": 5
+                },
+                {
+                  "category": "EVM",
+                  "category_id": 6
+                },
+                {
+                  "category": "Nuggets",
+                  "category_id": 7
+                },
+                {
+                  "category": "Fries",
+                  "category_id": 8
+                },
+                {
+                  "category": "Dessert",
+                  "category_id": 9
+                },
+                {
+                  "category": "Shakes",
+                  "category_id": 10
+                },
+                {
+                  "category": "Drinks Cold",
+                  "category_id": 11
+                },
+                {
+                  "category": "Drinks Hot",
+                  "category_id": 12
+                },
+                {
+                  "category": "Juices",
+                  "category_id": 13
+                },
+                {
+                  "category": "Sauces",
+                  "category_id": 14
+                }
+              ],
+              "item": [
+                {
+                  "category_id": 4,
+                  "item_id": 7,
+                  "category": "Sandwiches",
+                  "item_name": "SN Double Cheeseburger"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 8,
+                  "category": "Sandwiches",
+                  "item_name": "SN Royal Cheeseburger"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 9,
+                  "category": "Sandwiches",
+                  "item_name": "SN Double Royal Cheeseburger"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 10,
+                  "category": "Sandwiches",
+                  "item_name": "SN Caesar Wrap"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 11,
+                  "category": "Sandwiches",
+                  "item_name": "SN Big Mac"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 12,
+                  "category": "Sandwiches",
+                  "item_name": "SN Double Big Mac"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 13,
+                  "category": "Sandwiches",
+                  "item_name": "SN Royal Deluxe"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 14,
+                  "category": "Sandwiches",
+                  "item_name": "SN McChicken Premier + DRc Medium Coke"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 19,
+                  "category": "Sandwiches",
+                  "item_name": "SN McChicken Spicy"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 20,
+                  "category": "Sandwiches",
+                  "item_name": "SN Big Tasty Junior"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 21,
+                  "category": "Sandwiches",
+                  "item_name": "DS Pie Cherry"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 22,
+                  "category": "Sandwiches",
+                  "item_name": "S&S Snack Box Wings"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 42,
+                  "category": "Sandwiches",
+                  "item_name": "BF Sausage McMuffin w/o egg"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 43,
+                  "category": "Sandwiches",
+                  "item_name": "BF Fresh McMuffin"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 44,
+                  "category": "Sandwiches",
+                  "item_name": "BF Double Sausage & Egg McMuffin"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 45,
+                  "category": "Sandwiches",
+                  "item_name": "SN McChicken Premier"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 46,
+                  "category": "Sandwiches",
+                  "item_name": "SN Chicken strips_3 pcs"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 47,
+                  "category": "Sandwiches",
+                  "item_name": "SN Chicken strips_2 pcs"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 48,
+                  "category": "Sandwiches",
+                  "item_name": "SN McChicken"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 49,
+                  "category": "Sandwiches",
+                  "item_name": "SN Chicken McNuggets 9 pcs"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 50,
+                  "category": "Sandwiches",
+                  "item_name": "SN Chicken McNuggets 20 pcs"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 51,
+                  "category": "Sandwiches",
+                  "item_name": "S&S Greek Cheese Sticks"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 52,
+                  "category": "Sandwiches",
+                  "item_name": "DS Caramel Sundae"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 53,
+                  "category": "Sandwiches",
+                  "item_name": "DS McFlurry Chocolate-Caramel (12)"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 54,
+                  "category": "Sandwiches",
+                  "item_name": "DS Vanilla Cone New"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 55,
+                  "category": "Sandwiches",
+                  "item_name": "DRh Americano Small"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 56,
+                  "category": "Sandwiches",
+                  "item_name": "EVMR SN Big Mac"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 57,
+                  "category": "Sandwiches",
+                  "item_name": "SN Chicken strips_5 pcs"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 58,
+                  "category": "Sandwiches",
+                  "item_name": "FR Small Fries"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 59,
+                  "category": "Sandwiches",
+                  "item_name": "SN Big Tasty Spicy"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 1,
+                  "category": "Breakfast",
+                  "item_name": "BF Double Fresh McMuffin"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 2,
+                  "category": "Breakfast",
+                  "item_name": "BF Chicken Fresh McMuffin"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 3,
+                  "category": "Breakfast",
+                  "item_name": "BF Big Breakfast Wrap"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 4,
+                  "category": "Breakfast",
+                  "item_name": "SN Hamburger"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 5,
+                  "category": "Breakfast",
+                  "item_name": "SN Big Tasty"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 6,
+                  "category": "Breakfast",
+                  "item_name": "SN Cheeseburger"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 40,
+                  "category": "Breakfast",
+                  "item_name": "DRc Aqua Minerale Still"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 41,
+                  "category": "Breakfast",
+                  "item_name": "VM HM Toy KubRub"
+                }
+              ],
+              "max_offers": []
+            },
+            "offer": [
+              {
+                "promo_mechanic": [
+                  {
+                    "promomech_id": 7,
+                    "promomech_name": "Check Threshold - 149 Rubles - Product for 0 Ruble"
+                  },
+                  {
+                    "promomech_id": 4,
+                    "promomech_name": "Price Discount - Strike old show new"
+                  }
+                ],
+                "discount_depth": [20, 50],
+                "no_of_offers": [5, 7]
+              }
+            ]
+          },
+          {
+            "segment_config_id": 1062,
+            "promo_id": 2,
+            "segment_id": 9,
+            "maximize": 5,
+            "segment_name": "Offline",
+            "objective": {
+              "maximize": [
+                {
+                  "objective_name": "Net Sales Lift",
+                  "objective_id": 5,
+                  "promo_id": 2,
+                  "promo_objective_id": 6
+                }
+              ],
+              "lower_bound": [
+                {
+                  "lower_bound_name": "Guest Count Lift",
+                  "lower_bound_percentage": -1
+                }
+              ]
+            },
+            "product": {
+              "product_item": [
+                {
+                  "category": "Sandwiches",
+                  "category_id": 4
+                },
+                {
+                  "category": "Breakfast",
+                  "category_id": 1
+                },
+                {
+                  "category": "Happy Meals",
+                  "category_id": 2
+                }
+              ],
+              "item": [
+                {
+                  "category_id": 4,
+                  "item_id": 7,
+                  "category": "Sandwiches",
+                  "item_name": "SN Double Cheeseburger"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 8,
+                  "category": "Sandwiches",
+                  "item_name": "SN Royal Cheeseburger"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 9,
+                  "category": "Sandwiches",
+                  "item_name": "SN Double Royal Cheeseburger"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 10,
+                  "category": "Sandwiches",
+                  "item_name": "SN Caesar Wrap"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 11,
+                  "category": "Sandwiches",
+                  "item_name": "SN Big Mac"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 12,
+                  "category": "Sandwiches",
+                  "item_name": "SN Double Big Mac"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 13,
+                  "category": "Sandwiches",
+                  "item_name": "SN Royal Deluxe"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 14,
+                  "category": "Sandwiches",
+                  "item_name": "SN McChicken Premier + DRc Medium Coke"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 19,
+                  "category": "Sandwiches",
+                  "item_name": "SN McChicken Spicy"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 20,
+                  "category": "Sandwiches",
+                  "item_name": "SN Big Tasty Junior"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 21,
+                  "category": "Sandwiches",
+                  "item_name": "DS Pie Cherry"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 22,
+                  "category": "Sandwiches",
+                  "item_name": "S&S Snack Box Wings"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 42,
+                  "category": "Sandwiches",
+                  "item_name": "BF Sausage McMuffin w/o egg"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 43,
+                  "category": "Sandwiches",
+                  "item_name": "BF Fresh McMuffin"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 44,
+                  "category": "Sandwiches",
+                  "item_name": "BF Double Sausage & Egg McMuffin"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 45,
+                  "category": "Sandwiches",
+                  "item_name": "SN McChicken Premier"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 46,
+                  "category": "Sandwiches",
+                  "item_name": "SN Chicken strips_3 pcs"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 47,
+                  "category": "Sandwiches",
+                  "item_name": "SN Chicken strips_2 pcs"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 48,
+                  "category": "Sandwiches",
+                  "item_name": "SN McChicken"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 49,
+                  "category": "Sandwiches",
+                  "item_name": "SN Chicken McNuggets 9 pcs"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 50,
+                  "category": "Sandwiches",
+                  "item_name": "SN Chicken McNuggets 20 pcs"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 51,
+                  "category": "Sandwiches",
+                  "item_name": "S&S Greek Cheese Sticks"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 52,
+                  "category": "Sandwiches",
+                  "item_name": "DS Caramel Sundae"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 53,
+                  "category": "Sandwiches",
+                  "item_name": "DS McFlurry Chocolate-Caramel (12)"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 54,
+                  "category": "Sandwiches",
+                  "item_name": "DS Vanilla Cone New"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 55,
+                  "category": "Sandwiches",
+                  "item_name": "DRh Americano Small"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 56,
+                  "category": "Sandwiches",
+                  "item_name": "EVMR SN Big Mac"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 57,
+                  "category": "Sandwiches",
+                  "item_name": "SN Chicken strips_5 pcs"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 58,
+                  "category": "Sandwiches",
+                  "item_name": "FR Small Fries"
+                },
+                {
+                  "category_id": 4,
+                  "item_id": 59,
+                  "category": "Sandwiches",
+                  "item_name": "SN Big Tasty Spicy"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 1,
+                  "category": "Breakfast",
+                  "item_name": "BF Double Fresh McMuffin"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 2,
+                  "category": "Breakfast",
+                  "item_name": "BF Chicken Fresh McMuffin"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 3,
+                  "category": "Breakfast",
+                  "item_name": "BF Big Breakfast Wrap"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 4,
+                  "category": "Breakfast",
+                  "item_name": "SN Hamburger"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 5,
+                  "category": "Breakfast",
+                  "item_name": "SN Big Tasty"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 6,
+                  "category": "Breakfast",
+                  "item_name": "SN Cheeseburger"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 40,
+                  "category": "Breakfast",
+                  "item_name": "DRc Aqua Minerale Still"
+                },
+                {
+                  "category_id": 1,
+                  "item_id": 41,
+                  "category": "Breakfast",
+                  "item_name": "VM HM Toy KubRub"
+                }
+              ],
+              "max_offers": []
+            },
+            "offer": [
+              {
+                "promo_mechanic": [
+                  {
+                    "promomech_id": 7,
+                    "promomech_name": "Check Threshold - 149 Rubles - Product for 0 Ruble"
+                  },
+                  {
+                    "promomech_id": 4,
+                    "promomech_name": "Price Discount - Strike old show new"
+                  }
+                ],
+                "discount_depth": [20, 50],
+                "no_of_offers": [5, 7]
+              }
+            ]
+          }
+        ],
+        "promo_channel": [
+          {
+            "promo_name": "Online"
+          },
+          {
+            "promo_name": "Offline"
+          }
+        ],
+        "competition_discounts": [
+          {
+            "competition_id": 393,
+            "brand_id": 1,
+            "discount_id": 2,
+            "discount_depth": 10,
+            "offer_config_id": 742,
+            "brand_name": "KFC",
+            "discount_name": "Sanders Basket@XX"
+          }
+        ],
+        "is_edit": false,
+        "offer_week_name": "2 Week",
+        "description": "2 weeks"
+      }
+    ],
+    "status": "OK",
+    "http_code": 200
+  },
+  "offer_configuration_edit_OfferConfigid": {
+    "data": [
+      {
+        "promo_id": 1,
+        "promo_name": "Online",
+        "recommended_offer": [
+          {
+            "scenario_offer_impact_index_id": 12122,
+            "offer_id": 5539,
+            "segment_code": "enrollment_earlybegin",
+            "impact_index": 100,
+            "creative_color": "Solid Red",
+            "creative_background": "B1",
+            "regular_price": 304.0,
+            "promo_price": 228.0,
+            "discount_depth": 25,
+            "offer_usage": 2.3,
+            "segment_config_id": 1669,
+            "product_type": {
+              "promo_type_name": "Pair",
+              "promo_type_id": 2,
+              "promo_type_code": "pair"
+            },
+            "discount_mechanic": {
+              "promomech_name": "Price Discount Strike old shownew",
+              "promomech_id": 4,
+              "promomech_code": "sosn"
+            },
+            "promo_id": 1,
+            "promo_name": "Online",
+            "segment_name": "Enrollment -Early beginners",
+            "items": [
+              {
+                "item_id": "2315-2315",
+                "item_name": "S&S Greek 4 Cheese Sticks"
+              }
+            ]
+          },
+          {
+            "scenario_offer_impact_index_id": 12123,
+            "offer_id": 5540,
+            "segment_code": "enrollment earlybegin",
+            "impact_index": 54,
+            "creative_color": "Solid Red",
+            "creative_background": "81",
+            "regular_price": 49.0,
+            "promo_price": 36.0,
+            "discount_depth": 27,
+            "offer_usage": 0.6,
+            "segment_config_id": 1669,
+            "product_type": {
+              "promo_type_name": "Individual - Pair",
+              "promo_type_id": 5,
+              "promo_type_code": "ind-pair"
+            },
+            "discount_mechanic": {
+              "promomech_name": "Price Discount - @PricePoint",
+              "promomech_id": 3,
+              "promomech_code": "atpp"
+            },
+            "promo_id": 1,
+            "promo_name": "Online",
+            "segment_name": "Enrollment -Early beginners",
+            "items": [
+              {
+                "item_id": "2350",
+                "item_name": "SN Chicken McNuggets 4 pcs"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "OK",
+    "http_code": 200
+  },
+  "offer_configuration_list": {
+    "data": {
+      "count": 18,
+      "data": [
+        {
+          "offer_config_id": 1241,
+          "offer_package_id": "2119",
+          "offer_package_name": "testdemo_madhuri gollakota_2022-12-16 10:58",
+          "status": 1,
+          "start_date": "2022-12-21T12:00:00Z",
+          "created_by": "madhuri gollakota",
+          "modified_at": "2022-12-16T10:58:42.174364Z",
+          "status_name": "Saved",
+          "promo_name": [
+            {
+              "promo_name": "Online"
+            }
+          ],
+          "segments": [
+            {
+              "segment_config_id": 2097,
+              "segment_id": 2,
+              "offer_config_id": 1241,
+              "promo_id": 1,
+              "maximize": 5,
+              "segment_name": "Enrollment - Early beginners",
+              "promo_name": "Online"
+            },
+            {
+              "segment_config_id": 2098,
+              "segment_id": 10,
+              "offer_config_id": 1241,
+              "promo_id": 1,
+              "maximize": 5,
+              "segment_name": "Pre-registration",
+              "promo_name": "Online"
+            }
+          ],
+          "created_name": "madhuri gollakota",
+          "offer_week_name": "2 Week",
+          "description": "2 weeks",
+          "edit": true
+        },
+        {
+          "offer_config_id": 1236,
+          "offer_package_id": "2114",
+          "offer_package_name": "offline_madhuri gollakota_2022-12-16 08:08",
+          "status": 1,
+          "start_date": "2022-12-22T12:00:00Z",
+          "created_by": "madhuri gollakota",
+          "modified_at": "2022-12-16T08:08:19.436700Z",
+          "status_name": "Submitted",
+          "promo_name": [
+            {
+              "promo_name": "Offline"
+            }
+          ],
+          "segments": [
+            {
+              "segment_config_id": 2092,
+              "segment_id": 9,
+              "offer_config_id": 1236,
+              "promo_id": 2,
+              "maximize": 5,
+              "segment_name": "Offline",
+              "promo_name": "Offline"
+            }
+          ],
+          "created_name": "madhuri gollakota",
+          "offer_week_name": "1 Week",
+          "description": "1 week",
+          "edit": true
+        },
+        {
+          "offer_config_id": 1235,
+          "offer_package_id": "2113",
+          "offer_package_name": "testpack_madhuri gollakota_2022-12-16 06:16",
+          "status": 1,
+          "start_date": "2022-12-18T05:30:00Z",
+          "created_by": "madhuri gollakota",
+          "modified_at": "2022-12-16T06:16:43.659079Z",
+          "status_name": "Failed",
+          "promo_name": [
+            {
+              "promo_name": "Online"
+            }
+          ],
+          "segments": [
+            {
+              "segment_config_id": 2090,
+              "segment_id": 2,
+              "offer_config_id": 1235,
+              "promo_id": 1,
+              "maximize": 5,
+              "segment_name": "Pre-registration",
+              "promo_name": "Online"
+            },
+            {
+              "segment_config_id": 2091,
+              "segment_id": 10,
+              "offer_config_id": 1235,
+              "promo_id": 1,
+              "maximize": 5,
+              "segment_name": "Enrollment - Early beginners",
+              "promo_name": "Online"
+            }
+          ],
+          "created_name": "madhuri gollakota",
+          "offer_week_name": "2 Week",
+          "description": "2 weeks",
+          "edit": true
+        },
+        {
+          "offer_config_id": 1230,
+          "offer_package_id": "2108",
+          "offer_package_name": "DP_madhuri gollakota_2022-12-15 19:55",
+          "status": 1,
+          "start_date": "2022-12-16T12:00:00Z",
+          "created_by": "madhuri gollakota",
+          "modified_at": "2022-12-15T14:25:31.278504Z",
+          "status_name": "Completed Partial",
+          "promo_name": [
+            {
+              "promo_name": "Online"
+            }
+          ],
+          "segments": [
+            {
+              "segment_config_id": 2084,
+              "segment_id": 2,
+              "offer_config_id": 1230,
+              "promo_id": 1,
+              "maximize": 5,
+              "segment_name": "Pre-registration",
+              "promo_name": "Online"
+            }
+          ],
+          "created_name": "madhuri gollakota",
+          "offer_week_name": "2 Week",
+          "description": "2 weeks",
+          "edit": true
+        },
+        {
+          "offer_config_id": 1229,
+          "offer_package_id": "2107",
+          "offer_package_name": "Check-Test1_madhuri gollakota_2022-12-15 14:04",
+          "status": 1,
+          "start_date": "2022-12-17T12:00:00Z",
+          "created_by": "madhuri gollakota",
+          "modified_at": "2022-12-15T14:04:27.437875Z",
+          "status_name": "Saved",
+          "promo_name": [
+            {
+              "promo_name": "Online"
+            }
+          ],
+          "segments": [
+            {
+              "segment_config_id": 2083,
+              "segment_id": 2,
+              "offer_config_id": 1229,
+              "promo_id": 1,
+              "maximize": 5,
+              "segment_name": "Pre-registration",
+              "promo_name": "Online"
+            }
+          ],
+          "created_name": "madhuri gollakota",
+          "offer_week_name": "2 Week",
+          "description": "2 weeks",
+          "edit": true
+        },
+        {
+          "offer_config_id": 1228,
+          "offer_package_id": "2106",
+          "offer_package_name": "check_madhuri gollakota_2022-12-15 09:15",
+          "status": 1,
+          "start_date": "2022-12-21T12:00:00Z",
+          "created_by": "madhuri gollakota",
+          "modified_at": "2022-12-15T09:15:12.805311Z",
+          "status_name": "Saved",
+          "promo_name": [
+            {
+              "promo_name": "Online"
+            }
+          ],
+          "segments": [
+            {
+              "segment_config_id": 2080,
+              "segment_id": 2,
+              "offer_config_id": 1228,
+              "promo_id": 1,
+              "maximize": 5,
+              "segment_name": "Pre-registration",
+              "promo_name": "Online"
+            },
+            {
+              "segment_config_id": 2081,
+              "segment_id": 10,
+              "offer_config_id": 1228,
+              "promo_id": 1,
+              "maximize": 5,
+              "segment_name": "Enrollment - Early beginners",
+              "promo_name": "Online"
+            },
+            {
+              "segment_config_id": 2082,
+              "segment_id": 11,
+              "offer_config_id": 1228,
+              "promo_id": 1,
+              "maximize": 5,
+              "segment_name": "Enrollment - Late start",
+              "promo_name": "Online"
+            }
+          ],
+          "created_name": "madhuri gollakota",
+          "offer_week_name": "2 Week",
+          "description": "2 weeks",
+          "edit": true
+        },
+        {
+          "offer_config_id": 1227,
+          "offer_package_id": "2105",
+          "offer_package_name": "12_madhuri gollakota_2022-12-15 08:43",
+          "status": 1,
+          "start_date": "2022-12-22T05:30:00Z",
+          "created_by": "madhuri gollakota",
+          "modified_at": "2022-12-15T08:43:21.304387Z",
+          "status_name": "Saved",
+          "promo_name": [
+            {
+              "promo_name": "Online"
+            }
+          ],
+          "segments": [
+            {
+              "segment_config_id": 2079,
+              "segment_id": 1,
+              "offer_config_id": 1227,
+              "promo_id": 1,
+              "maximize": 5,
+              "segment_name": "Mass Online",
+              "promo_name": "Online"
+            }
+          ],
+          "created_name": "madhuri gollakota",
+          "offer_week_name": "1 Week",
+          "description": "1 week",
+          "edit": true
+        },
+        {
+          "offer_config_id": 1226,
+          "offer_package_id": "2104",
+          "offer_package_name": "12_madhuri gollakota_2022-12-15 08:39",
+          "status": 1,
+          "start_date": "2022-12-22T12:00:00Z",
+          "created_by": "madhuri gollakota",
+          "modified_at": "2022-12-15T08:43:51.210756Z",
+          "status_name": "Saved",
+          "promo_name": [
+            {
+              "promo_name": "Online"
+            }
+          ],
+          "segments": [
+            {
+              "segment_config_id": 2078,
+              "segment_id": 1,
+              "offer_config_id": 1226,
+              "promo_id": 1,
+              "maximize": 5,
+              "segment_name": "Mass Online",
+              "promo_name": "Online"
+            }
+          ],
+          "created_name": "madhuri gollakota",
+          "offer_week_name": "2 Week",
+          "description": "2 weeks",
+          "edit": true
+        },
+        {
+          "offer_config_id": 1225,
+          "offer_package_id": "2103",
+          "offer_package_name": "test_madhuri gollakota_2022-12-15 08:24",
+          "status": 1,
+          "start_date": "2022-12-16T12:00:00Z",
+          "created_by": "madhuri gollakota",
+          "modified_at": "2022-12-15T08:24:36.515293Z",
+          "status_name": "Saved",
+          "promo_name": [
+            {
+              "promo_name": "Online"
+            }
+          ],
+          "segments": [
+            {
+              "segment_config_id": 2077,
+              "segment_id": 2,
+              "offer_config_id": 1225,
+              "promo_id": 1,
+              "maximize": 5,
+              "segment_name": "Pre-registration",
+              "promo_name": "Online"
+            }
+          ],
+          "created_name": "madhuri gollakota",
+          "offer_week_name": "2 Week",
+          "description": "2 weeks",
+          "edit": true
+        }
+      ]
+    },
+    "status": "OK",
+    "http_code": 200
+  },
+  "segment_list": {
+    "data": [
+      {
+        "segment_id": 1,
+        "segment_name": "Mass Online",
+        "promo_id": 1,
+        "user_count": 14020724
+      },
+      {
+        "segment_id": 2,
+        "segment_name": "Pre-registration",
+        "promo_id": 1,
+        "user_count": null
+      },
+      {
+        "segment_id": 10,
+        "segment_name": "Enrollment - Early beginners",
+        "promo_id": 1,
+        "user_count": 47127
+      },
+      {
+        "segment_id": 11,
+        "segment_name": "Enrollment - Late start",
+        "promo_id": 1,
+        "user_count": 165874
+      },
+      {
+        "segment_id": 3,
+        "segment_name": "Active - Low Frequency",
+        "promo_id": 1,
+        "user_count": 1704646
+      },
+      {
+        "segment_id": 4,
+        "segment_name": "Active - High Frequency Low Offers Low Check",
+        "promo_id": 1,
+        "user_count": 174217
+      },
+      {
+        "segment_id": 5,
+        "segment_name": "Active - High Frequency Low Offers High Check",
+        "promo_id": 1,
+        "user_count": 139830
+      },
+      {
+        "segment_id": 6,
+        "segment_name": "Active - High Frequency High Offers",
+        "promo_id": 1,
+        "user_count": 699408
+      },
+      {
+        "segment_id": 7,
+        "segment_name": "Lapsing - At least one transaction",
+        "promo_id": 1,
+        "user_count": 838733
+      },
+      {
+        "segment_id": 12,
+        "segment_name": "Lapsing - No transactions",
+        "promo_id": 1,
+        "user_count": 227040
+      },
+      {
+        "segment_id": 8,
+        "segment_name": "Inactive - At least one transaction",
+        "promo_id": 1,
+        "user_count": 4378230
+      },
+      {
+        "segment_id": 13,
+        "segment_name": "Inactive - No Transactions",
+        "promo_id": 1,
+        "user_count": 5645619
+      }
+    ],
+    "status": "OK",
+    "http_code": 200
+  },
+  "offer_promoobj": {
+    "data": [
+      {
+        "objective_name": "Guest Count Lift",
+        "objective_id": 1,
+        "promo_id": 1,
+        "promo_objective_id": 10
+      },
+      {
+        "objective_name": "Guest Count Lift",
+        "objective_id": 1,
+        "promo_id": 2,
+        "promo_objective_id": 11
+      },
+      {
+        "objective_name": "Average Check Lift",
+        "objective_id": 4,
+        "promo_id": 2,
+        "promo_objective_id": 7
+      },
+      {
+        "objective_name": "Average Check Lift",
+        "objective_id": 4,
+        "promo_id": 1,
+        "promo_objective_id": 8
+      },
+      {
+        "objective_name": "Net Sales Lift",
+        "objective_id": 5,
+        "promo_id": 1,
+        "promo_objective_id": 5
+      },
+      {
+        "objective_name": "Net Sales Lift",
+        "objective_id": 5,
+        "promo_id": 2,
+        "promo_objective_id": 6
+      },
+      {
+        "objective_name": "Gross Profit Lift",
+        "objective_id": 6,
+        "promo_id": 2,
+        "promo_objective_id": 3
+      },
+      {
+        "objective_name": "Gross Profit Lift",
+        "objective_id": 6,
+        "promo_id": 1,
+        "promo_objective_id": 4
+      }
+    ],
+    "status": "OK",
+    "http_code": 200
+  },
+  "offer_pdt_cat": {
+    "data": [
+      {
+        "category_id": 1,
+        "category": "Breakfast",
+        "active": true
+      },
+      {
+        "category_id": 4,
+        "category": "Sandwiches",
+        "active": true
+      },
+      {
+        "category_id": 5,
+        "category": "Starters",
+        "active": true
+      },
+      {
+        "category_id": 6,
+        "category": "EVM",
+        "active": true
+      },
+      {
+        "category_id": 7,
+        "category": "Nuggets",
+        "active": true
+      },
+      {
+        "category_id": 8,
+        "category": "Fries",
+        "active": true
+      },
+      {
+        "category_id": 9,
+        "category": "Dessert",
+        "active": true
+      },
+      {
+        "category_id": 10,
+        "category": "Shakes",
+        "active": true
+      },
+      {
+        "category_id": 11,
+        "category": "Drinks Cold",
+        "active": true
+      },
+      {
+        "category_id": 12,
+        "category": "Drinks Hot",
+        "active": true
+      },
+      {
+        "category_id": 13,
+        "category": "Juices",
+        "active": true
+      },
+      {
+        "category_id": 14,
+        "category": "Sauces",
+        "active": true
+      }
+    ],
+    "status": "OK",
+    "http_code": 200
+  },
+  "save_1": {
+    "data": 2121,
+    "status": "OK",
+    "http_code": 200
+  },
+  "offer_promomech": {
+    "data": [
+      {
+        "promomech_id": 1,
+        "promomech_name": "Price Discount - 2 for price of 1",
+        "promomech_code": "bogo",
+        "recommender_flag": 1,
+        "scenario_planner_flag": 1,
+        "active": true,
+        "date_created": "2022-01-03T10:01:00Z"
+      },
+      {
+        "promomech_id": 2,
+        "promomech_name": "Favorable prices: Product for XX Rubles",
+        "promomech_code": "fp",
+        "recommender_flag": 1,
+        "scenario_planner_flag": 1,
+        "active": true,
+        "date_created": "2022-01-03T10:01:00Z"
+      },
+      {
+        "promomech_id": 3,
+        "promomech_name": "Price Discount - @Price Point",
+        "promomech_code": "atpp",
+        "recommender_flag": 1,
+        "scenario_planner_flag": 1,
+        "active": true,
+        "date_created": "2022-01-03T10:01:00Z"
+      }
+    ],
+    "status": "OK",
+    "http_code": 200
+  },
+  "offer_getitem": {
+    "data": [
+      {
+        "item_id": 1,
+        "item_code": "1029",
+        "item_name": "BF Double Fresh McMuffin",
+        "category_id": 1,
+        "category_name": "Breakfast"
+      },
+      {
+        "item_id": 2,
+        "item_code": "1030",
+        "item_name": "BF Chicken Fresh McMuffin",
+        "category_id": 1,
+        "category_name": "Breakfast"
+      },
+      {
+        "item_id": 3,
+        "item_code": "1032",
+        "item_name": "BF Big Breakfast Wrap",
+        "category_id": 1,
+        "category_name": "Breakfast"
+      },
+      {
+        "item_id": 4,
+        "item_code": "2000",
+        "item_name": "SN Hamburger",
+        "category_id": 4,
+        "category_name": "Sandwiches"
+      },
+      {
+        "item_id": 5,
+        "item_code": "2004",
+        "item_name": "SN Big Tasty",
+        "category_id": 4,
+        "category_name": "Sandwiches"
+      },
+      {
+        "item_id": 6,
+        "item_code": "2010",
+        "item_name": "SN Cheeseburger",
+        "category_id": 4,
+        "category_name": "Sandwiches"
+      },
+      {
+        "item_id": 7,
+        "item_code": "2011",
+        "item_name": "SN Double Cheeseburger",
+        "category_id": 4,
+        "category_name": "Sandwiches"
+      },
+      {
+        "item_id": 8,
+        "item_code": "2060",
+        "item_name": "SN Royal Cheeseburger",
+        "category_id": 4,
+        "category_name": "Sandwiches"
+      },
+      {
+        "item_id": 9,
+        "item_code": "2065",
+        "item_name": "SN Double Royal Cheeseburger",
+        "category_id": 4,
+        "category_name": "Sandwiches"
+      },
+      {
+        "item_id": 10,
+        "item_code": "2086",
+        "item_name": "SN Caesar Wrap",
+        "category_id": 4,
+        "category_name": "Sandwiches"
+      },
+      {
+        "item_id": 11,
+        "item_code": "2100",
+        "item_name": "SN Big Mac",
+        "category_id": 4,
+        "category_name": "Sandwiches"
+      },
+      {
+        "item_id": 12,
+        "item_code": "2170",
+        "item_name": "SN Double Big Mac",
+        "category_id": 4,
+        "category_name": "Sandwiches"
+      },
+      {
+        "item_id": 13,
+        "item_code": "2222",
+        "item_name": "SN Royal Deluxe",
+        "category_id": 4,
+        "category_name": "Sandwiches"
+      },
+      {
+        "item_id": 14,
+        "item_code": "2263",
+        "item_name": "SN McChicken Premier + DRc Medium Coke",
+        "category_id": 4,
+        "category_name": "Sandwiches"
+      },
+      {
+        "item_id": 15,
+        "item_code": "2269",
+        "item_name": "SN \u0421hicken Panini Tuscany",
+        "category_id": 4,
+        "category_name": "Sandwiches"
+      },
+      {
+        "item_id": 16,
+        "item_code": "2275",
+        "item_name": "S&S Chicken Wing 1 pc",
+        "category_id": 5,
+        "category_name": "Starters"
+      },
+      {
+        "item_id": 18,
+        "item_code": "2302",
+        "item_name": "SN Chickenburger",
+        "category_id": 4,
+        "category_name": "Sandwiches"
+      },
+      {
+        "item_id": 19,
+        "item_code": "2315",
+        "item_name": "SN McChicken Spicy",
+        "category_id": 4,
+        "category_name": "Sandwiches"
+      },
+      {
+        "item_id": 20,
+        "item_code": "2507",
+        "item_name": "SN Big Tasty Junior",
+        "category_id": 4,
+        "category_name": "Sandwiches"
+      },
+      {
+        "item_id": 21,
+        "item_code": "4010",
+        "item_name": "DS Pie Cherry",
+        "category_id": 9,
+        "category_name": "Dessert"
+      },
+      {
+        "item_id": 22,
+        "item_code": "6563",
+        "item_name": "S&S Snack Box Wings",
+        "category_id": 5,
+        "category_name": "Starters"
+      },
+      {
+        "item_id": 23,
+        "item_code": "7186",
+        "item_name": "DRh Cappuccino Large",
+        "category_id": 12,
+        "category_name": "Drinks Hot"
+      },
+      {
+        "item_id": 24,
+        "item_code": "1033",
+        "item_name": "BF Hash Brown",
+        "category_id": 1,
+        "category_name": "Breakfast"
+      },
+      {
+        "item_id": 25,
+        "item_code": "3010",
+        "item_name": "FR Medium Fries",
+        "category_id": 8,
+        "category_name": "Fries"
+      },
+      {
+        "item_id": 26,
+        "item_code": "3021",
+        "item_name": "S&S Italian Pie",
+        "category_id": 5,
+        "category_name": "Starters"
+      },
+      {
+        "item_id": 27,
+        "item_code": "2347",
+        "item_name": "S&S Nuggets Box",
+        "category_id": 5,
+        "category_name": "Starters"
+      },
+      {
+        "item_id": 28,
+        "item_code": "7000",
+        "item_name": "DRc Small Coke",
+        "category_id": 11,
+        "category_name": "Drinks Cold"
+      },
+      {
+        "item_id": 29,
+        "item_code": "7152",
+        "item_name": "DRh Cappuccino Small",
+        "category_id": 12,
+        "category_name": "Drinks Hot"
+      },
+      {
+        "item_id": 30,
+        "item_code": "2455",
+        "item_name": "S&S Sharable Box with Wings Big Size",
+        "category_id": 5,
+        "category_name": "Starters"
+      },
+      {
+        "item_id": 31,
+        "item_code": "2351",
+        "item_name": "SN Chicken McNuggets 6 pcs",
+        "category_id": 7,
+        "category_name": "Nuggets"
+      },
+      {
+        "item_id": 32,
+        "item_code": "6562",
+        "item_name": "S&S Sharable Box with Strips Big Size",
+        "category_id": 5,
+        "category_name": "Starters"
+      },
+      {
+        "item_id": 33,
+        "item_code": "6585",
+        "item_name": "S&S Snack Box",
+        "category_id": 5,
+        "category_name": "Starters"
+      },
+      {
+        "item_id": 34,
+        "item_code": "7020",
+        "item_name": "DRc Medium Coke",
+        "category_id": 11,
+        "category_name": "Drinks Cold"
+      },
+      {
+        "item_id": 35,
+        "item_code": "2097",
+        "item_name": "SN Shrimp Wrap",
+        "category_id": 4,
+        "category_name": "Sandwiches"
+      },
+      {
+        "item_id": 36,
+        "item_code": "7156",
+        "item_name": "DRh Cappuccino Medium",
+        "category_id": 12,
+        "category_name": "Drinks Hot"
+      },
+      {
+        "item_id": 37,
+        "item_code": "3079",
+        "item_name": "FR Large Wedges",
+        "category_id": 8,
+        "category_name": "Fries"
+      },
+      {
+        "item_id": 39,
+        "item_code": "2350",
+        "item_name": "SN Chicken McNuggets 4 pcs",
+        "category_id": 7,
+        "category_name": "Nuggets"
+      },
+      {
+        "item_id": 40,
+        "item_code": "7516",
+        "item_name": "DRc Aqua Minerale Still",
+        "category_id": 11,
+        "category_name": "Drinks Cold"
+      },
+      {
+        "item_id": 42,
+        "item_code": "1020",
+        "item_name": "BF Sausage McMuffin w/o egg",
+        "category_id": 1,
+        "category_name": "Breakfast"
+      },
+      {
+        "item_id": 43,
+        "item_code": "1021",
+        "item_name": "BF Fresh McMuffin",
+        "category_id": 1,
+        "category_name": "Breakfast"
+      },
+      {
+        "item_id": 44,
+        "item_code": "1022",
+        "item_name": "BF Double Sausage & Egg McMuffin",
+        "category_id": 1,
+        "category_name": "Breakfast"
+      },
+      {
+        "item_id": 45,
+        "item_code": "2184",
+        "item_name": "SN McChicken Premier",
+        "category_id": 5,
+        "category_name": "Starters"
+      },
+      {
+        "item_id": 46,
+        "item_code": "2230",
+        "item_name": "SN Chicken strips_3 pcs",
+        "category_id": 5,
+        "category_name": "Starters"
+      },
+      {
+        "item_id": 47,
+        "item_code": "2240",
+        "item_name": "SN Chicken strips_2 pcs",
+        "category_id": 5,
+        "category_name": "Starters"
+      },
+      {
+        "item_id": 48,
+        "item_code": "2300",
+        "item_name": "SN McChicken",
+        "category_id": 4,
+        "category_name": "Sandwiches"
+      },
+      {
+        "item_id": 49,
+        "item_code": "2352",
+        "item_name": "SN Chicken McNuggets 9 pcs",
+        "category_id": 7,
+        "category_name": "Nuggets"
+      },
+      {
+        "item_id": 51,
+        "item_code": "2518",
+        "item_name": "S&S Greek Cheese Sticks",
+        "category_id": 5,
+        "category_name": "Starters"
+      },
+      {
+        "item_id": 52,
+        "item_code": "4065",
+        "item_name": "DS Caramel Sundae",
+        "category_id": 9,
+        "category_name": "Dessert"
+      },
+      {
+        "item_id": 53,
+        "item_code": "4116",
+        "item_name": "DS McFlurry Chocolate-Caramel (12)",
+        "category_id": 9,
+        "category_name": "Dessert"
+      },
+      {
+        "item_id": 54,
+        "item_code": "4230",
+        "item_name": "DS Vanilla Cone New",
+        "category_id": 9,
+        "category_name": "Dessert"
+      },
+      {
+        "item_id": 55,
+        "item_code": "7150",
+        "item_name": "DRh Americano Small",
+        "category_id": 12,
+        "category_name": "Drinks Hot"
+      },
+      {
+        "item_id": 56,
+        "item_code": "8825",
+        "item_name": "EVMR SN Big Mac",
+        "category_id": 6,
+        "category_name": "EVM"
+      },
+      {
+        "item_id": 57,
+        "item_code": "2239",
+        "item_name": "SN Chicken strips_5 pcs",
+        "category_id": 5,
+        "category_name": "Starters"
+      },
+      {
+        "item_id": 58,
+        "item_code": "3000",
+        "item_name": "FR Small Fries",
+        "category_id": 8,
+        "category_name": "Fries"
+      },
+      {
+        "item_id": 59,
+        "item_code": "2044",
+        "item_name": "SN Big Tasty Spicy",
+        "category_id": 4,
+        "category_name": "Sandwiches"
+      },
+      {
+        "item_id": 60,
+        "item_code": "2177",
+        "item_name": "SN Big Tasty 3 cheeses",
+        "category_id": 4,
+        "category_name": "Sandwiches"
+      },
+      {
+        "item_id": 61,
+        "item_code": "2197",
+        "item_name": "SN Big Tasty Wrap",
+        "category_id": 4,
+        "category_name": "Sandwiches"
+      },
+      {
+        "item_id": 141,
+        "item_code": "1011",
+        "item_name": "BF Sausage & Egg McMuffin",
+        "category_id": 1,
+        "category_name": "Breakfast"
+      },
+      {
+        "item_id": 142,
+        "item_code": "2121",
+        "item_name": "SN Bacon Caesar Wrap",
+        "category_id": 4,
+        "category_name": "Sandwiches"
+      }
+    ],
+    "status": "OK",
+    "http_code": 200
+  },
+  "offer_config_save": {
+    "data": "Discount Saved Successfully",
+    "status": "OK",
+    "http_code": 200
+  }
+}

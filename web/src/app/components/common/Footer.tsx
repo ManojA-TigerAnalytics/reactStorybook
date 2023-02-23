@@ -1,5 +1,5 @@
 import { AppBar, Box, Container, Toolbar, Typography } from "@mui/material";
-import Logo from "../Logo";
+import Logo from "./Logo";
 
 function Footer() {
   return (

@@ -1,6 +1,17 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import RecommenderService from "services/recommender/recommender.service";
 
+type RecommenderFilterParams = {
+  page: string;
+  page_size: string;
+  offer_package_id?: string;
+  offer_package_name?: string;
+  promo_id?: string[];
+  segment_id?: string[];
+  created_by?: string;
+  status_name?: string[];
+  offer_start_date?: string;
+};
 export const fetchPromoRecommenderChannel = createAsyncThunk(
   "recommender/fetchPromoRecommenderChannel",
   async () => {
@@ -24,8 +35,8 @@ export const fetchPromoStatus = createAsyncThunk(
 );
 export const fetchFilteredRecommendation = createAsyncThunk(
   "recommender/fetchFilteredRecommendation",
-  async () => {
-    const response = await RecommenderService.getFilteredRecommendation();
+  async (params: RecommenderFilterParams) => {
+    const response = await RecommenderService.getFilteredRecommendation(params);
     return response.data.data;
   }
 );

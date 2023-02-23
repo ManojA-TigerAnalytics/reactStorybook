@@ -1,5 +1,16 @@
 import client from "../../axios";
 
+type RecommenderFilterParams = {
+  page: string;
+  page_size: string;
+  offer_package_id?: string;
+  offer_package_name?: string;
+  promo_id?: string[];
+  segment_id?: string[];
+  created_by?: string;
+  status_name?: string[];
+  offer_start_date?: string;
+};
 const RecommenderService = {
   getPromoChannel() {
     return client.get("/offer_configuration/promochannel/");
@@ -10,8 +21,8 @@ const RecommenderService = {
   getStatus() {
     return client.get("/offer_configuration/status/list/");
   },
-  getFilteredRecommendation() {
-    return client.get("/offer_configuration/list?page=1");
+  getFilteredRecommendation(params: RecommenderFilterParams) {
+    return client.get(`/offer_configuration/list`, { params });
   },
 };
 
