@@ -4,40 +4,39 @@ import {
   InputLabel,
   MenuItem,
   Select,
-  SelectProps,
 } from '@mui/material'
-import { Control, useController } from 'react-hook-form'
+import { useController } from 'react-hook-form'
 
 type MenuItemOption = {
   label: string
   value: string | number
 }
-type DropDownFormProps<T extends FormControlProps> = {
-  control: Control<T>
+type DropDownFormProps = FormControlProps & {
+  control: any
   label: string
   name: string
   options: MenuItemOption[]
+  className?: string
 }
-// type DropDownFormProps = SelectProps & {
-//   control: any
-//   label: string
-//   name: string
-//   options: MenuItemOption[]
-// }
-function DropDownForm<T extends FormControlProps>({
+function DropDownForm({
   control,
   label,
   name,
   options,
+  className,
   ...rest
-}: DropDownFormProps<T>) {
+}: DropDownFormProps) {
   const {
     field: { onChange, value },
     fieldState: { error },
   } = useController({ name, control })
 
   return (
-    <FormControl {...rest} error={Boolean(error)}>
+    <FormControl
+      {...rest}
+      error={Boolean(error)}
+      className={`w-full ${className}`}
+    >
       <InputLabel color='secondary' size='small' id={`${name}-label`}>
         {label}
       </InputLabel>
@@ -49,7 +48,6 @@ function DropDownForm<T extends FormControlProps>({
         label={label}
         size='small'
         color='secondary'
-        {...rest}
       >
         {options.map(({ label, value }: MenuItemOption) => (
           <MenuItem key={value} value={value}>
@@ -59,5 +57,9 @@ function DropDownForm<T extends FormControlProps>({
       </Select>
     </FormControl>
   )
+}
+
+DropDownForm.defaultProps = {
+  className: undefined,
 }
 export default DropDownForm
