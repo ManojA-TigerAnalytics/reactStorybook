@@ -5,30 +5,31 @@ import {
   FormControlLabel,
   TextField,
   TextFieldProps,
-} from "@mui/material";
+} from '@mui/material'
 import {
   Control,
   Controller,
   FieldValues,
   Path,
   PathValue,
-} from "react-hook-form";
-import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
-import CheckBoxIcon from "@mui/icons-material/CheckBox";
+} from 'react-hook-form'
+import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank'
+import CheckBoxIcon from '@mui/icons-material/CheckBox'
 
 type Option = {
-  id: string;
-  label: string;
-};
+  id: string
+  label: string
+}
 
 type AutoCompleteCheckBoxProps<T extends FieldValues> = {
-  control: Control<T>;
-  name: Path<T>;
-  defaultValue?: PathValue<T, Path<T>>;
-  options: Option[];
-  label: string;
-  textFieldProps?: TextFieldProps;
-};
+  control: Control<T>
+  name: Path<T>
+  defaultValue?: PathValue<T, Path<T>>
+  options: Option[]
+  label: string
+  className?: string
+  textFieldProps?: TextFieldProps
+}
 
 function AutoCompleteCheckBox<T extends FieldValues>({
   control,
@@ -36,9 +37,10 @@ function AutoCompleteCheckBox<T extends FieldValues>({
   options,
   defaultValue,
   label,
+  className,
   textFieldProps = {},
 }: AutoCompleteCheckBoxProps<T>) {
-  const { ...rest } = textFieldProps;
+  const { ...rest } = textFieldProps
   return (
     <Controller
       control={control}
@@ -47,7 +49,7 @@ function AutoCompleteCheckBox<T extends FieldValues>({
       render={({ field: { onChange, value }, fieldState: { error } }) => (
         <Autocomplete
           ListboxProps={{ style: { maxHeight: 150 } }}
-          className="w-full"
+          className={`w-full ${className}`}
           // limitTags={1}
           multiple
           options={options}
@@ -57,8 +59,8 @@ function AutoCompleteCheckBox<T extends FieldValues>({
           value={value}
           isOptionEqualToValue={(option, value) => option.id === value.id}
           renderTags={(value, getTagProps) => {
-            const numTags = value.length;
-            const limitTags = 1;
+            const numTags = value.length
+            const limitTags = 1
 
             return (
               <>
@@ -72,16 +74,16 @@ function AutoCompleteCheckBox<T extends FieldValues>({
 
                 {numTags > limitTags && ` +${numTags - limitTags}`}
               </>
-            );
+            )
           }}
           renderOption={(props, option, { selected }) => (
             <li {...props}>
               <FormControlLabel
                 control={
                   <Checkbox
-                    icon={<CheckBoxOutlineBlankIcon fontSize="small" />}
-                    checkedIcon={<CheckBoxIcon fontSize="small" />}
-                    color="secondary"
+                    icon={<CheckBoxOutlineBlankIcon fontSize='small' />}
+                    checkedIcon={<CheckBoxIcon fontSize='small' />}
+                    color='secondary'
                     checked={selected}
                   />
                 }
@@ -92,11 +94,11 @@ function AutoCompleteCheckBox<T extends FieldValues>({
           renderInput={(params) => (
             <TextField
               {...params}
-              color="secondary"
+              color='secondary'
               label={label}
               placeholder={`Select ${label}`}
-              variant="outlined"
-              size="small"
+              variant='outlined'
+              size='small'
               error={!!error}
               helperText={error?.message}
               {...rest}
@@ -105,12 +107,13 @@ function AutoCompleteCheckBox<T extends FieldValues>({
         />
       )}
     />
-  );
+  )
 }
 
 AutoCompleteCheckBox.defaultProps = {
   defaultValue: undefined,
   textFieldProps: undefined,
-};
+  className: '',
+}
 
-export default AutoCompleteCheckBox;
+export default AutoCompleteCheckBox

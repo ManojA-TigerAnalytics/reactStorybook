@@ -1,8 +1,10 @@
 import { createAsyncThunk } from '@reduxjs/toolkit'
 import RecommenderService from 'services/recommender/recommender.service'
 import {
+  ProductItemsParamsType,
+  PromoObjectiveParamsType,
   RecommenderFilterParams,
-  SegmentFilterType,
+  SegmentFilterParamsType,
 } from '../recommender.types'
 
 export const fetchPromoRecommenderChannel = createAsyncThunk(
@@ -42,8 +44,36 @@ export const fetchOfferDuration = createAsyncThunk(
 )
 export const fetchFilteredSegment = createAsyncThunk(
   'recommender/fetchFilteredSegment',
-  async (params: SegmentFilterType) => {
+  async (params: SegmentFilterParamsType) => {
     const response = await RecommenderService.getFilteredSegment(params)
+    return response.data.data
+  }
+)
+export const fetchPromoObjective = createAsyncThunk(
+  'recommender/fetchPromoObjective',
+  async (params: PromoObjectiveParamsType) => {
+    const response = await RecommenderService.getPromoObjective(params)
+    return response.data.data
+  }
+)
+export const fetchProductCategory = createAsyncThunk(
+  'recommender/fetchProductCategory',
+  async () => {
+    const response = await RecommenderService.getProductCategory()
+    return response.data.data
+  }
+)
+export const fetchProductItems = createAsyncThunk(
+  'recommender/fetchProductItems',
+  async (params: ProductItemsParamsType) => {
+    const response = await RecommenderService.getProductItems(params)
+    return response.data.data
+  }
+)
+export const fetchPromoMechanic = createAsyncThunk(
+  'recommender/fetchPromoMechanic',
+  async () => {
+    const response = await RecommenderService.getPromoMechanic()
     return response.data.data
   }
 )

@@ -267,11 +267,11 @@ server.get("/api/scenario_planner/selection", (req, res) => {
     page_size,
   } = req.query;
   const pagesOfData = Math.round(
-    db.scenario_planner_selection.data.data.length / page_size
+    db.promo_comparison_selection.data.data.length / page_size
   );
   let payloadresult = [];
   payloadresult = pagination(
-    db.scenario_planner_selection.data.data,
+    db.promo_comparison_selection.data.data,
     page,
     page_size
   );
@@ -286,7 +286,7 @@ server.get("/api/scenario_planner/selection", (req, res) => {
   }
   const data = {
     data: payloadresult,
-    count: db.scenario_planner_selection.data.data.length,
+    count: db.promo_comparison_selection.data.data.length,
   };
   const status = "OK";
   const http_code = 200;
@@ -413,6 +413,12 @@ server.get("/api/offer_configuration/offer_duration/", (req, res) => {
 server.post("/api/offer_configuration/save/1", (req, res) => {
   res.status(200).json(db.save_1);
 });
+server.get("/api/scenario_planner/scenario_groups**", (req, res) => {
+  res.status(200).json(db.promo_comparison);
+});
+// server.get("/api/scenario_planner/selection**", (req, res) => {
+//   res.status(200).json(db.promo_comparison_selection);
+// });
 server.use(router);
 
 server.listen(8080, () => {

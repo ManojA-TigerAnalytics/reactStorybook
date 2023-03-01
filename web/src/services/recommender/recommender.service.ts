@@ -1,4 +1,8 @@
-import { SegmentFilterType } from 'app/pages/recommender/recommender.types'
+import {
+  ProductItemsParamsType,
+  PromoObjectiveParamsType,
+  SegmentFilterParamsType,
+} from 'app/pages/recommender/recommender.types'
 import client from '../../axios'
 
 type RecommenderFilterParams = {
@@ -28,8 +32,20 @@ const RecommenderService = {
   getDuration() {
     return client.get(`offer_configuration/offer_duration/`)
   },
-  getFilteredSegment(params: SegmentFilterType) {
+  getFilteredSegment(params: SegmentFilterParamsType) {
     return client.get(`offer_configuration/segment/list/`, { params })
+  },
+  getPromoObjective(params: PromoObjectiveParamsType) {
+    return client.get(`offer_configuration/promoobjective/list/`, { params })
+  },
+  getProductCategory() {
+    return client.get(`offer_configuration/product-category/`)
+  },
+  getProductItems(params: ProductItemsParamsType) {
+    return client.get(`offer_configuration/getitem/`, { params })
+  },
+  getPromoMechanic() {
+    return client.get(`offer_configuration/promomechanic/`)
   },
 }
 

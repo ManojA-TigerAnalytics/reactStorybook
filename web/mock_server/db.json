@@ -4062,5 +4062,1016 @@
     "data": "Discount Saved Successfully",
     "status": "OK",
     "http_code": 200
+  },
+  "promo_comparison": {
+    "data": {
+      "count": 47,
+      "data": [
+        {
+          "offer_duration": "2",
+          "start_date": "2023-03-06",
+          "scenarios_count": 2
+        },
+        {
+          "offer_duration": "2",
+          "start_date": "2023-03-05",
+          "scenarios_count": 1
+        },
+        {
+          "offer_duration": "2",
+          "start_date": "2023-02-28",
+          "scenarios_count": 3
+        },
+        {
+          "offer_duration": "2",
+          "start_date": "2023-02-27",
+          "scenarios_count": 5
+        },
+        {
+          "offer_duration": "2",
+          "start_date": "2023-02-25",
+          "scenarios_count": 1
+        }
+      ]
+    },
+    "status": "OK",
+    "http_code": 200
+  },
+  "promo_comparison_selection": {
+    "data": {
+      "count": 2,
+      "data": [
+        {
+          "scenario": {
+            "scenario_id": 1683,
+            "scenario_package_id": "2517",
+            "scenario_name": "SM_TEST_MASS_ONLINE_ACTIVE_HF_GC_madhuri gollakota_2023-03-01 04:50",
+            "discount_duration": "2 Week",
+            "created_by": "madhuri gollakota",
+            "start_date": "2023-03-06",
+            "last_updated": "2023-03-01T06:25:29Z",
+            "created_at": "2023-03-01T04:50:52Z"
+          },
+          "segment_configuration": [
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10654,
+              "segment_name": "Active - High Frequency Low Offers High Check",
+              "discount_mechanic": "Price Discount - @Price Point",
+              "item": [
+                {
+                  "item_code": "2000",
+                  "item_name": "SN Hamburger",
+                  "item_id": 4
+                }
+              ],
+              "discount_depth": 80,
+              "regular_price": 162,
+              "discount_price": 82
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10641,
+              "segment_name": "Mass Online",
+              "discount_mechanic": "Price Discount - @Price Point",
+              "item": [
+                {
+                  "item_code": "2010-2010-3010",
+                  "item_name": "2 SN Cheeseburger + FR Medium Fries",
+                  "item_id": 311
+                }
+              ],
+              "discount_depth": 106,
+              "regular_price": 213,
+              "discount_price": 107
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10642,
+              "segment_name": "Mass Online",
+              "discount_mechanic": "Price Discount - @Price Point",
+              "item": [
+                {
+                  "item_code": "2302",
+                  "item_name": "SN Chickenburger",
+                  "item_id": 18
+                }
+              ],
+              "discount_depth": 28,
+              "regular_price": 57,
+              "discount_price": 29
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10643,
+              "segment_name": "Mass Online",
+              "discount_mechanic": "Price Discount - @Price Point",
+              "item": [
+                {
+                  "item_code": "7152",
+                  "item_name": "DRh Cappuccino Small",
+                  "item_id": 29
+                }
+              ],
+              "discount_depth": 16,
+              "regular_price": 69,
+              "discount_price": 53
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10644,
+              "segment_name": "Mass Online",
+              "discount_mechanic": "Price Discount - second @Price Point",
+              "item": [
+                {
+                  "item_code": "2011",
+                  "item_name": "SN Double Cheeseburger",
+                  "item_id": 7
+                }
+              ],
+              "discount_depth": 88,
+              "regular_price": 139,
+              "discount_price": 51
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10645,
+              "segment_name": "Mass Online",
+              "discount_mechanic": "Price Discount - second @Price Point",
+              "item": [
+                {
+                  "item_code": "2315",
+                  "item_name": "SN Chicken Premier",
+                  "item_id": 19
+                }
+              ],
+              "discount_depth": 111,
+              "regular_price": 160,
+              "discount_price": 49
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10646,
+              "segment_name": "Mass Online",
+              "discount_mechanic": "Price Discount - second @Price Point",
+              "item": [
+                {
+                  "item_code": "3079",
+                  "item_name": "FR Large Wedges",
+                  "item_id": 37
+                }
+              ],
+              "discount_depth": 65,
+              "regular_price": 120,
+              "discount_price": 55
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10647,
+              "segment_name": "Active - High Frequency Low Offers Low Check",
+              "discount_mechanic": "Price Discount - @Price Point",
+              "item": [
+                {
+                  "item_code": "2000",
+                  "item_name": "SN Hamburger",
+                  "item_id": 4
+                }
+              ],
+              "discount_depth": 37,
+              "regular_price": 108,
+              "discount_price": 71
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10648,
+              "segment_name": "Active - High Frequency Low Offers Low Check",
+              "discount_mechanic": "Price Discount - @Price Point",
+              "item": [
+                {
+                  "item_code": "2011",
+                  "item_name": "SN Double Cheeseburger",
+                  "item_id": 7
+                }
+              ],
+              "discount_depth": 68,
+              "regular_price": 139,
+              "discount_price": 71
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10649,
+              "segment_name": "Active - High Frequency Low Offers Low Check",
+              "discount_mechanic": "Price Discount - @Price Point",
+              "item": [
+                {
+                  "item_code": "2302",
+                  "item_name": "SN Chickenburger",
+                  "item_id": 18
+                }
+              ],
+              "discount_depth": 28,
+              "regular_price": 57,
+              "discount_price": 29
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10650,
+              "segment_name": "Active - High Frequency Low Offers Low Check",
+              "discount_mechanic": "Price Discount - @Price Point",
+              "item": [
+                {
+                  "item_code": "7152",
+                  "item_name": "DRh Cappuccino Small",
+                  "item_id": 29
+                }
+              ],
+              "discount_depth": 23,
+              "regular_price": 69,
+              "discount_price": 46
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10651,
+              "segment_name": "Active - High Frequency Low Offers Low Check",
+              "discount_mechanic": "Favorable prices: Product for XX Rubles",
+              "item": [
+                {
+                  "item_code": "2060",
+                  "item_name": "SN Grand",
+                  "item_id": 8
+                }
+              ],
+              "discount_depth": 84,
+              "regular_price": 340,
+              "discount_price": 256
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10652,
+              "segment_name": "Active - High Frequency Low Offers Low Check",
+              "discount_mechanic": "Price Discount - Strike old show new",
+              "item": [
+                {
+                  "item_code": "2010",
+                  "item_name": "SN Cheeseburger",
+                  "item_id": 6
+                }
+              ],
+              "discount_depth": 64,
+              "regular_price": 130,
+              "discount_price": 66
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10653,
+              "segment_name": "Active - High Frequency Low Offers Low Check",
+              "discount_mechanic": "Check Threshold - 249 Rubles - Product for 1 Ruble",
+              "item": [
+                {
+                  "item_code": "3000",
+                  "item_name": "FR Small Fries",
+                  "item_id": 58
+                }
+              ],
+              "discount_depth": 0,
+              "regular_price": 0,
+              "discount_price": 1
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10640,
+              "segment_name": "Mass Online",
+              "discount_mechanic": "Price Discount - @Price Point",
+              "item": [
+                {
+                  "item_code": "2000",
+                  "item_name": "SN Hamburger",
+                  "item_id": 4
+                }
+              ],
+              "discount_depth": 80,
+              "regular_price": 162,
+              "discount_price": 82
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10655,
+              "segment_name": "Active - High Frequency Low Offers High Check",
+              "discount_mechanic": "Price Discount - @Price Point",
+              "item": [
+                {
+                  "item_code": "2302",
+                  "item_name": "SN Chickenburger",
+                  "item_id": 18
+                }
+              ],
+              "discount_depth": 28,
+              "regular_price": 57,
+              "discount_price": 29
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10656,
+              "segment_name": "Active - High Frequency Low Offers High Check",
+              "discount_mechanic": "Price Discount - @Price Point",
+              "item": [
+                {
+                  "item_code": "3003|3010",
+                  "item_name": "FR Potato Wedges Medium | FR Medium Fries",
+                  "item_id": 341
+                }
+              ],
+              "discount_depth": 95,
+              "regular_price": 192,
+              "discount_price": 97
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10657,
+              "segment_name": "Active - High Frequency Low Offers High Check",
+              "discount_mechanic": "Favorable prices: Product for XX Rubles",
+              "item": [
+                {
+                  "item_code": "2010",
+                  "item_name": "SN Cheeseburger",
+                  "item_id": 6
+                }
+              ],
+              "discount_depth": 45,
+              "regular_price": 130,
+              "discount_price": 85
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10658,
+              "segment_name": "Active - High Frequency Low Offers High Check",
+              "discount_mechanic": "Price Discount - Strike old show new",
+              "item": [
+                {
+                  "item_code": "2086",
+                  "item_name": "SN Caesar Wrap",
+                  "item_id": 10
+                }
+              ],
+              "discount_depth": 182,
+              "regular_price": 366,
+              "discount_price": 184
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10659,
+              "segment_name": "Active - High Frequency Low Offers High Check",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [
+                {
+                  "item_code": "2011",
+                  "item_name": "SN Double Cheeseburger",
+                  "item_id": 7
+                }
+              ],
+              "discount_depth": 70,
+              "regular_price": 139,
+              "discount_price": 139
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10660,
+              "segment_name": "Active - High Frequency Low Offers High Check",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [
+                {
+                  "item_code": "7152",
+                  "item_name": "DRh Cappuccino Small",
+                  "item_id": 29
+                }
+              ],
+              "discount_depth": 34,
+              "regular_price": 69,
+              "discount_price": 69
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10661,
+              "segment_name": "Active - High Frequency High Offers",
+              "discount_mechanic": "Price Discount - @Price Point",
+              "item": [
+                {
+                  "item_code": "2000",
+                  "item_name": "SN Hamburger",
+                  "item_id": 4
+                }
+              ],
+              "discount_depth": 80,
+              "regular_price": 162,
+              "discount_price": 82
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10662,
+              "segment_name": "Active - High Frequency High Offers",
+              "discount_mechanic": "Price Discount - @Price Point",
+              "item": [
+                {
+                  "item_code": "2302",
+                  "item_name": "SN Chickenburger",
+                  "item_id": 18
+                }
+              ],
+              "discount_depth": 85,
+              "regular_price": 171,
+              "discount_price": 86
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10663,
+              "segment_name": "Active - High Frequency High Offers",
+              "discount_mechanic": "Price Discount - Strike old show new",
+              "item": [
+                {
+                  "item_code": "2010-3010-7232",
+                  "item_name": "SN Cheeseburger + FR Medium Fries + DRc New Cola Medium",
+                  "item_id": 316
+                }
+              ],
+              "discount_depth": 91,
+              "regular_price": 185,
+              "discount_price": 94
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10664,
+              "segment_name": "Active - High Frequency High Offers",
+              "discount_mechanic": "Price Discount - Strike old show new",
+              "item": [
+                {
+                  "item_code": "2060|2315",
+                  "item_name": "SN Grand | SN Chicken Premier",
+                  "item_id": 325
+                }
+              ],
+              "discount_depth": 84,
+              "regular_price": 170,
+              "discount_price": 86
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10665,
+              "segment_name": "Active - High Frequency High Offers",
+              "discount_mechanic": "Price Discount - Strike old show new",
+              "item": [
+                {
+                  "item_code": "2086",
+                  "item_name": "SN Caesar Wrap",
+                  "item_id": 10
+                }
+              ],
+              "discount_depth": 182,
+              "regular_price": 366,
+              "discount_price": 184
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10666,
+              "segment_name": "Active - High Frequency High Offers",
+              "discount_mechanic": "Price Discount - Strike old show new",
+              "item": [
+                {
+                  "item_code": "3003",
+                  "item_name": "FR Potato Wedges Medium",
+                  "item_id": 216
+                }
+              ],
+              "discount_depth": 47,
+              "regular_price": 96,
+              "discount_price": 49
+            },
+            {
+              "offer_config_id": 1683,
+              "offer_id": 10667,
+              "segment_name": "Active - High Frequency High Offers",
+              "discount_mechanic": "Check Threshold - 249 Rubles - Product for 1 Ruble",
+              "item": [
+                {
+                  "item_code": "3000",
+                  "item_name": "FR Small Fries",
+                  "item_id": 58
+                }
+              ],
+              "discount_depth": 0,
+              "regular_price": 0,
+              "discount_price": 1
+            }
+          ],
+          "overall_impact": [
+            {
+              "granularity": "1000",
+              "granularity_value": "overall",
+              "gc_scenario": 2162796,
+              "gc_lift": 35.3,
+              "avg_scenario": 294,
+              "avg_lift": 8.6,
+              "netsales_scenario": 635878588,
+              "netsales_lift": 47,
+              "gp_scenario": 199255289,
+              "gp_lift": -21.9,
+              "uc_scenario": 904253,
+              "uc_lift": 17.6,
+              "upt_scenario": 7200,
+              "upt_lift": 47.8,
+              "urw_scenario": 11123,
+              "urw_lift": 100,
+              "effect_on_margin_scenario": 0,
+              "effect_on_margin_lift": -57.6
+            }
+          ]
+        },
+        {
+          "scenario": {
+            "scenario_id": 1682,
+            "scenario_package_id": "2516",
+            "scenario_name": "SM_TEST_MASS_ONLINE_ACTIVE_HF_madhuri gollakota_2023-03-01 04:48",
+            "discount_duration": "2 Week",
+            "created_by": "madhuri gollakota",
+            "start_date": "2023-03-06",
+            "last_updated": "2023-03-01T05:49:17Z",
+            "created_at": "2023-03-01T04:48:16Z"
+          },
+          "segment_configuration": [
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10626,
+              "segment_name": "Active - High Frequency Low Offers Low Check",
+              "discount_mechanic": "Price Discount - @Price Point",
+              "item": [
+                {
+                  "item_code": "2000",
+                  "item_name": "SN Hamburger",
+                  "item_id": 4
+                }
+              ],
+              "discount_depth": 26,
+              "regular_price": 54,
+              "discount_price": 28
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10613,
+              "segment_name": "Mass Online",
+              "discount_mechanic": "Price Discount - @Price Point",
+              "item": [
+                {
+                  "item_code": "2010-2302-3010",
+                  "item_name": "SN Cheeseburger + SN Chickenburger + FR Medium Fries",
+                  "item_id": 131
+                }
+              ],
+              "discount_depth": 41,
+              "regular_price": 170,
+              "discount_price": 129
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10614,
+              "segment_name": "Mass Online",
+              "discount_mechanic": "Price Discount - second @Price Point",
+              "item": [
+                {
+                  "item_code": "2011|2300",
+                  "item_name": "SN Double Cheeseburger | SN Chicken Hit",
+                  "item_id": 320
+                }
+              ],
+              "discount_depth": 96,
+              "regular_price": 139,
+              "discount_price": 43
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10615,
+              "segment_name": "Mass Online",
+              "discount_mechanic": "Price Discount - Strike old show new",
+              "item": [
+                {
+                  "item_code": "2060",
+                  "item_name": "SN Grand",
+                  "item_id": 8
+                }
+              ],
+              "discount_depth": 169,
+              "regular_price": 340,
+              "discount_price": 171
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10616,
+              "segment_name": "Mass Online",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [
+                {
+                  "item_code": "2004",
+                  "item_name": "SN Big Special",
+                  "item_id": 5
+                }
+              ],
+              "discount_depth": 136,
+              "regular_price": 273,
+              "discount_price": 273
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10617,
+              "segment_name": "Mass Online",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [
+                {
+                  "item_code": "2086",
+                  "item_name": "SN Caesar Wrap",
+                  "item_id": 10
+                }
+              ],
+              "discount_depth": 92,
+              "regular_price": 183,
+              "discount_price": 183
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10618,
+              "segment_name": "Mass Online",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [
+                {
+                  "item_code": "2222",
+                  "item_name": "SN Grand Deluxe",
+                  "item_id": 13
+                }
+              ],
+              "discount_depth": 84,
+              "regular_price": 169,
+              "discount_price": 169
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10619,
+              "segment_name": "Active - High Frequency High Offers",
+              "discount_mechanic": "Price Discount - @Price Point",
+              "item": [
+                {
+                  "item_code": "2300-7232",
+                  "item_name": "SN Chicken Hit + DRc New Cola Medium",
+                  "item_id": 337
+                }
+              ],
+              "discount_depth": 49,
+              "regular_price": 198,
+              "discount_price": 149
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10620,
+              "segment_name": "Active - High Frequency High Offers",
+              "discount_mechanic": "Favorable prices: Product for XX Rubles",
+              "item": [
+                {
+                  "item_code": "2086",
+                  "item_name": "SN Caesar Wrap",
+                  "item_id": 10
+                }
+              ],
+              "discount_depth": 90,
+              "regular_price": 183,
+              "discount_price": 93
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10621,
+              "segment_name": "Active - High Frequency High Offers",
+              "discount_mechanic": "Price Discount - Strike old show new",
+              "item": [
+                {
+                  "item_code": "2000-2315",
+                  "item_name": "SN Hamburger + SN Chicken Premier",
+                  "item_id": 309
+                }
+              ],
+              "discount_depth": 106,
+              "regular_price": 214,
+              "discount_price": 108
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10622,
+              "segment_name": "Active - High Frequency High Offers",
+              "discount_mechanic": "Price Discount - Strike old show new",
+              "item": [
+                {
+                  "item_code": "2004",
+                  "item_name": "SN Big Special",
+                  "item_id": 5
+                }
+              ],
+              "discount_depth": 136,
+              "regular_price": 273,
+              "discount_price": 137
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10623,
+              "segment_name": "Active - High Frequency High Offers",
+              "discount_mechanic": "Price Discount - Strike old show new",
+              "item": [
+                {
+                  "item_code": "2011",
+                  "item_name": "SN Double Cheeseburger",
+                  "item_id": 7
+                }
+              ],
+              "discount_depth": 138,
+              "regular_price": 278,
+              "discount_price": 140
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10624,
+              "segment_name": "Active - High Frequency High Offers",
+              "discount_mechanic": "Price Discount - Strike old show new",
+              "item": [
+                {
+                  "item_code": "2060",
+                  "item_name": "SN Grand",
+                  "item_id": 8
+                }
+              ],
+              "discount_depth": 169,
+              "regular_price": 340,
+              "discount_price": 171
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10625,
+              "segment_name": "Active - High Frequency High Offers",
+              "discount_mechanic": "Price Discount - Strike old show new",
+              "item": [
+                {
+                  "item_code": "2222-3010",
+                  "item_name": "SN Grand Deluxe + FR Medium Fries",
+                  "item_id": 114
+                }
+              ],
+              "discount_depth": 140,
+              "regular_price": 281,
+              "discount_price": 141
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10612,
+              "segment_name": "Mass Online",
+              "discount_mechanic": "Price Discount - @Price Point",
+              "item": [
+                {
+                  "item_code": "2000",
+                  "item_name": "SN Hamburger",
+                  "item_id": 4
+                }
+              ],
+              "discount_depth": 80,
+              "regular_price": 162,
+              "discount_price": 82
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10627,
+              "segment_name": "Active - High Frequency Low Offers Low Check",
+              "discount_mechanic": "Price Discount - @Price Point",
+              "item": [
+                {
+                  "item_code": "2010",
+                  "item_name": "SN Cheeseburger",
+                  "item_id": 6
+                }
+              ],
+              "discount_depth": 31,
+              "regular_price": 130,
+              "discount_price": 99
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10628,
+              "segment_name": "Active - High Frequency Low Offers Low Check",
+              "discount_mechanic": "Price Discount - @Price Point",
+              "item": [
+                {
+                  "item_code": "2302-3010",
+                  "item_name": "SN Chickenburger + FR Medium Fries",
+                  "item_id": 121
+                }
+              ],
+              "discount_depth": 29,
+              "regular_price": 120,
+              "discount_price": 91
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10629,
+              "segment_name": "Active - High Frequency Low Offers Low Check",
+              "discount_mechanic": "Price Discount - Strike old show new",
+              "item": [
+                {
+                  "item_code": "2004",
+                  "item_name": "SN Big Special",
+                  "item_id": 5
+                }
+              ],
+              "discount_depth": 136,
+              "regular_price": 273,
+              "discount_price": 137
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10630,
+              "segment_name": "Active - High Frequency Low Offers Low Check",
+              "discount_mechanic": "Price Discount - Strike old show new",
+              "item": [
+                {
+                  "item_code": "2060",
+                  "item_name": "SN Grand",
+                  "item_id": 8
+                }
+              ],
+              "discount_depth": 169,
+              "regular_price": 340,
+              "discount_price": 171
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10631,
+              "segment_name": "Active - High Frequency Low Offers Low Check",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [
+                {
+                  "item_code": "2086",
+                  "item_name": "SN Caesar Wrap",
+                  "item_id": 10
+                }
+              ],
+              "discount_depth": 92,
+              "regular_price": 183,
+              "discount_price": 183
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10632,
+              "segment_name": "Active - High Frequency Low Offers Low Check",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [
+                {
+                  "item_code": "2222",
+                  "item_name": "SN Grand Deluxe",
+                  "item_id": 13
+                }
+              ],
+              "discount_depth": 84,
+              "regular_price": 169,
+              "discount_price": 169
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10633,
+              "segment_name": "Active - High Frequency Low Offers High Check",
+              "discount_mechanic": "Price Discount - @Price Point",
+              "item": [
+                {
+                  "item_code": "2302-3010",
+                  "item_name": "SN Chickenburger + FR Medium Fries",
+                  "item_id": 121
+                }
+              ],
+              "discount_depth": 59,
+              "regular_price": 120,
+              "discount_price": 61
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10634,
+              "segment_name": "Active - High Frequency Low Offers High Check",
+              "discount_mechanic": "Favorable prices: Product for XX Rubles",
+              "item": [
+                {
+                  "item_code": "2010",
+                  "item_name": "SN Cheeseburger",
+                  "item_id": 6
+                }
+              ],
+              "discount_depth": 64,
+              "regular_price": 130,
+              "discount_price": 66
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10635,
+              "segment_name": "Active - High Frequency Low Offers High Check",
+              "discount_mechanic": "Price Discount - Strike old show new",
+              "item": [
+                {
+                  "item_code": "2060",
+                  "item_name": "SN Grand",
+                  "item_id": 8
+                }
+              ],
+              "discount_depth": 169,
+              "regular_price": 340,
+              "discount_price": 171
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10636,
+              "segment_name": "Active - High Frequency Low Offers High Check",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [
+                {
+                  "item_code": "2004",
+                  "item_name": "SN Big Special",
+                  "item_id": 5
+                }
+              ],
+              "discount_depth": 136,
+              "regular_price": 273,
+              "discount_price": 273
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10637,
+              "segment_name": "Active - High Frequency Low Offers High Check",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [
+                {
+                  "item_code": "2011",
+                  "item_name": "SN Double Cheeseburger",
+                  "item_id": 7
+                }
+              ],
+              "discount_depth": 70,
+              "regular_price": 139,
+              "discount_price": 139
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10638,
+              "segment_name": "Active - High Frequency Low Offers High Check",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [
+                {
+                  "item_code": "2086",
+                  "item_name": "SN Caesar Wrap",
+                  "item_id": 10
+                }
+              ],
+              "discount_depth": 92,
+              "regular_price": 183,
+              "discount_price": 183
+            },
+            {
+              "offer_config_id": 1682,
+              "offer_id": 10639,
+              "segment_name": "Active - High Frequency Low Offers High Check",
+              "discount_mechanic": "Price Discount - 2 for price of 1",
+              "item": [
+                {
+                  "item_code": "2222",
+                  "item_name": "SN Grand Deluxe",
+                  "item_id": 13
+                }
+              ],
+              "discount_depth": 84,
+              "regular_price": 169,
+              "discount_price": 169
+            }
+          ],
+          "overall_impact": [
+            {
+              "granularity": "1000",
+              "granularity_value": "overall",
+              "gc_scenario": 1777054,
+              "gc_lift": 11.2,
+              "avg_scenario": 403,
+              "avg_lift": 48.9,
+              "netsales_scenario": 716169994,
+              "netsales_lift": 65.5,
+              "gp_scenario": 258561806,
+              "gp_lift": 1.3,
+              "uc_scenario": 831924,
+              "uc_lift": 8.2,
+              "upt_scenario": 6766,
+              "upt_lift": 38.9,
+              "urw_scenario": 8588,
+              "urw_lift": 54.4,
+              "effect_on_margin_scenario": 0,
+              "effect_on_margin_lift": -28.8
+            }
+          ]
+        }
+      ]
+    },
+    "status": "OK",
+    "http_code": 200
   }
 }

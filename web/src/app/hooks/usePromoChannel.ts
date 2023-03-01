@@ -1,17 +1,17 @@
-import { useState } from "react";
-import RecommenderService from "services/recommender/recommender.service";
+import { useState } from 'react'
+import RecommenderService from 'services/recommender/recommender.service'
 
-function usePromoChannel() {
-  const [isLoading, setIsLoading] = useState(false);
-  setIsLoading(true);
-  const { status, data } = RecommenderService.getPromoChannel();
+function useFetchObjective() {
+  const [isLoading, setIsLoading] = useState(false)
+  setIsLoading(true)
+  const { status, data } = RecommenderService.getPromoChannel()
   if (status === 200) {
-    setIsLoading(false);
+    setIsLoading(false)
   } else {
-    setIsLoading(false);
+    setIsLoading(false)
   }
 
-  return { data, isLoading };
+  return { data, isLoading }
 }
 
-export default usePromoChannel;
+export default useFetchObjective

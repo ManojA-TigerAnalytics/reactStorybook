@@ -1,8 +1,12 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { PayloadAction, createSlice } from '@reduxjs/toolkit'
 import {
   fetchFilteredRecommendation,
   fetchFilteredSegment,
   fetchOfferDuration,
+  fetchProductCategory,
+  fetchProductItems,
+  fetchPromoMechanic,
+  fetchPromoObjective,
   fetchPromoRecommenderChannel,
   fetchPromoSegment,
   fetchPromoStatus,
@@ -23,12 +27,23 @@ const initialState: InitialRecommenderState = {
   recommendationList: recommendationInitialState,
   offerDuration: [],
   filteredSegment: [],
+  promoObjective: [],
+  productCategory: [],
+  productItems: [],
+  promoMechanic: [],
+  current: {
+    promoId: [],
+  },
 }
 
 const recommenderSlice = createSlice({
   name: 'recommender',
   initialState,
-  reducers: {},
+  reducers: {
+    setCurrentPromoIdSelection: (state, action: PayloadAction<number[]>) => {
+      state.current.promoId = action.payload
+    },
+  },
   extraReducers: (builder) => {
     builder.addCase(fetchPromoRecommenderChannel.fulfilled, (state, action) => {
       state.promoChannel = action.payload
@@ -48,7 +63,21 @@ const recommenderSlice = createSlice({
     builder.addCase(fetchFilteredSegment.fulfilled, (state, action) => {
       state.filteredSegment = action.payload
     })
+    builder.addCase(fetchPromoObjective.fulfilled, (state, action) => {
+      state.promoObjective = action.payload
+    })
+    builder.addCase(fetchProductCategory.fulfilled, (state, action) => {
+      state.productCategory = action.payload
+    })
+    builder.addCase(fetchProductItems.fulfilled, (state, action) => {
+      state.productItems = action.payload
+    })
+    builder.addCase(fetchPromoMechanic.fulfilled, (state, action) => {
+      state.promoMechanic = action.payload
+    })
   },
 })
+
+export const { setCurrentPromoIdSelection } = recommenderSlice.actions
 
 export default recommenderSlice.reducer

@@ -1,6 +1,11 @@
-export type SegmentFilterType = {
+export type SegmentFilterParamsType = {
   promo_id: string[]
 }
+export type PromoObjectiveParamsType = SegmentFilterParamsType
+export type ProductItemsParamsType = {
+  category_id: number[]
+}
+
 export type PromoChannel = {
   promo_id: number
   promo_name: string
@@ -27,6 +32,33 @@ export type FilteredSegment = {
   promo_id: number
   user_count: number
 }
+export type PromoObjectiveType = {
+  objective_id: number
+  objective_name: string
+  promo_id: number
+  promo_objective_id: number
+}
+export type ProductCategoryType = {
+  active: boolean
+  category: string
+  category_id: number
+}
+export type ProductItemsType = {
+  category_id: number
+  category_name: string
+  item_code: string
+  item_id: number
+  item_name: string
+}
+export type PromoMechanicType = {
+  active: boolean
+  date_created: string
+  promomech_code: string
+  promomech_id: number
+  promomech_name: string
+  recommender_flag: number
+  scenario_planner_flag: number
+}
 export type InitialRecommenderState = {
   promoChannel: PromoChannel[]
   segment: Segment[]
@@ -34,6 +66,13 @@ export type InitialRecommenderState = {
   recommendationList: FilteredRecommendation
   offerDuration: OfferDuration[]
   filteredSegment: FilteredSegment[]
+  promoObjective: PromoObjectiveType[]
+  productCategory: ProductCategoryType[]
+  productItems: ProductItemsType[]
+  promoMechanic: PromoMechanicType[]
+  current: {
+    promoId: number[]
+  }
 }
 export type FilteredRecommendation = {
   count: number
@@ -100,11 +139,18 @@ export type ConfigurationFilterFormValues = {
   promoDuration: string
 }
 export type PromoConfigurationFormValues = {
+  // clean this types
   startDate: Date
   channelFilter: AutoCompleteOption[]
   promoDuration: string
-  promoDepth: number
+  promoDepth: number[]
   selectedSegment: string
+  applyObjectiveTo: string
+  maximizeObjective: string
+  lowerBoundObjectives: { lowerBoundObjective: string; percentage: number }[]
+  productCategory: AutoCompleteOption[]
+  productItem: AutoCompleteOption[]
+  maxPromos: [{ maxPromosCategory: string; maxPromosCount: string }]
 }
 export type AutoCompleteOption = {
   id: string

@@ -4,6 +4,7 @@ const globalConstants = {
   logoLight: '/assets/images/logo_light.svg',
   logoDark: '/assets/images/logo_dark.svg',
   dashBoardPath: '/dashboard',
+  setMaxOfferDefault: 10,
 }
 
 const dashboardConstants = [

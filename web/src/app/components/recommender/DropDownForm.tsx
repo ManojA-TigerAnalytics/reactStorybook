@@ -17,6 +17,8 @@ type DropDownFormProps = FormControlProps & {
   name: string
   options: MenuItemOption[]
   className?: string
+  defaultValue?: string | number
+  disabledOptions?: string[]
 }
 function DropDownForm({
   control,
@@ -24,12 +26,14 @@ function DropDownForm({
   name,
   options,
   className,
+  defaultValue,
+  disabledOptions = [],
   ...rest
 }: DropDownFormProps) {
   const {
     field: { onChange, value },
     fieldState: { error },
-  } = useController({ name, control })
+  } = useController({ name, control, defaultValue })
 
   return (
     <FormControl
@@ -50,7 +54,11 @@ function DropDownForm({
         color='secondary'
       >
         {options.map(({ label, value }: MenuItemOption) => (
-          <MenuItem key={value} value={value}>
+          <MenuItem
+            key={value}
+            value={value}
+            disabled={disabledOptions.includes(value.toString())}
+          >
             {label}
           </MenuItem>
         ))}
@@ -60,6 +68,9 @@ function DropDownForm({
 }
 
 DropDownForm.defaultProps = {
-  className: undefined,
+  className: '',
+  defaultValue: '',
+  disabledOptions: [],
 }
+
 export default DropDownForm

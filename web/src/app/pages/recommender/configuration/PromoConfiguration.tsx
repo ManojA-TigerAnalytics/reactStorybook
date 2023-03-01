@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import { Container, Typography } from '@mui/material'
+import { Box, Container, Divider, Typography } from '@mui/material'
 import { useForm } from 'react-hook-form'
 import { useEffect, useState } from 'react'
 import { useAppSelector } from 'app/hooks/store-hooks'
@@ -7,6 +7,7 @@ import RadioCheckBoxForm from 'app/components/recommender/RadioCheckBoxForm'
 import {
   CheckBoxRadioOption,
   ConfigurationFilterFormValues,
+  DropDownOption,
   PromoConfigurationFormValues,
 } from '../recommender.types'
 import ConfigFilter from './ConfigFilter'
@@ -16,33 +17,60 @@ import PromoSelection from './PromoSelection'
 import SubmitReset from '../SubmitReset'
 
 function PromoConfiguration() {
-  const { filteredSegment } = useAppSelector((state) => state.recommender)
-
+  const {
+    filteredSegment,
+    promoObjective,
+    current,
+    productCategory,
+    productItems,
+  } = useAppSelector((state) => state.recommender)
   const [selectSegmentList, setSelectSegmentList] = useState<
     CheckBoxRadioOption[]
   >([])
+  const [objectiveList, setObjectiveList] = useState<DropDownOption[]>([])
 
   useEffect(() => {
     const reMapFilteredSegment = filteredSegment.map(
-      ({ segment_name: segmentName, segment_id: segmentId }) => ({
-        label: segmentName,
+      ({
+        segment_name: segmentName,
+        segment_id: segmentId,
+        user_count: userCount,
+      }) => ({
+        label: `${segmentName} (${userCount ?? 0})`,
         value: segmentId.toString(),
       })
     )
     setSelectSegmentList(reMapFilteredSegment)
   }, [filteredSegment])
 
+  useEffect(() => {
+    const reMapPromoObjective = promoObjective
+      .filter(({ promo_id: promoId }) => current.promoId.includes(promoId))
+      .map(({ objective_id: objectiveId, objective_name: objectiveName }) => ({
+        label: objectiveName,
+        value: objectiveId.toString(),
+      }))
+    setObjectiveList(reMapPromoObjective)
+  }, [promoObjective])
+
   const {
     handleSubmit: promoConfigHandleSubmit,
     control: promoConfigControl,
     reset: promoConfigReset,
   } = useForm<PromoConfigurationFormValues>({
+    // clean this
     defaultValues: {
       startDate: new Date(),
       channelFilter: [],
       promoDuration: '',
-      promoDepth: 10,
+      promoDepth: [5, 7],
       selectedSegment: '',
+      applyObjectiveTo: '',
+      maximizeObjective: '',
+      lowerBoundObjectives: [{ lowerBoundObjective: '', percentage: 0 }],
+      productCategory: [],
+      productItem: [],
+      maxPromos: [{ maxPromosCategory: '', maxPromosCount: '' }],
     },
   })
 
@@ -54,56 +82,68 @@ function PromoConfiguration() {
     // eslint-disable-next-line no-console
     console.log(data)
   }
-  const mockList = [
+  const dropDownMockList = [
     {
       label: 'label one',
       value: 'value one',
     },
   ]
+  // const autocompleteMockList = [
+  //   {
+  //     label: 'label one',
+  //     id: 'value one',
+  //   },
+  // ]
+
   return (
     <Container maxWidth='xl' className='px-10 py-4'>
       <div className='grid grid-cols-2 gap-4 '>
-        <div className='col-span-2 my-4'>
+        <div className='col-span-2 mt-2'>
           <ConfigFilter />
         </div>
-        <div className='col-span-2 my-4'>
+        <Divider className='col-span-2' />
+        <Box sx={{ border: 1 }} className='col-span-2 '>
           <form
             onSubmit={promoConfigHandleSubmit(onObjectiveFormSubmit)}
             color='primary'
-            className='space-y-3'
+            className='space-y-2'
           >
-            <div className='grid grid-cols-4 gap-4 '>
-              <div className=' bg-gray-200 dark:bg-transparent'>
+            <div className='grid grid-cols-4 gap-4'>
+              <Box
+                sx={{ backgroundColor: 'secondary' }}
+                className='bg-gray-100 p-5'
+              >
                 <Typography>Segment *</Typography>
                 <RadioCheckBoxForm
                   control={promoConfigControl}
                   name='selectedSegment'
                   options={selectSegmentList}
                 />
-              </div>
-              <div className='col-span-3 mt-5'>
+              </Box>
+              <div className='col-span-3 mt-2 p-5'>
                 <ObjectiveSelection
                   control={promoConfigControl}
-                  options={mockList}
+                  options={objectiveList}
                 />
                 <ProductSelection
                   control={promoConfigControl}
-                  options={mockList}
+                  category={productCategory}
+                  items={productItems}
                 />
                 <PromoSelection
                   control={promoConfigControl}
-                  options={mockList}
+                  options={dropDownMockList}
                 />
                 <SubmitReset
-                  submitButtonText='submit'
+                  submitButtonText='preview'
                   resetButtonText='reset'
                   onReset={onPromoConfigReset}
-                  className='col-span-2 '
+                  className=''
                 />
               </div>
             </div>
           </form>
-        </div>
+        </Box>
       </div>
     </Container>
   )

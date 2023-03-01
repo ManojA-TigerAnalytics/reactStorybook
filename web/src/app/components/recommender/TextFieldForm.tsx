@@ -1,4 +1,4 @@
-import { TextField, TextFieldProps } from "@mui/material";
+import { TextField, TextFieldProps } from '@mui/material'
 import {
   Control,
   Controller,
@@ -6,18 +6,19 @@ import {
   FieldValues,
   Path,
   PathValue,
-} from "react-hook-form";
-import * as yup from "yup";
+} from 'react-hook-form'
+import * as yup from 'yup'
 
 type TextFieldFormProps<T extends FieldValues> = {
-  control: Control<T>;
-  name: FieldPath<T>;
-  label: string;
-  defaultValue?: PathValue<T, Path<T>>;
-  rules?: yup.SchemaOf<string>;
-  disabled?: boolean;
-  textFieldProps?: TextFieldProps;
-};
+  control: Control<T>
+  name: FieldPath<T>
+  label: string
+  defaultValue?: PathValue<T, Path<T>>
+  rules?: yup.SchemaOf<string>
+  disabled?: boolean
+  textFieldProps?: TextFieldProps
+  className?: string
+}
 
 function TextFieldForm<T extends FieldValues>({
   control,
@@ -27,8 +28,9 @@ function TextFieldForm<T extends FieldValues>({
   rules,
   disabled = false,
   textFieldProps = {},
+  className,
 }: TextFieldFormProps<T>) {
-  const { ...rest } = textFieldProps;
+  const { ...rest } = textFieldProps
   return (
     <Controller
       name={name}
@@ -43,10 +45,10 @@ function TextFieldForm<T extends FieldValues>({
       }) => (
         <TextField
           label={label}
-          className="w-full"
-          color="secondary"
-          variant="outlined"
-          size="small"
+          className={`w-full ${className}`}
+          color='secondary'
+          variant='outlined'
+          size='small'
           onChange={onChange}
           onBlur={onBlur}
           value={value}
@@ -58,7 +60,7 @@ function TextFieldForm<T extends FieldValues>({
         />
       )}
     />
-  );
+  )
 }
 
 TextFieldForm.defaultProps = {
@@ -66,5 +68,6 @@ TextFieldForm.defaultProps = {
   rules: undefined,
   disabled: undefined,
   textFieldProps: undefined,
-};
-export default TextFieldForm;
+  className: undefined,
+}
+export default TextFieldForm
