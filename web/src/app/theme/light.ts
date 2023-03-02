@@ -1,13 +1,13 @@
-import { createTheme } from "@mui/material";
+import { createTheme } from '@mui/material'
 
 const lightTheme = createTheme({
   palette: {
-    mode: "light",
+    mode: 'light',
     primary: {
-      main: "#ffffff",
+      main: '#ffffff',
     },
     secondary: {
-      main: "#f7901d",
+      main: '#f7901d',
     },
   },
   shape: {
@@ -17,8 +17,8 @@ const lightTheme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          "&:hover": {
-            color: "white",
+          '&:hover': {
+            color: 'white',
           },
         },
       },
@@ -26,13 +26,45 @@ const lightTheme = createTheme({
     MuiAppBar: {
       styleOverrides: {
         colorPrimary: {
-          "& .MuiButton-root:hover": {
-            color: "black",
+          '& .MuiButton-root:hover': {
+            color: 'black',
+          },
+        },
+      },
+    },
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          scrollbarColor: '#c1c1c1 #f1f1f1',
+          '&::-webkit-scrollbar, & *::-webkit-scrollbar': {
+            backgroundColor: '#f1f1f1',
+            width: '9px',
+          },
+          '&::-webkit-scrollbar-thumb, & *::-webkit-scrollbar-thumb': {
+            borderRadius: 8,
+            backgroundColor: '#c1c1c1',
+            minHeight: 24,
+            border: '3px solid #f1f1f1',
+          },
+          '&::-webkit-scrollbar-thumb:focus, & *::-webkit-scrollbar-thumb:focus':
+            {
+              backgroundColor: '#959595',
+            },
+          '&::-webkit-scrollbar-thumb:active, & *::-webkit-scrollbar-thumb:active':
+            {
+              backgroundColor: '#959595',
+            },
+          '&::-webkit-scrollbar-thumb:hover, & *::-webkit-scrollbar-thumb:hover':
+            {
+              backgroundColor: '#959595',
+            },
+          '&::-webkit-scrollbar-corner, & *::-webkit-scrollbar-corner': {
+            backgroundColor: '#f1f1f1',
           },
         },
       },
     },
   },
-});
+})
 
-export default lightTheme;
+export default lightTheme

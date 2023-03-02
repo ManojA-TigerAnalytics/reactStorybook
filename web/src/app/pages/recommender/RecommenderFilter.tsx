@@ -6,14 +6,23 @@ import { useAppDispatch, useAppSelector } from 'app/hooks/store-hooks'
 import dayjs from 'dayjs'
 import { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
+import { Paper, styled } from '@mui/material'
+import { globalConstants } from 'app/constants/constant'
 import {
   fetchFilteredRecommendation,
   fetchPromoRecommenderChannel,
   fetchPromoSegment,
   fetchPromoStatus,
 } from './actions/recommender.actions'
-import SubmitReset from './SubmitReset'
+import SubmitReset from '../../components/common/SubmitReset'
 
+// const PaperCard = styled(Paper)(({ theme }) => ({
+//   ...theme.typography.body2,
+//   textAlign: 'center',
+//   color: theme.palette.text.secondary,
+//   height: 60,
+//   lineHeight: '60px',
+// }))
 type Option = {
   id: string
   label: string
@@ -107,42 +116,43 @@ function RecommenderFilter({ page, pageSize }: RecommenderFilterProps) {
     reset()
   }
   return (
-    <form
-      onSubmit={handleSubmit(onSubmit)}
-      className='grid grid-cols-8 gap-4 content-center'
-      color='primary'
-    >
-      <TextFieldForm control={control} name='packageId' label='Package Id' />
-      <TextFieldForm
-        control={control}
-        name='packageName'
-        label='Package Name'
-      />
+    <Paper className='p-5' elevation={globalConstants.defaultPaperElevation}>
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className='grid grid-cols-8 gap-4 content-center'
+        color='primary'
+      >
+        <TextFieldForm control={control} name='packageId' label='Package Id' />
+        <TextFieldForm
+          control={control}
+          name='packageName'
+          label='Package Name'
+        />
 
-      <AutoCompleteCheckBox
-        control={control}
-        label='Promo channel'
-        name='channelFilter'
-        options={promoChannelList}
-      />
+        <AutoCompleteCheckBox
+          control={control}
+          label='Promo channel'
+          name='channelFilter'
+          options={promoChannelList}
+        />
 
-      <AutoCompleteCheckBox
-        control={control}
-        label='Segment'
-        name='segmentFilter'
-        options={segmentList}
-      />
+        <AutoCompleteCheckBox
+          control={control}
+          label='Segment'
+          name='segmentFilter'
+          options={segmentList}
+        />
 
-      <DatepickerForm control={control} label='Start Date' name='startDate' />
+        <DatepickerForm control={control} label='Start Date' name='startDate' />
 
-      <TextFieldForm control={control} name='createdBy' label='Created By' />
-      <AutoCompleteCheckBox
-        control={control}
-        label='Status'
-        name='statusFilter'
-        options={statusList}
-      />
-      {/* <div>
+        <TextFieldForm control={control} name='createdBy' label='Created By' />
+        <AutoCompleteCheckBox
+          control={control}
+          label='Status'
+          name='statusFilter'
+          options={statusList}
+        />
+        {/* <div>
         <Button
           variant="contained"
           color="secondary"
@@ -162,13 +172,14 @@ function RecommenderFilter({ page, pageSize }: RecommenderFilterProps) {
           Reset
         </Button>
       </div> */}
-      <SubmitReset
-        submitButtonText='submit'
-        resetButtonText='reset'
-        onReset={onReset}
-        className='grid grid-cols-2'
-      />
-    </form>
+        <SubmitReset
+          submitButtonText='submit'
+          resetButtonText='reset'
+          onReset={onReset}
+          className='grid grid-cols-2'
+        />
+      </form>
+    </Paper>
   )
 }
 

@@ -3,6 +3,7 @@ const globalConstants = {
   defaultTheme: 'light',
   logoLight: '/assets/images/logo_light.svg',
   logoDark: '/assets/images/logo_dark.svg',
+  defaultPaperElevation: 2,
   dashBoardPath: '/dashboard',
   setMaxOfferDefault: 10,
 }

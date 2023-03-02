@@ -7,6 +7,8 @@ import { useForm } from 'react-hook-form'
 import { useEffect, useState } from 'react'
 import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
+import { Paper } from '@mui/material'
+import { globalConstants } from 'app/constants/constant'
 import {
   AutoCompleteOption,
   ConfigurationFilterFormValues,
@@ -24,7 +26,7 @@ import {
   fetchPromoObjective,
   fetchPromoRecommenderChannel,
 } from '../actions/recommender.actions'
-import SubmitReset from '../SubmitReset'
+import SubmitReset from '../../../components/common/SubmitReset'
 import { setCurrentPromoIdSelection } from '../slice/recommender.slice'
 
 function ConfigFilter() {
@@ -108,36 +110,38 @@ function ConfigFilter() {
     filterReset()
   }
   return (
-    <form
-      onSubmit={filterHandleSubmit(onFilterSubmit)}
-      color='primary'
-      className='grid grid-cols-8 gap-4 '
-    >
-      <DatepickerForm
-        control={filterControl}
-        name='startDate'
-        label='Start Date'
-        className='col-start-3'
-      />
-      <AutoCompleteCheckBox
-        control={filterControl}
-        label='Promo channel'
-        name='channelFilter'
-        options={promoChannelList}
-      />
-      <DropDownForm
-        control={filterControl}
-        label='Promo Duration'
-        name='promoDuration'
-        options={promoDurationList}
-      />
-      <SubmitReset
-        submitButtonText='filter'
-        resetButtonText='reset'
-        onReset={onFilterReset}
-        className='col-span-2'
-      />
-    </form>
+    <Paper className='p-5' elevation={globalConstants.defaultPaperElevation}>
+      <form
+        onSubmit={filterHandleSubmit(onFilterSubmit)}
+        color='primary'
+        className='grid grid-cols-8 gap-4 '
+      >
+        <DatepickerForm
+          control={filterControl}
+          name='startDate'
+          label='Start Date'
+          className='col-start-3'
+        />
+        <AutoCompleteCheckBox
+          control={filterControl}
+          label='Promo channel'
+          name='channelFilter'
+          options={promoChannelList}
+        />
+        <DropDownForm
+          control={filterControl}
+          label='Promo Duration'
+          name='promoDuration'
+          options={promoDurationList}
+        />
+        <SubmitReset
+          submitButtonText='filter'
+          resetButtonText='reset'
+          onReset={onFilterReset}
+          className='col-span-2'
+        />
+      </form>
+    </Paper>
   )
 }
 

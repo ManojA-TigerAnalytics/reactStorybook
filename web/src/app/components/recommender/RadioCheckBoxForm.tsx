@@ -43,7 +43,7 @@ function RadioCheckBoxForm<T extends FieldValues>({
   return (
     <>
       {options.map((option) => (
-        <div key={option.value}>
+        <div key={option.value} className='mt-2'>
           <FormControlLabel
             value={option.value}
             control={

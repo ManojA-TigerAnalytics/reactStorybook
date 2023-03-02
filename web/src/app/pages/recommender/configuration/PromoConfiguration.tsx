@@ -1,9 +1,10 @@
 /* eslint-disable camelcase */
-import { Box, Container, Divider, Typography } from '@mui/material'
+import { Box, Container, Divider, Paper, Typography } from '@mui/material'
 import { useForm } from 'react-hook-form'
 import { useEffect, useState } from 'react'
 import { useAppSelector } from 'app/hooks/store-hooks'
 import RadioCheckBoxForm from 'app/components/recommender/RadioCheckBoxForm'
+import { globalConstants } from 'app/constants/constant'
 import {
   CheckBoxRadioOption,
   ConfigurationFilterFormValues,
@@ -14,7 +15,7 @@ import ConfigFilter from './ConfigFilter'
 import ObjectiveSelection from './ObjectiveSelection'
 import ProductSelection from './ProductSelection'
 import PromoSelection from './PromoSelection'
-import SubmitReset from '../SubmitReset'
+import SubmitReset from '../../../components/common/SubmitReset'
 
 function PromoConfiguration() {
   const {
@@ -102,24 +103,25 @@ function PromoConfiguration() {
           <ConfigFilter />
         </div>
         <Divider className='col-span-2' />
-        <Box sx={{ border: 1 }} className='col-span-2 '>
+        <Paper
+          className=' col-span-2'
+          elevation={globalConstants.defaultPaperElevation}
+        >
+          {/* <Box className='col-span-2 '> */}
           <form
             onSubmit={promoConfigHandleSubmit(onObjectiveFormSubmit)}
             color='primary'
             className='space-y-2'
           >
             <div className='grid grid-cols-4 gap-4'>
-              <Box
-                sx={{ backgroundColor: 'secondary' }}
-                className='bg-gray-100 p-5'
-              >
+              <Paper elevation={0} className='bg-gray-100 p-5'>
                 <Typography>Segment *</Typography>
                 <RadioCheckBoxForm
                   control={promoConfigControl}
                   name='selectedSegment'
                   options={selectSegmentList}
                 />
-              </Box>
+              </Paper>
               <div className='col-span-3 mt-2 p-5'>
                 <ObjectiveSelection
                   control={promoConfigControl}
@@ -143,7 +145,8 @@ function PromoConfiguration() {
               </div>
             </div>
           </form>
-        </Box>
+          {/* </Box> */}
+        </Paper>
       </div>
     </Container>
   )

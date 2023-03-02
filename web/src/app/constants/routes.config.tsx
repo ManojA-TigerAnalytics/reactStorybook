@@ -7,6 +7,7 @@ import comparisonRoutes from 'app/pages/comparison/comparison.routes'
 import dashboardRoutes from 'app/pages/dashboard/dashboard.routes'
 import feedRoutes from 'app/pages/feed/feed.routes'
 import plannerRoutes from 'app/pages/planner/planner.routes'
+import pricePlannerRoutes from 'app/pages/price-scenario-planner/price-planner.routes'
 import recommenderRoutes from 'app/pages/recommender/recommender.routes'
 import { Navigate, RouteObject } from 'react-router-dom'
 
@@ -35,6 +36,7 @@ const routes: RouteObject[] = [
       ...plannerRoutes,
       ...feedRoutes,
       ...recommenderRoutes,
+      ...pricePlannerRoutes,
     ],
   },
 ]
