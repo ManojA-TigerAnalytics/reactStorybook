@@ -3,12 +3,15 @@ import {
   AccordionDetails,
   AccordionSummary,
   Typography,
+  Button,
 } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
+import { useNavigate } from 'react-router-dom'
 import { comparisonAccordionHeaderMock } from './comparisonMock'
 import ComparisonAccordionDetails from './ComparisonAccordionDetails'
 
 function ComparisonAcordion() {
+  const navigate = useNavigate()
   return (
     <div>
       {comparisonAccordionHeaderMock.data.map((scenario) => (
@@ -25,10 +28,19 @@ function ComparisonAcordion() {
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
+            <Typography>Scenario</Typography>
             <ComparisonAccordionDetails />
           </AccordionDetails>
         </Accordion>
       ))}
+
+      <Button
+        onClick={() => navigate('/comparison/details')}
+        variant='contained'
+        color='secondary'
+      >
+        Compare
+      </Button>
     </div>
   )
 }

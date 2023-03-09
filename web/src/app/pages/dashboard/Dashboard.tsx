@@ -1,9 +1,9 @@
-import DashBoardCard from "app/components/comparison/DashBoardCard";
-import { dashboardConstants } from "app/constants/constant";
+import DashBoardCard from 'app/components/dashboard/DashBoardCard'
+import { dashboardConstants } from 'app/constants/constant'
 
 export default function Dashboard() {
   return (
-    <div className="p-10 grid grid-cols-4 gap-4">
+    <div className='p-10 grid grid-cols-4 gap-4'>
       {dashboardConstants.map((element) => (
         <DashBoardCard
           key={element.title}
@@ -14,5 +14,5 @@ export default function Dashboard() {
         />
       ))}
     </div>
-  );
+  )
 }

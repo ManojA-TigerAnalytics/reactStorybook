@@ -3,7 +3,9 @@ import { globalConstants } from 'app/constants/constant'
 import { useState } from 'react'
 
 function PriceConfigForm() {
-  const [priceOptimizerName, setPriceOptimizerName] = useState('')
+  const [priceOptimizerName, setPriceOptimizerName] = useState(
+    'PriceRecommendation'
+  )
   const [priceOptimizerDescription, setPriceOptimizerDescription] = useState('')
   return (
     <Paper className='p-5' elevation={globalConstants.defaultPaperElevation}>

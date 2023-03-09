@@ -1,5 +1,12 @@
 /* eslint-disable camelcase */
-import { Box, Container, Divider, Paper, Typography } from '@mui/material'
+import {
+  Container,
+  Divider,
+  Paper,
+  Typography,
+  alpha,
+  styled,
+} from '@mui/material'
 import { useForm } from 'react-hook-form'
 import { useEffect, useState } from 'react'
 import { useAppSelector } from 'app/hooks/store-hooks'
@@ -16,6 +23,13 @@ import ObjectiveSelection from './ObjectiveSelection'
 import ProductSelection from './ProductSelection'
 import PromoSelection from './PromoSelection'
 import SubmitReset from '../../../components/common/SubmitReset'
+
+const StylePaper = styled(Paper)(({ theme }) => ({
+  backgroundColor:
+    theme.palette.mode === 'dark'
+      ? alpha(theme.palette.primary.dark, 0.1)
+      : alpha(theme.palette.primary.dark, 0.3),
+}))
 
 function PromoConfiguration() {
   const {
@@ -114,14 +128,14 @@ function PromoConfiguration() {
             className='space-y-2'
           >
             <div className='grid grid-cols-4 gap-4'>
-              <Paper elevation={0} className='bg-gray-100 p-5'>
+              <StylePaper elevation={0} color='secondary.main' className='p-5'>
                 <Typography>Segment *</Typography>
                 <RadioCheckBoxForm
                   control={promoConfigControl}
                   name='selectedSegment'
                   options={selectSegmentList}
                 />
-              </Paper>
+              </StylePaper>
               <div className='col-span-3 mt-2 p-5'>
                 <ObjectiveSelection
                   control={promoConfigControl}

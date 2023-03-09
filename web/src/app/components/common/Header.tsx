@@ -1,85 +1,83 @@
-import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
-import MenuItem from "@mui/material/MenuItem";
-import Brightness4Icon from "@mui/icons-material/Brightness4";
-import Brightness7Icon from "@mui/icons-material/Brightness7";
-import { useAppDispatch, useAppSelector } from "app/hooks/store-hooks";
-import { toggleTheme } from "app/store/slice/themeSlice";
-import { dashboardConstants, globalConstants } from "app/constants/constant";
-import { useNavigate } from "react-router-dom";
-import Logo from "./Logo";
+import * as React from 'react'
+import AppBar from '@mui/material/AppBar'
+import Box from '@mui/material/Box'
+import Toolbar from '@mui/material/Toolbar'
+import IconButton from '@mui/material/IconButton'
+import Typography from '@mui/material/Typography'
+import Menu from '@mui/material/Menu'
+import MenuIcon from '@mui/icons-material/Menu'
+import Container from '@mui/material/Container'
+import Avatar from '@mui/material/Avatar'
+import Tooltip from '@mui/material/Tooltip'
+import MenuItem from '@mui/material/MenuItem'
+import Brightness4Icon from '@mui/icons-material/Brightness4'
+import Brightness7Icon from '@mui/icons-material/Brightness7'
+import { useAppDispatch, useAppSelector } from 'app/hooks/store-hooks'
+import { toggleTheme } from 'app/store/slice/themeSlice'
+import { dashboardConstants, globalConstants } from 'app/constants/constant'
+import { NavLink, useNavigate } from 'react-router-dom'
+import HomeIcon from '@mui/icons-material/Home'
+import Logo from './Logo'
 
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+const settings = ['Profile', 'Account', 'Dashboard', 'Logout']
 
 function Header() {
-  const navigate = useNavigate();
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
-    null
-  );
+  const navigate = useNavigate()
+  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null)
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(
     null
-  );
+  )
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElNav(event.currentTarget);
-  };
+    setAnchorElNav(event.currentTarget)
+  }
   const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElUser(event.currentTarget);
-  };
+    setAnchorElUser(event.currentTarget)
+  }
 
   const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
+    setAnchorElNav(null)
+  }
 
   const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
+    setAnchorElUser(null)
+  }
 
   // const theme: ThemeOptions = useTheme()
-  const currentTheme = useAppSelector((state) => state.theme.mode);
-  const dispatch = useAppDispatch();
+  const currentTheme = useAppSelector((state) => state.theme.mode)
+  const dispatch = useAppDispatch()
   return (
-    <AppBar position="static">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Logo navigateTo={globalConstants.dashBoardPath} />
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+    <AppBar position='static'>
+      <Container maxWidth='xl'>
+        <Toolbar variant='dense' disableGutters>
+          <Logo navigateTo={globalConstants.dashBoardPath} className='w-24' />
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
+              size='large'
+              aria-label='account of current user'
+              aria-controls='menu-appbar'
+              aria-haspopup='true'
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color='inherit'
             >
               <MenuIcon />
             </IconButton>
             <Menu
-              id="menu-appbar"
+              id='menu-appbar'
               anchorEl={anchorElNav}
               anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
+                vertical: 'bottom',
+                horizontal: 'left',
               }}
               keepMounted
               transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
+                vertical: 'top',
+                horizontal: 'left',
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none" },
+                display: { xs: 'block', md: 'none' },
               }}
             >
               {dashboardConstants.map((page) => (
@@ -87,71 +85,101 @@ function Header() {
                   key={page.title}
                   onClick={() => navigate(page.routePath)}
                 >
-                  <Typography textAlign="center">{page.title}</Typography>
+                  <Typography textAlign='center'>{page.title}</Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
           <Typography
-            variant="h6"
+            variant='h6'
             noWrap
-            component="a"
-            href=""
+            component='a'
+            href=''
             sx={{
               mr: 2,
-              display: { xs: "flex", md: "none" },
+              display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
-              fontFamily: "monospace",
+              fontFamily: 'monospace',
               fontWeight: 200,
-              letterSpacing: ".1rem",
-              color: "inherit",
-              textDecoration: "none",
+              letterSpacing: '.1rem',
+              color: 'inherit',
+              textDecoration: 'none',
             }}
           >
             {globalConstants.organizationName}
           </Typography>
           <Box
-            alignContent="center"
-            sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
-            alignItems="center"
-            justifyContent="center"
+            alignContent='center'
+            sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, p: 0 }}
+            alignItems='bottom'
+            justifyContent='center'
           >
+            <NavLink
+              to='/dashboard'
+              className='mt-4 px-4'
+              style={({ isActive }) =>
+                isActive
+                  ? {
+                      textDecoration: 'none',
+                      color: '#f7901d',
+                      borderBottomStyle: 'solid',
+                    }
+                  : {
+                      textDecoration: 'none',
+                      color: 'inherit',
+                    }
+              }
+            >
+              <HomeIcon />
+            </NavLink>
             {dashboardConstants.map((page) => (
-              <Button
+              <NavLink
                 key={page.title}
-                onClick={() => navigate(page.routePath)}
-                sx={{ my: 2, color: "inherit", display: "flex" }}
+                to={page.routePath}
+                className='py-4 px-4'
+                style={({ isActive }) =>
+                  isActive
+                    ? {
+                        textDecoration: 'none',
+                        color: '#f7901d',
+                        borderBottomStyle: 'solid',
+                      }
+                    : {
+                        textDecoration: 'none',
+                        color: 'inherit',
+                      }
+                }
               >
-                {page.title}
-              </Button>
+                <Typography textAlign='center'>{page.title}</Typography>
+              </NavLink>
             ))}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
+            <Tooltip title='Open settings'>
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt='Remy Sharp' src='/static/images/avatar/2.jpg' />
               </IconButton>
             </Tooltip>
             <Menu
-              sx={{ mt: "45px" }}
-              id="menu-appbar"
+              // sx={{ mt: '45px' }}
+              id='menu-appbar'
               anchorEl={anchorElUser}
               anchorOrigin={{
-                vertical: "top",
-                horizontal: "right",
+                vertical: 'top',
+                horizontal: 'right',
               }}
               keepMounted
               transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
+                vertical: 'top',
+                horizontal: 'right',
               }}
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                  <Typography textAlign='center'>{setting}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -161,9 +189,9 @@ function Header() {
             <IconButton
               sx={{ ml: 1 }}
               onClick={() => dispatch(toggleTheme())}
-              color="inherit"
+              color='inherit'
             >
-              {currentTheme === "dark" ? (
+              {currentTheme === 'dark' ? (
                 <Brightness7Icon />
               ) : (
                 <Brightness4Icon />
@@ -173,6 +201,6 @@ function Header() {
         </Toolbar>
       </Container>
     </AppBar>
-  );
+  )
 }
-export default Header;
+export default Header

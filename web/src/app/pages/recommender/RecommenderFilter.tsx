@@ -6,7 +6,7 @@ import { useAppDispatch, useAppSelector } from 'app/hooks/store-hooks'
 import dayjs from 'dayjs'
 import { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { Paper, styled } from '@mui/material'
+import { Paper } from '@mui/material'
 import { globalConstants } from 'app/constants/constant'
 import {
   fetchFilteredRecommendation,
